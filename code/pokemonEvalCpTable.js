@@ -1,12 +1,96 @@
 var myApp = angular.module('myApp',[]);
 
-myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {	
-	$scope.pokemonList = [
+myApp.controller('pokemonEvalCpTable', ['$scope', 'data', 'util', function($scope, data, util) {
+	$scope.pokemonList = data.pokemonList;
+	$scope.pokemon = $scope.pokemonList[0];
+	
+	//--------------------------------------------------------------------
+	// Detailed Screen
+	//--------------------------------------------------------------------
+	$scope.calcCandy = function(pokemon) {
+		pokemon.evol.forEach(function(evol){
+			if(evol.candy < pokemon.candyCount){
+				evol.candyCount = 0;
+			} else {
+				evol.candyCount = evol.candy - pokemon.candyCount;
+			}
+		});
+	};
+	
+	$scope.pokemonSelected = function(pokemon) {
+		$scope.pokemon = angular.copy(pokemon);
+		
+		/*if ($scope.pokemon.evol) {
+			$scope.pokemon.evol.forEach(function(item){
+				if(!item.evol) return;
+				item.evol.forEach(function(test){
+						item.evol = util.getPokemonByNumber(test.number);
+				});
+				
+			});
+		}*/
+	};
+	
+	//--------------------------------------------------------------------
+	// Quick Math
+	//--------------------------------------------------------------------
+	$scope.cpCalc = function(pokemon) {
+		if (!pokemon.evol || pokemon.evol.length === 0) return;
+		if (pokemon.cp > pokemon.topCp) {
+			pokemon.cp = pokemon.topCp;
+		}
+		
+		var minCp = pokemon.cp;
+		var maxCp = pokemon.cp;
+		
+		pokemon.evol.forEach(function(evol) {
+			evol.minCp = Math.round(minCp * evol.minMulti);
+			evol.maxCp = Math.round(maxCp * evol.maxMulti);
+			minCp = evol.minCp;
+			maxCp = evol.maxCp;
+		});
+	};
+
+	//--------------------------------------------------------------------
+	// Both Toggle Screens
+	//--------------------------------------------------------------------
+}]);
+
+myApp.controller('pokemonEvalCpTableRowFormat', ['$scope', 'util', function($scope, util) {
+	init();
+	
+	function init() {
+		if($scope.pokemon.evol) {
+			for (var j=0; j < $scope.pokemon.evol.length; j++) {
+				var evol = util.getPokemonByNumber($scope.pokemon.evol[j].number);
+				
+				if (!evol) return;
+				$scope.pokemon.evol[j] = angular.copy(evol);
+			}
+		}
+	}
+}]);
+
+myApp.factory('util', ['data', function(data) {
+	self = {};
+	
+	self.getPokemonByNumber = function(number) {
+		for (var i=0; i < data.pokemonList.length; i++){
+			if(data.pokemonList[i].number === number) return angular.copy(data.pokemonList[i]);
+		}
+	};
+	
+	return self;
+}]);
+
+myApp.factory('data', [function() {
+	self = {};
+	
+	self.pokemonList = [
 		{	number:1,
 			name:'Bulbasaur',
 			candyDis:3,
 			topCp:1071,
-			candy:25,
 			evol: [{number:2}, {number:3}],
 			cp: 100
 		},
@@ -14,7 +98,7 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 			name:'Ivysaur',
 			candyDis:3,
 			topCp:1632,
-			candy:100,
+			candy:25,
 			minMulti:1.53,
 			maxMulti:1.58,
 			evol: [{ number:3 }]
@@ -23,6 +107,7 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 			name:'Venusaur',
 			candyDis:3,
 			topCp:2580,
+			candy:100,
 			minMulti:1.20,
 			maxMulti:1.61
 		},
@@ -1057,59 +1142,6 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 			topCp:3299
 		}
 	];
-	$scope.pokemon = $scope.pokemonList[0];
 	
-	//--------------------------------------------------------------------
-	// Detailed Screen
-	//--------------------------------------------------------------------
-	$scope.pokemonSelected = function(pokemon) {
-		$scope.pokemon = angular.copy(pokemon);
-	}
-
-	//--------------------------------------------------------------------
-	// Quick Math
-	//--------------------------------------------------------------------
-	$scope.cpCalc = function(pokemon) {
-		if (!pokemon.evol || pokemon.evol.length === 0) return;
-		if (pokemon.cp > pokemon.topCp) {
-			
-			pokemon.cp = pokemon.topCp;
-		}
-		
-		var minCp = pokemon.cp;
-		var maxCp = pokemon.cp;
-		
-		pokemon.evol.forEach(function(evol) {
-			evol.minCp = Math.round(minCp * evol.minMulti);
-			evol.maxCp = Math.round(maxCp * evol.maxMulti);
-			minCp = evol.minCp;
-			maxCp = evol.maxCp;
-		});
-	};
-
-	//--------------------------------------------------------------------
-	// Both Toggle Screens
-	//--------------------------------------------------------------------
-}]);
-
-myApp.controller('pokemonEvalCpTableRowFormat', ['$scope', function($scope) {
-	init();
-	
-	function init() {
-		if($scope.pokemon.evol) {
-			for (var j=0; j < $scope.pokemon.evol.length; j++) {
-				var evol = getPokemonByNumber($scope.pokemon.evol[j].number);
-				
-				if (!evol) return;
-				$scope.pokemon.evol[j] = angular.copy(evol);
-				$scope.pokemon.evol[j].evol = null;
-			}
-		}
-	}
-	
-	function getPokemonByNumber(number) {
-		for (var i=0; i < $scope.pokemonList.length; i++){
-			if($scope.pokemonList[i].number === number) return $scope.pokemonList[i];
-		}
-	}
+	return self;
 }]);
