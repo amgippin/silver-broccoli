@@ -53,7 +53,54 @@
 		<h1>Please select a pokemon</h1>
 	</div>
 	<div ng-show="pokemon">
-		<h1>You selected: {{pokemon.name}}</h1>			
+		<h1>You selected: {{pokemon.name}}</h1>
+		
+		<div>
+			<div class="column-number">{{pokemon.number}}</div>
+			<div class="column-name">{{pokemon.name}}</div>
+			<input class="column-currentCP" ng-model="pokemon.cp" type="number" min=10 ng-change="cpCalc(pokemon)">
+			<div style="display:inline-block;" ng-repeat="evol in pokemon.evol">
+				<div class="column-evol-name">{{evol.name}}</div>
+				<div class="column-evol-cp">{{evol.minCp}}&nbsp </div>
+				<div class="column-evol-cp">{{evol.maxCp}}&nbsp </div>
+				<input class="column-evol-multi-input" ng-model="evol.minMulti" type="number" min=0 step=.01 ng-change="cpCalc(pokemon)">
+				<input class="column-evol-multi-input column-end" ng-model="evol.maxMulti" type="number" min=0 step=.01 ng-change="cpCalc(pokemon)">
+			</div>
+		</div>
+		
+		<div ng-repeat="item in pokemon.evol">
+			<div class="column-number">{{item.number}}</div>
+			<div class="column-name">{{item.name}}</div>
+			<input class="column-currentCP" ng-model="item.cp" type="number" min=10 ng-change="cpCalc(item)">
+			<div style="display:inline-block;" ng-repeat="evol in item.evol">
+				<div class="column-evol-name">{{evol.name}}</div>
+				<div class="column-evol-cp">{{evol.minCp}}&nbsp </div>
+				<div class="column-evol-cp">{{evol.maxCp}}&nbsp </div>
+				<input class="column-evol-multi-input" ng-model="evol.minMulti" type="number" min=0 step=.01 ng-change="cpCalc(item)">
+				<input class="column-evol-multi-input column-end" ng-model="evol.maxMulti" type="number" min=0 step=.01 ng-change="cpCalc(item)">
+			</div>
+			<div>{{item}}</div>
+		</div>
+		
+		<br><br><br><br>
+		
+		<div>
+			<div>Buddy Distance: {{pokemon.candyDis}}km</div><br>
+			<input type="number" min=0 ng-model="pokemon.candyCount" ng-change="calcCandy(pokemon)"><br><br>
+			
+			<div>
+				<div style="display:inline-block; width:85px;">Name</div>
+				<div style="display:inline-block; width:50px;">Candy</div>
+				<div style="display:inline-block; width:50px;">Candy Required</div>
+			</div>
+			<div ng-repeat="evol in pokemon.evol">
+				<div style="display:inline-block; width:85px;">{{evol.name}}</div>
+				<div style="display:inline-block; width:50px;">{{evol.candy}}</div>
+				<div style="display:inline-block; width:50px;">{{evol.candyCount}}</div>
+			</div>
+		</div>
+		
+		<br><br><br>
 		_________________________________________________________
 		<div ng-show="pokemon.pre_evol" ng-repeat="item in pokemon.pre_evol">
 			<div>
