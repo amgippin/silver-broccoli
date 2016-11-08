@@ -1,0 +1,34 @@
+.pokemon-eval-cp-table {
+	border-style: solid;
+}
+.pokemon-eval-cp-table-row-evol {
+	background-color: green;
+}
+.red{
+	background-color:red;
+}
+.blue{
+	background-color:blue;
+}
+.inline {
+	float:left;
+}
+.column-number {
+	float: left;
+	width: 15px;
+	
+}
+.column-name {
+	display: inline-block;
+	width: 70px;
+}
+.column-input-div {
+	display: inline-block;
+}
+.column-input {
+	width:84px;
+}
+.column-cp-text {
+	display: inline-block;
+	width:84px;
+}
