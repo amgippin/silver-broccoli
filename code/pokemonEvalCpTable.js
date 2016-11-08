@@ -400,82 +400,82 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number:69,
 			name: 'Bellsprout',
-			minMulti:1.54,
-			maxMulti:1.6,
 			evol: [{ number:70 }, { number:71 }]
 		},		
 		{	
 			number:70,
 			name: 'Weepinbell',
-			minMulti:1.47,
-			maxMulti:1.52,
+			minMulti:1.54,
+			maxMulti:1.6,
 			evol: [{ number:71 }]
 		},	
 		{	
 			number:71,
-			name: 'Victreebel'
+			name: 'Victreebel',
+			minMulti:1.47,
+			maxMulti:1.52
 		},		
 		{	
 			number:72,
 			name: 'Tentacool',
-			minMulti:2.47,
-			maxMulti:2.6,
 			evol: [{ number:73 }]
 		},
 		{	
 			number:73,
-			name: 'Tentacruel'
+			name: 'Tentacruel',
+			minMulti:2.47,
+			maxMulti:2.6
 		},		
 		{	
 			number:74,
 			name: 'Geodude',
-			minMulti:1.71,
-			maxMulti:1.76,
 			evol: [{ number:75 }, { number:76 }]
 		},
 		{	
 			number:75,
 			name: 'Graveler',
-			minMulti:1.63,
-			maxMulti:1.72,
+			minMulti:1.71,
+			maxMulti:1.76,
 			evol: [{ number:76 }]
 		},		
 		{	
 			number:76,
-			name: 'Golem'
+			name: 'Golem',
+			minMulti:1.63,
+			maxMulti:1.72
 		},	
 		{	
 			number:77,
 			name: 'Ponyta',
-			minMulti:1.47,
-			maxMulti:1.6,
 			evol: [{ number:78 }]
 		},		
 		{	
 			number:78,
-			name: 'Rapidash'
+			name: 'Rapidash',
+			minMulti:1.47,
+			maxMulti:1.6
 		},
 		{	
 			number:79,
 			name: 'Slowpoke',
-			minMulti:2.19,
-			maxMulti:2.21,
 			evol: [{ number:80 }]
 		},	
 		{	
 			number:80,
-			name: 'Slowbro'
+			name: 'Slowbro',
+			minMulti:2.19,
+			maxMulti:2.21
 		},
 		{	
 			number:81,
 			name: 'Magnemite',
-			minMulti:2.16,
-			maxMulti:2.2,
 			evol: [{ number:82 }]
 		},		
 		{	
 			number:82,
-			name: 'Magneton'
+			name: 'Magneton',
+			minMulti:2.16,
+			maxMulti:2.2
 		},	
 		{	
 			number:83,
@@ -484,64 +484,64 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number:84,
 			name: 'Doduo',
-			minMulti:2.11,
-			maxMulti:2.24,
 			evol: [{ number:85 }]
 		},
 		{	
 			number:85,
-			name: 'Dodrio'
+			name: 'Dodrio',
+			minMulti:2.11,
+			maxMulti:2.24
 		},		
 		{	
 			number:86,
 			name: 'Seel',
-			minMulti:1.96,
-			maxMulti:2.03,
 			evol: [{ number:87 }]
 		},
 		{	
 			number:87,
-			name: 'Dewgong'
+			name: 'Dewgong',
+			minMulti:1.96,
+			maxMulti:2.03
 		},		
 		{	
 			number:88,
 			name: 'Grimer',
-			minMulti:2.03,
-			maxMulti:2.17,
 			evol: [{ number:89 }]
 		},	
 		{	
 			number:89,
-			name: 'Muk'
+			name: 'Muk',
+			minMulti:2.03,
+			maxMulti:2.17
 		},
 		{	
 			number:90,
 			name: 'Shellder',
-			minMulti:2.62,
-			maxMulti:2.65,
 			evol: [{ number:91 }]
 		},
 		{	
 			number:91,
-			name: 'Cloyster'
+			name: 'Cloyster',
+			minMulti:2.62,
+			maxMulti:2.65
 		},		
 		{	
 			number:92,
 			name: 'Gastly',
-			minMulti:1.75,
-			maxMulti:1.83,
 			evol: [{ number:93 }, { number:94 }]
 		},
 		{	
 			number:93,
 			name: 'Haunter',
-			minMulti:1.53,
-			maxMulti:1.8,
+			minMulti:1.75,
+			maxMulti:1.83,
 			evol: [{ number:94 }]
 		},		
 		{	
 			number:94,
-			name: 'Gengar'
+			name: 'Gengar',
+			minMulti:1.53,
+			maxMulti:1.8
 		},	
 		{	
 			number:95,
@@ -550,57 +550,57 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number:96,
 			name: 'Drowzee',
-			minMulti:2.05,
-			maxMulti:2.11,
 			evol: [{ number:97 }]
 		},
 		{	
 			number:97,
-			name: 'Hypno'
+			name: 'Hypno',
+			minMulti:2.05,
+			maxMulti:2.11
 		},		
 		{	
 			number:98,
 			name: 'Krabby',
-			minMulti:2.35,
-			maxMulti:2.4,
 			evol: [{ number:99 }]
 		},
 		{	
 			number:99,
-			name: 'Kingler'
+			name: 'Kingler',
+			minMulti:2.35,
+			maxMulti:2.4,
 		},		
 		{	
 			number:100,
 			name: 'Voltorb',
-			minMulti:2.01,
-			maxMulti:2.03,
 			evol: [{ number:101 }]
 		},	
 		{	
 			number:101,
-			name: 'Electrode'
+			name: 'Electrode',
+			minMulti:2.01,
+			maxMulti:2.03
 		},		
 		{	
 			number:102,
 			name: 'Exeggcute',
-			minMulti:2.7,
-			maxMulti:3.18,
 			evol: [{ number:103 }]
 		},
 		{	
 			number:103,
-			name: 'Exeggutor'
+			name: 'Exeggutor',
+			minMulti:2.7,
+			maxMulti:3.18
 		},		
 		{	
 			number:104,
 			name: 'Cubone',
-			minMulti:1.65,
-			maxMulti:1.67,
 			evol: [{ number:105 }]
 		},
 		{	
 			number:105,
-			name: 'Marowak'
+			name: 'Marowak',
+			minMulti:1.65,
+			maxMulti:1.67
 		},		
 		{	
 			number:106,
@@ -617,24 +617,24 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number:109,
 			name: 'Koffing',
-			minMulti:1.95,
-			maxMulti:2.1,
 			evol: [{ number:110 }]
 		},		
 		{	
 			number:110,
-			name: 'Weezing'
+			name: 'Weezing',
+			minMulti:1.95,
+			maxMulti:2.1
 		},
 		{	
 			number:111,
 			name: 'Rhyhorn',
-			minMulti:1.9,
-			maxMulti:1.91,
 			evol: [{ number:112 }]
 		},		
 		{	
 			number:112,
-			name: 'Rhydon'
+			name: 'Rhydon',
+			minMulti:1.9,
+			maxMulti:1.91
 		},	
 		{	
 			number:113,
@@ -651,35 +651,35 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number:116,
 			name: 'Horsea',
-			minMulti:2.19,
-			maxMulti:2.23,
 			evol: [{ number:117 }]
 		},
 		{	
 			number:117,
-			name: 'Seadra'
+			name: 'Seadra',
+			minMulti:2.19,
+			maxMulti:2.23
 		},		
 		{	
 			number:118,
 			name: 'Goldeen',
-			minMulti:2.14,
-			maxMulti:2.24,
 			evol: [{ number:119 }]
 		},	
 		{	
 			number:119,
-			name: 'Seaking'
+			name: 'Seaking',
+			minMulti:2.14,
+			maxMulti:2.24
 		},		
 		{	
 			number:120,
 			name: 'Staryu',
-			minMulti:2.35,
-			maxMulti:2.44,
 			evol: [{ number:121 }]
 		},
 		{	
 			number:121,
-			name: 'Starmie'
+			name: 'Starmie',
+			minMulti:2.35,
+			maxMulti:2.44
 		},		
 		{	
 			number:122,
@@ -712,13 +712,13 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number:129,
 			name: 'Magikarp',
-			minMulti:10.1,
-			maxMulti:11.96,
 			evol: [{ number:130 }]
 		},		
 		{	
 			number:130,
-			name: 'Gyarados'
+			name: 'Gyarados',
+			minMulti:10.1,
+			maxMulti:11.96
 		},	
 		{	
 			number:131,
@@ -731,35 +731,35 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number:133,
 			name: 'Eevee',
-			minMulti:2.62,
-			maxMulti:2.67,
 			evol: [{ number:134 }]
 		},		
 		{	
 			number:134,
 			name: 'Vaporeon',
+			minMulti:2.62,
+			maxMulti:2.67
 		},
 		{	
 			number:133,
 			name: 'Eevee',
-			minMulti:2.01,
-			maxMulti:2.09,
 			evol: [{ number:135 }]
 		},		
 		{	
 			number:135,
 			name: 'Jolteon',
+			minMulti:2.01,
+			maxMulti:2.09
 		},	
 		{	
 			number:133,
 			name: 'Eevee',
-			minMulti:2.46,
-			maxMulti:2.64,
 			evol: [{ number:136 }]
 		},		
 		{	
 			number:136,
-			name: 'Flareon'
+			name: 'Flareon',
+			minMulti:2.46,
+			maxMulti:2.64
 		},	
 		{	
 			number:137,
@@ -768,24 +768,24 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number:138,
 			name: 'Omanyte',
-			minMulti:1.99,
-			maxMulti:2.12,
 			evol: [{ number:139 }]
 		},
 		{	
 			number:139,
-			name: 'Omastar'
+			name: 'Omastar',
+			minMulti:1.99,
+			maxMulti:2.12
 		},		
 		{	
 			number:140,
 			name: 'Kabuto',
-			minMulti:1.97,
-			maxMulti:2.37,
 			evol: [{ number:141 }]
 		},
 		{	
 			number:141,
-			name: 'Kabutops'
+			name: 'Kabutops',
+			minMulti:1.97,
+			maxMulti:2.37
 		},		
 		{	
 			number:142,
@@ -810,20 +810,20 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number:147,
 			name: 'Dratini',
-			minMulti:1.8,
-			maxMulti:1.85,
 			evol: [{ number:148 }, { number:149 }]
 		},		
 		{	
 			number:148,
 			name: 'Dragonair',
-			minMulti:2.03,
-			maxMulti:2.08,
+			minMulti:1.8,
+			maxMulti:1.85,
 			evol: [{ number:149 }]
 		},	
 		{	
 			number:149,
-			name: 'Dragonite'
+			name: 'Dragonite',
+			minMulti:2.03,
+			maxMulti:2.08
 		},		
 		{	
 			number:150,
