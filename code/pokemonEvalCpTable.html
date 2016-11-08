@@ -8,20 +8,44 @@
 <button ng-click="quickView=false">Quick Math</button>
 <button ng-click="quickView=true">Detailed</button>
 
-<div ng-hide="quickView" ng-controller="pokemonEvalCpTableRowFormat" ng-repeat="pokemon in pokemonList">
-	<div style="width:30px; float:left">{{pokemon.number}}</div>
-	<div style="width:85px; display:inline-block;">{{pokemon.name}}</div>
-	<input style="width:85px; display:inline-block; margin-right:15px;" ng-model="pokemon.cp" type="number" min=10 ng-change="cpCalc(pokemon)">
-	<div style="display:inline-block;" ng-repeat="evol in pokemon.evol" >
-		<div style="width:85px; display:inline-block;">{{evol.name}}</div>
-		<div style="width:45px; display:inline-block;">{{evol.minCp}}&nbsp</div>
-		<div style="width:45px; display:inline-block;">{{evol.maxCp}}&nbsp</div>
-		<input style="width:45px; display:inline-block;" ng-model="evol.minMulti" type="number" min=0 step=.01 ng-change="cpCalc(pokemon)">
-		<input style="width:45px; display:inline-block; margin-right:15px;" ng-model="evol.maxMulti" type="number" min=0 step=.01 ng-change="cpCalc(pokemon)">
+<div ng-hide="quickView">
+	<div>
+		<div class="column-number">#</div>
+		<div class="column-name">Name</div>
+		<div class="column-currentCP">Current CP</div>
+		<div style="display:inline-block">
+			Test
+			<br>
+			<div class="column-evol-name">Name</div>
+			<div class="column-evol-cp">Min CP</div>
+			<div class="column-evol-cp">Max CP</div>
+			<div class="column-evol-multi-input"></div>
+			<div class="column-evol-multi-input"></div>
+		</div>
+		<div style="display:inline-block">
+			Test
+			<br>
+			<div class="column-evol-name">Name</div>
+			<div class="column-evol-cp">Min CP</div>
+			<div class="column-evol-cp">Max CP</div>
+			<div class="column-evol-multi-input"></div>
+			<div class="column-evol-multi-input"></div>
+		</div>
+	</div>
+
+	<div ng-controller="pokemonEvalCpTableRowFormat" ng-repeat="pokemon in pokemonList">
+		<div class="column-number">{{pokemon.number}}</div>
+		<div class="column-name">{{pokemon.name}}</div>
+		<input class="column-currentCP" ng-model="pokemon.cp" type="number" min=10 ng-change="cpCalc(pokemon)">
+		<div style="display:inline-block;" ng-repeat="evol in pokemon.evol" >
+			<div class="column-evol-name">{{evol.name}}</div>
+			<div class="column-evol-cp">{{evol.minCp}}&nbsp </div>
+			<div class="column-evol-cp">{{evol.maxCp}}&nbsp </div>
+			<input class="column-evol-multi-input" ng-model="evol.minMulti" type="number" min=0 step=.01 ng-change="cpCalc(pokemon)">
+			<input class="column-evol-multi-input column-end" ng-model="evol.maxMulti" type="number" min=0 step=.01 ng-change="cpCalc(pokemon)">
+		</div>
 	</div>
 </div>
-
-<div>Pokemon Updated:<br>{{updatedPokemon}}</div>
 
 <div ng-show="quickView">
 	<select ng-model="pokemon" ng-options="item.name for item in pokemonList" ng-change="pokemonSelected(pokemon)"></select>
@@ -41,7 +65,13 @@
 		</div>
 		<div ng-show="pokemon.evol" ng-repeat="item in pokemon.evol">
 			<h2>Evolution {{$index+1}}: {{item.name}}</h2>	
-		</div>		
+		</div>	
+	</div>
+	
+	{{pokemon}}
+	
+	
+	
 </div>
 
 </body>

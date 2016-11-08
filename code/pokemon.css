@@ -13,22 +13,33 @@
 .inline {
 	float:left;
 }
+
+/*Columns*/
+.column-currentCP {
+	display:inline-block; 
+	margin-right:15px;
+	width:85px; 
+}
+.column-evol-cp {
+	display:inline-block;
+	width:55px; 
+}
+.column-evol-name {
+	display:inline-block;
+	width:85px; 
+}
+.column-evol-multi-input {
+	display:inline-block;
+	width:45px; 
+}
 .column-number {
-	float: left;
-	width: 15px;
-	
+	float:left;
+	width:30px; 
 }
 .column-name {
-	display: inline-block;
-	width: 70px;
+	display:inline-block;
+	width:85px; 
 }
-.column-input-div {
-	display: inline-block;
-}
-.column-input {
-	width:84px;
-}
-.column-cp-text {
-	display: inline-block;
-	width:84px;
+.column-end {
+	margin-right:15px;
 }
