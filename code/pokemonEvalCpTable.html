@@ -8,7 +8,7 @@
 <button ng-click="quickView=false">Quick Math</button>
 <button ng-click="quickView=true">Detailed</button>
 
-<table ng-hide="quickView" class="pokemon-eval-cp-table">
+<!--<table ng-hide="quickView" class="pokemon-eval-cp-table">
 	<tr>
 		<th colspan="4"></th>
 		<th colspan="5">Evolution 1</th>
@@ -37,7 +37,7 @@
 		<td style="border-style: solid;">{{pokemon}}</td>
 	</tr>
 	
-	<!--<tr ng-controller="pokemonEvalCpTableRowFormat" ng-class="pokemon.rowClass" ng-repeat="pokemon in pokemonList">
+	<tr ng-controller="pokemonEvalCpTableRowFormat" ng-class="pokemon.rowClass" ng-repeat="pokemon in pokemonList">
 		<td><input type="checkbox" ng-model="pokemon.checked"></td>
 		<td>{{::pokemon.number}}</td>
 		<td>{{::pokemon.name}}</td>
@@ -52,8 +52,23 @@
 		<td>{{pokemon.evol_2.maxCp}}</td>
 		<td><input ng-show="pokemon.evol_1.minMulti" style="width:84px" type="number" step=".01" ng-model="pokemon.evol_1.minMulti"></td>
 		<td><input ng-show="pokemon.evol_1.maxMulti" style="width:84px" type="number" step=".01" ng-model="pokemon.evol_1.maxMulti"></td>
-	</tr>-->
-</table>
+	</tr>
+</table>-->
+
+<div ng-controller="pokemonEvalCpTableRowFormat" ng-repeat="pokemon in pokemonList">
+	<div style="width:15px; float:left">{{pokemon.number}}</div>
+	<div style="width:85px; display:inline-block;">{{pokemon.name}}</div>
+	<input style="width:85px; display:inline-block; margin-right:15px;" ng-model="pokemon.cp" type="number" min=10 ng-change="one(pokemon)">
+	<div style="display:inline-block;" ng-repeat="evol in pokemon.evol" >
+		<div style="width:85px; display:inline-block;">{{evol.name}}</div>
+		<div style="width:45px; display:inline-block;">{{evol.minCp}}&nbsp</div>
+		<div style="width:45px; display:inline-block;">{{evol.maxCp}}&nbsp</div>
+		<input style="width:45px; display:inline-block;" ng-model="evol.minMulti" type="number" min=0 step=.01>
+		<input style="width:45px; display:inline-block; margin-right:15px;" ng-model="evol.maxMulti" type="number" min=0 step=.01>
+	</div>
+</div>
+
+<div>Pokemon Updated:<br>{{updatedPokemon}}</div>
 
 <!--<div ng-show="quickView">
 	<select ng-model="pokemon" ng-options="item.name for item in pokemonList" ng-change="pokemonSelected(pokemon)"></select>

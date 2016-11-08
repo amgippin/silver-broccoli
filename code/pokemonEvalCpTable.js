@@ -26,376 +26,376 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		{	
 			number: 4,
 			name: 'Charmander',
-			minMulti:1.64,
-			maxMulti:1.70,
 			evol: [{ number:5 }, { number:6 }]
 		},
 		{	
 			number: 5,
 			name: 'Charmeleon',
-			minMulti:1.71,
-			maxMulti:1.73,
+			minMulti:1.64,
+			maxMulti:1.70,
 			evol: [{ number:6 }]
 		},
 		{	
 			number: 6,
-			name: 'Charizard'
+			name: 'Charizard',
+			minMulti:1.71,
+			maxMulti:1.73
 		},	
 		{	
 			number: 7,
 			name: 'Squirtle',
-			minMulti:1.63,
-			maxMulti:1.4,
 			evol: [{ number:8 }, { number:9 }]
 		},	
 		{	
 			number: 8,
 			name: 'Wartortle',
-			minMulti:1.4,
-			maxMulti:1.65,
+			minMulti:1.63,
+			maxMulti:1.4,
 			evol: [{ number:9 }]
 		},	
 		{	
 			number: 9,
-			name: 'Blastoise'
+			name: 'Blastoise',
+			minMulti:1.4,
+			maxMulti:1.65,
 		},	
 		{	
 			number: 10,
 			name: 'Caterpie',
-			minMulti:1.04,
-			maxMulti:1.08,
 			evol: [{ number:11 }, { number:12 }]
 		},	
 		{	
 			number: 11,
 			name: 'Metapod',
-			minMulti:3.52,
-			maxMulti:3.79,
+			minMulti:1.04,
+			maxMulti:1.08,
 			evol: [{ number:12 }]
 		},	
 		{	
 			number: 12,
-			name: 'Butterfree'
+			name: 'Butterfree',
+			minMulti:3.52,
+			maxMulti:3.79
 		},	
 		{	
 			number: 13,
 			name: 'Weedle',
-			minMulti:1.06,
-			maxMulti:1.1,
 			evol: [{ number:14 }, { number:15 }]
 		},	
 		{	
 			number: 14,
 			name: 'Kakuna',
-			minMulti:3.3,
-			maxMulti:3.42,
+			minMulti:1.06,
+			maxMulti:1.1,
 			evol: [{ number:15 }]
 		},	
 		{	
 			number: 15,
-			name: 'Beedrill'
+			name: 'Beedrill',
+			minMulti:3.3,
+			maxMulti:3.42
 		},			
 		{	
 			number: 16,
 			name: 'Pidgey',
-			minMulti:1.82,
-			maxMulti:1.95,
 			evol: [{ number:17 }, { number:18 }]
 		},
 		{	
 			number: 17,
 			name: 'Pidgeotto',
-			minMulti:1.73,
-			maxMulti:1.78,
+			minMulti:1.82,
+			maxMulti:1.95,
 			evol: [{ number:18 }]
 		},	
 		{	
 			number: 18,
-			name: 'Pidgeot'
+			name: 'Pidgeot',
+			minMulti:1.73,
+			maxMulti:1.78
 		},	
 		{	
 			number: 19,
 			name: 'Rattata',
-			minMulti:1.61,
-			maxMulti:1.73,
 			evol: [{ number:20 }]
 		},	
 		{	
 			number: 20,
-			name: 'Raticate'
+			name: 'Raticate',
+			minMulti:1.61,
+			maxMulti:1.73,
 		},	
 		{	
 			number: 21,
 			name: 'Spearow',
-			minMulti:2.58,
-			maxMulti:2.81,
 			evol: [{ number:22 }]
 		},		
 		{	
 			number: 22,
-			name: 'Fearow'
+			name: 'Fearow',
+			minMulti:2.58,
+			maxMulti:2.81
 		},	
 		{	
 			number:23,
 			name: 'Ekans',
-			minMulti:2.2,
-			maxMulti:2.33,
 			evol: [{ number:24 }]
 		},		
 		{	
 			number: '24',
-			name: 'Arbok'
+			name: 'Arbok',
+			minMulti:2.2,
+			maxMulti:2.33
 		},
 		{	
 			number:25,
 			name: 'Pikachu',
-			minMulti:2.33,
-			maxMulti:2.38,
 			evol: [{ number:26 }]
 		},		
 		{	
 			number:26,
-			name: 'Raichu'
+			name: 'Raichu',
+			minMulti:2.33,
+			maxMulti:2.38
 		},
 		{	
 			number:27,
 			name: 'Sandshrew',
-			minMulti:2.35,
-			maxMulti:2.76,
 			evol: [{ number:28 }]
 		},		
 		{	
 			number:28,
-			name: 'Sandslash'
+			name: 'Sandslash',
+			minMulti:2.35,
+			maxMulti:2.76
 		},	
 		{	
 			number:29,
 			name: 'Nidoran F',
-			minMulti:1.62,
-			maxMulti:1.66,
 			evol: [{ number:30 }, { number:31 }]
 		},		
 		{	
 			number:30,
 			name: 'Nidorina',
-			minMulti:1.8,
-			maxMulti:2.04,
+			minMulti:1.62,
+			maxMulti:1.66,
 			evol: [{ number:31 }]
 		},
 		{	
 			number:31,
-			name: 'Nidoqueen'
+			name: 'Nidoqueen',
+			minMulti:1.8,
+			maxMulti:2.04,
 		},		
 		{	
 			number:32,
 			name: 'Nidoran M',
-			minMulti:1.65,
-			maxMulti:1.7,
 			evol: [{ number:33 }, { number:34 }]
 		},
 		{	
 			number:33,
 			name: 'Nidorino',
-			minMulti:1.64,
-			maxMulti:1.86,
+			minMulti:1.65,
+			maxMulti:1.7,
 			evol: [{ number:34 }]
 		},		
 		{	
 			number:34,
-			name: 'Nidoking'
+			name: 'Nidoking',
+			minMulti:1.64,
+			maxMulti:1.86
 		},	
 		{	
 			number:35,
 			name: 'Clefairy',
-			minMulti:2.02,
-			maxMulti:2.2,
 			evol: [{ number:36 }]
 		},		
 		{	
 			number:36,
-			name: 'Clefable'
+			name: 'Clefable',
+			minMulti:2.02,
+			maxMulti:2.2
 		},
 		{	
 			number:37,
 			name: 'Vulpix',
-			minMulti:2.68,
-			maxMulti:2.74,
 			evol: [{ number:38 }]
 		},		
 		{	
 			number:38,
-			name: 'Ninetales'
+			name: 'Ninetales',
+			minMulti:2.68,
+			maxMulti:2.74
 		},
 		{	
 			number:39,
 			name: 'Jigglypuff',
-			minMulti:2.41,
-			maxMulti:2.47,
 			evol: [{ number:40 }]
 		},		
 		{	
 			number:40,
-			name: 'Wigglytuff'
+			name: 'Wigglytuff',
+			minMulti:2.41,
+			maxMulti:2.47
 		},	
 		{	
 			number:41,
 			name: 'Zubat',
-			minMulti:2.9,
-			maxMulti:3.33,
 			evol: [{ number:42 }]
 		},		
 		{	
 			number:42,
-			name: 'Golbat'
+			name: 'Golbat',
+			minMulti:2.9,
+			maxMulti:3.33,
 		},
 		{	
 			number:43,
 			name: 'Oddish',
-			minMulti:1.48,
-			maxMulti:1.51,
 			evol: [{ number:44 }, { number:45 }]
 		},		
 		{	
 			number:44,
 			name: 'Gloom',
 			minMulti:1.48,
-			maxMulti:1.42,
+			maxMulti:1.51,
 			evol: [{ number:45 }]
 		},
 		{	
 			number:45,
-			name: 'Vilplume'
+			name: 'Vilplume',
+			minMulti:1.48,
+			maxMulti:1.42
 		},		
 		{	
 			number:46,
 			name: 'Paras',
-			minMulti:1.92,
-			maxMulti:2.02,
 			evol: [{ number:47 }]
 		},	
 		{	
 			number:47,
-			name: 'Parasect'
+			name: 'Parasect',
+			minMulti:1.92,
+			maxMulti:2.02
 		},		
 		{	
 			number:48,
 			name: 'Venonat',
-			minMulti:1.85,
-			maxMulti:1.9,
 			evol: [{ number:49 }]
 		},
 		{	
 			number:49,
-			name: 'Venonmoth'
+			name: 'Venonmoth',
+			minMulti:1.85,
+			maxMulti:1.9
 		},		
 		{	
 			number:50,
 			name: 'Diglett',
-			minMulti:2.68,
-			maxMulti:2.77,
 			evol: [{ number:51 }]
 		},
 		{	
 			number:51,
-			name: 'Dugltrio'
+			name: 'Dugltrio',
+			minMulti:2.68,
+			maxMulti:2.77
 		},		
 		{	
 			number:52,
 			name: 'Meowth',
-			minMulti:1.98,
-			maxMulti:2.24,
 			evol: [{ number:53 }]
 		},	
 		{	
 			number:53,
-			name: 'Persian'
+			name: 'Persian',
+			minMulti:1.98,
+			maxMulti:2.24
 		},		
 		{	
 			number:54,
 			name: 'Psyduck',
-			minMulti:2.22,
-			maxMulti:2.29,
 			evol: [{ number:55 }]
 		},
 		{	
 			number:55,
-			name: 'Golduck'
+			name: 'Golduck',
+			minMulti:2.22,
+			maxMulti:2.29
 		},		
 		{	
 			number:56,
 			name: 'Mankey',
-			minMulti:2.15,
-			maxMulti:2.28,
 			evol: [{ number:57 }]
 		},
 		{	
 			number:57,
-			name: 'Primeape'
+			name: 'Primeape',
+			minMulti:2.15,
+			maxMulti:2.28
 		},		
 		{	
 			number:58,
 			name: 'Growlithe',
-			minMulti:2.25,
-			maxMulti:2.36,
-			evol: [{ number:59 }]
+			evol: [{ number:59 }],
 		},	
 		{	
 			number:59,
-			name: 'Arcanine'
+			name: 'Arcanine',
+			minMulti:2.25,
+			maxMulti:2.36
 		},	
 		{	
 			number:60,
 			name: 'Poliwag',
-			minMulti:1.72,
-			maxMulti:1.89,
 			evol: [{ number:61 }, { number:62 }]
 		},
 		{	
 			number:61,
 			name: 'Poliwhirl',
-			minMulti:1.9,
-			maxMulti:1.96,
+			minMulti:1.72,
+			maxMulti:1.89,
 			evol: [{ number:62 }]
 		},		
 		{	
 			number:62,
-			name: 'Poliwrath'
+			name: 'Poliwrath',
+			minMulti:1.9,
+			maxMulti:1.96
 		},
 		{	
 			number:63,
 			name: 'Abra',
-			minMulti:1.36,
-			maxMulti:2,
 			evol: [{ number:64 }, { number:65 }]
 		},		
 		{	
 			number:64,
 			name: 'Kadabra',
-			minMulti:1.41,
-			maxMulti:1.65,
+			minMulti:1.36,
+			maxMulti:2,
 			evol: [{ number:65 }]
 		},	
 		{	
 			number:65,
-			name: 'Alakazam'
+			name: 'Alakazam',
+			minMulti:1.41,
+			maxMulti:1.65
 		},		
 		{	
 			number:66,
 			name: 'Machop',
-			minMulti:1.62,
-			maxMulti:1.67,
 			evol: [{ number:67 }, { number:68 }]
 		},
 		{	
 			number:67,
 			name: 'Machoke',
-			minMulti:1.48,
-			maxMulti:1.7,
+			minMulti:1.62,
+			maxMulti:1.67,
 			evol: [{ number:68 }]
 		},		
 		{	
 			number:68,
-			name: 'Machamp'
+			name: 'Machamp',
+			minMulti:1.48,
+			maxMulti:1.7
 		},
 		{	
 			number:69,
@@ -834,7 +834,7 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 			name: ''
 		}
 	];
-	$scope.pokemonList = [
+	$scope.pokemonList2 = [
 		{	
 			number:1,
 			name:'Bulbasaur',
@@ -923,7 +923,7 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		pokemon.maxCp = Math.round(pokemon.cp * pokemon.maxMulti);
 	}
 	
-	function highlightRow(pokemon){
+	function highlightRow(pokemon) {
 		if(!pokemon) return;
 		
 		//pokemon.rowClass
@@ -935,13 +935,28 @@ myApp.controller('pokemonEvalCpTable', ['$scope', function($scope) {
 		}
 	}
 	
-	$scope.rowUpdated = function(pokemon){
+	$scope.rowUpdated = function(pokemon) {
 		$scope.cpCalc(pokemon);
 	}
 	
-	$scope.pokemonSelected = function(pokemon){
+	$scope.pokemonSelected = function(pokemon) {
 		
 	}
+
+	$scope.one = function(pokemon) {
+		$scope.updatedPokemon = pokemon;
+		if (!pokemon.evol || pokemon.evol.length === 0) return;
+		
+		var minCp = pokemon.cp;
+		var maxCp = pokemon.cp;
+		
+		pokemon.evol.forEach(function(evol){
+			evol.minCp = Math.round(minCp * evol.minMulti);
+			evol.maxCp = Math.round(maxCp * evol.maxMulti);
+			minCp = evol.minCp;
+			maxCp = evol.maxCp;
+		})
+	};
 }]);
 
 myApp.controller('pokemonEvalCpTableRowFormat', ['$scope', function($scope) {
@@ -967,6 +982,7 @@ myApp.controller('pokemonEvalCpTableRowFormat', ['$scope', function($scope) {
 			if($scope.pokemonList[i].number === number) return $scope.pokemonList[i];
 		}
 	}
+	
 }]);
 /*myApp.controller('pokemonEvalCpTableRowFormat', ['$scope', function($scope) {
 	init();
