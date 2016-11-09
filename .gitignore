@@ -4,5 +4,9 @@ angular2/angular-quickstart/app/app.module.js.map
 angular2/angular-quickstart/app/app.module.js
 angular2/angular-quickstart/app/main.js
 angular2/angular-quickstart/app/main.js.map
-angular2/angular-quickstart/node-modules/*
-angular2/angular-tour-of-heros/node-modules/*
+angular2/angular-quickstart/node_modules/*
+!angular2/angular-quickstart/node_modules/ .getkeep
+
+angular2/angular-tour-of-heroes/node_modules/*
+!angular2/angular-tour-of-heroes/node_modules/ .getkeep
+angular2/angular-tour-of-heroes/npm-debug.log
