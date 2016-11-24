@@ -16,3 +16,17 @@ angular2/angular-tour-of-heroes/app/app.component.js
 angular2/angular-tour-of-heroes/app/app.module.js
 angular2/angular-tour-of-heroes/app/app.module.js.map
 angular2/angular-tour-of-heroes/app/main.js
+
+src/node_modules/*
+src/app/*.map
+src/app/*.js
+src/app/banner/*.map
+src/app/banner/*.js
+src/app/pokemon/*.map
+src/app/pokemon/*.js
+src/app/workspace/*.map
+src/app/workspace/*.js
+src/app/workspace/sidebar/*.map
+src/app/workspace/sidebar/*.js
+src/app/workspace/viewarea/*.map
+src/app/workspace/viewarea/*.js
