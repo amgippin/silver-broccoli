@@ -1,3 +1,7 @@
 - Incorporate webpack 
 - Search filtering
 - Laungage file?
+
+Thanks too:
+https://pogotoolkit.com/#combatPower=100&page=cpcalc&selectedPokemon=140
+http://pokemongohub.net/pokemon-go-max-cp-per-level-chart/
