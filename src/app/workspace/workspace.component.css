@@ -5,3 +5,22 @@
 	padding: 5px;
 	vertical-align: middle;
 }
+
+.excel-row-column-cp {
+	display:inline-block;
+	width: 60px;
+}
+.excel-row-column-id {
+	display:inline-block;
+	width:25px;
+}
+.excel-row-column-name {
+	display:inline-block;
+	width:80px;
+}
+
+.excel-row-gap {
+	border: 1px solid red;
+	display:inline-block;
+	width:208px;
+}

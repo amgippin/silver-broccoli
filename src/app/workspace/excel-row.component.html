@@ -1,0 +1,32 @@
+<div>
+	<div class="excel-row-column-id">{{poke.id}}</div>
+	<div class="excel-row-column-name">{{poke.name}}</div>
+	<input class="excel-row-column-cp" type="number" min="10" max="9999" [(ngModel)]="poke.cp" (keyup)="cpCalc()" (change)="cpCalc()">
+	
+	<!--TODO: There has to be a dynamic way to build this-->
+	<div style="display:inline-block;" *ngIf="poke.evol">
+		<div style="display:inline-block; border: 1px solid green;" *ngFor="let evol of poke.evol">
+			<div class="excel-row-column-name">{{evol.name}}</div>
+			<div class="excel-row-column-cp">{{evol.minCp}}</div>
+			<div class="excel-row-column-cp">{{evol.maxCp}}</div>
+		</div>
+		<div style="display:inline-block;" *ngIf="poke.evol.length===1">
+			<div class="excel-row-gap">&nbsp;</div>
+		</div>
+	</div>
+	<div style="display:inline-block;" *ngIf="!poke.evol">
+		<div class="excel-row-gap">&nbsp;</div>
+		<div class="excel-row-gap">&nbsp;</div>
+	</div>
+	
+	
+	
+	<!--<div *ngIf="poke.evol" style="display:inline-block;">
+		<template ngFor let-evol [ngForOf]=poke.evol>
+			{{evol.name}}
+		</template>
+	</div>-->
+	
+	
+	
+</div>

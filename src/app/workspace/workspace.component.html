@@ -3,7 +3,7 @@
 	<button (click)="excelView = true">Excel View</button>
 </div>
 
-<div style="display: inline-block;" *ngIf="!excelView">
+<div style="display: inline-block;" *ngIf="excelView">
 	<div style="width:150px; height:100%; display: inline-block; border: 1px red solid; overflow-y: scroll">
 		<div *ngFor="let poke of pokeList" (click)="selectPoke(poke)" class="sidebar-line-item">
 			{{poke.id}}: {{poke.name}}
@@ -58,19 +58,59 @@
 
 
 
-<div *ngIf="excelView">
-	<table>
-		<tr>
-			<th>#</th>
-			<th>Name</th>
-			<th>CP</th>
-			<th>Max CP</th>
-		</tr>
-		<tr *ngFor="let poke of pokeList">
-			<td>{{poke.id}}</td>
-			<td>{{poke.name}}</td>
-			<td><input type="number" [(ngModel)]="poke.cp" min="10"></td>
-			<td>{{poke.topCp}}</td>
-		</tr>
-	</table>
+<div *ngIf="!excelView">
+	<div style="padding-top:10px;">
+		<div>
+			<div class="excel-row-column-id">#</div>
+			<div class="excel-row-column-name">Name</div>
+			<div class="excel-row-column-cp">Cp</div>
+			<div class="excel-row-column-name">Evol #1</div>
+			<div class="excel-row-column-cp">Min Cp</div>
+			<div class="excel-row-column-cp">Max Cp</div>
+			<div class="excel-row-column-name">Evol #2</div>
+			<div class="excel-row-column-cp">Min Cp</div>
+			<div class="excel-row-column-cp">Max Cp</div>
+		</div>
+		<excel-row *ngFor="let poke of pokeList" [poke]="poke"></excel-row>
+	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
