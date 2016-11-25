@@ -10,13 +10,13 @@ import { ButtonsModule, ButtonCheckboxDirective, ButtonRadioDirective } from 'ng
   styleUrls: ['app/workspace/workspace.component.css']
 })
 export class WorkspaceComponent {	
-	public pokeList: pokemon[] = this.pokeSrv.pokemonList;
+	public pokeList: pokemon[] = this.pokeSrv.getPokemonList();
 	selPokemon: pokemon;
 	
 	constructor(private pokeSrv: PokemonService) { }
   
 	ngOnInit(): void {
-		this.selectPoke(this.pokeSrv.pokemonList[0]);
+		this.selectPoke(this.pokeList[0]);
 	}
 	
 	getPokemon(): void {

@@ -926,43 +926,31 @@ export const POKEMON: pokemon[] = [
 		name:'Eevee',
 		candyDis:5,
 		topCp:969,
-		candy:25,
-		evol: [{ id:134 }]
+		candy:25
 	},		
 	{	id:134,
 		name:'Vaporeon',
 		candyDis:5,
 		topCp:3157,
 		minMulti:2.63,
-		maxMulti:2.73
-	},
-	{	id:133,
-		name:'Eevee',
-		candyDis:5,
-		topCp:969,
-		candy:25,
-		evol: [{ id:135 }]
+		maxMulti:2.73,
+		evol: [{ id:133 }]
 	},		
 	{	id:135,
 		name:'Jolteon',
 		candyDis:5,
 		topCp:2730,
 		minMulti:2.00,
-		maxMulti:2.10
-	},	
-	{	id:133,
-		name:'Eevee',
-		candyDis:5,
-		topCp:969,
-		candy:25,
-		evol: [{ id:136 }]
+		maxMulti:2.10,
+		evol: [{ id:133 }]
 	},		
 	{	id:136,
 		name:'Flareon',
 		candyDis:5,
 		topCp:2904,
 		minMulti:2.46,
-		maxMulti:2.64
+		maxMulti:2.64,
+		evol: [{ id:133 }]
 	},	
 	{	id:137,
 		name:'Porygon',

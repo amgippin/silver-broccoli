@@ -4,23 +4,15 @@ import { POKEMON } from './pokemon.list';
 
 @Injectable()
 export class PokemonService {
-	public pokemonList = Object.create(POKEMON);
+	private pokemonList = Object.create(POKEMON);
 	
-	getFreshPokemonList(): pokemon[] {
-		return POKEMON;
-	}
-	
-	getCurrentPokemonList(): pokemon[] {
+	getPokemonList(): pokemon[] {
 		return this.pokemonList;
 	}
 	
 	getPokemonById(id): pokemon {
-		var i = +id - 1;
+		var i = +id - 1;	
 		return POKEMON[i];
-	}
-	
-	updateEvolValue(index, evolNum, valueName, value) {
-		this.pokemonList[index].evol[evolNum].minCp = value;
 	}
 	
 	add(index) {

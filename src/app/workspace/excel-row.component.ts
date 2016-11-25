@@ -16,9 +16,7 @@ export class ExcelRowComponent {
 	public checkModel:any = {Attack: false, Defense: false, Stamina: false};
 	
 	constructor(private pokeSrv: PokemonService) { }
-	
-	
-	
+
 	ngOnInit(): void {
 		for (let i in this.poke.evol) {
 			var evol = this.pokeSrv.getPokemonById(this.poke.evol[i].id);

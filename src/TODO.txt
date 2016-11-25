@@ -1,6 +1,8 @@
 - Incorporate webpack 
 - Search filtering
 - Laungage file?
+- Eevee...
+- Make Pokemon list a dictionary or hash
 
 Thanks too:
 https://pogotoolkit.com/#combatPower=100&page=cpcalc&selectedPokemon=140

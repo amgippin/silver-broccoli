@@ -4,19 +4,33 @@
 	<input class="excel-row-column-cp" type="number" min="10" max="9999" [(ngModel)]="poke.cp" (keyup)="cpCalc()" (change)="cpCalc()">
 	
 	<!--TODO: There has to be a dynamic way to build this-->
-	<div style="display:inline-block;" *ngIf="poke.evol">
-		<div style="display:inline-block; border: 1px solid green;" *ngFor="let evol of poke.evol">
-			<div class="excel-row-column-name">{{evol.name}}</div>
-			<div class="excel-row-column-cp">{{evol.minCp}}</div>
-			<div class="excel-row-column-cp">{{evol.maxCp}}</div>
-		</div>
-		<div style="display:inline-block;" *ngIf="poke.evol.length===1">
+	<div style="display:inline-block;" *ngIf="poke.id != 133">
+		<div style="display:inline-block;" *ngIf="!poke.evol">
+			<div class="excel-row-gap">&nbsp;</div>
 			<div class="excel-row-gap">&nbsp;</div>
 		</div>
+		<div style="display:inline-block;" *ngIf="poke.evol">
+			<div class="excel-row-column-name">{{poke.evol[0].name}}</div>
+			<div class="excel-row-column-cp">{{poke.evol[0].minCp}}</div>
+			<div class="excel-row-column-cp">{{poke.evol[0].maxCp}}</div>
+			
+			<div style="display:inline-block;" *ngIf="poke.evol.length == 2">
+				<div class="excel-row-column-name">{{poke.evol[1].name}}</div>
+				<div class="excel-row-column-cp">{{poke.evol[1].minCp}}</div>
+				<div class="excel-row-column-cp">{{poke.evol[1].maxCp}}</div>
+			</div>
+			<div style="display:inline-block;" *ngIf="poke.evol.length != 2">
+				<div class="excel-row-gap">&nbsp;</div>
+			</div>
+		</div>
 	</div>
-	<div style="display:inline-block;" *ngIf="!poke.evol">
-		<div class="excel-row-gap">&nbsp;</div>
-		<div class="excel-row-gap">&nbsp;</div>
+	
+	<!--Eevee Special Section-->
+	<div style="display:inline-block;" *ngIf="poke.id == 133">
+		<div style="display:inline-block;" *ngIf="!poke.evol">
+			<div class="excel-row-gap">See Evolutions</div>
+			<div class="excel-row-gap">&nbsp;</div>
+		</div>
 	</div>
 	
 	<div style="display:inline-block;">
@@ -38,10 +52,4 @@
 			<button class="btn btn-sm btn-danger micro-button" (click)="removeRow()" *ngIf="poke.new">-</button>
 		</div>
 	</div>
-	
-	
-	
-	
-	
-	
 </div>

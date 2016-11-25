@@ -18,6 +18,7 @@ angular2/angular-tour-of-heroes/app/app.module.js.map
 angular2/angular-tour-of-heroes/app/main.js
 
 src/node_modules/*
+src/*.log
 src/app/*.map
 src/app/*.js
 src/app/banner/*.map
