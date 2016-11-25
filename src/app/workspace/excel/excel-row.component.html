@@ -1,4 +1,8 @@
 <div style="border-top: 1px grey solid;">
+	<!--TODO: make less ugly -->
+	<div style="display:inline-block; width:10px;" *ngIf="!expandFlag && poke.cp" (click)="expandFlag = true">+</div>
+	<div style="display:inline-block; width:10px;" *ngIf="expandFlag && poke.cp" (click)="expandFlag = false">-</div>
+	<div style="display:inline-block; width:10px" *ngIf="!poke.cp">&nbsp;</div>
 	<div class="excel-row-column-id">{{poke.id}}</div>
 	<div class="excel-row-column-name">{{poke.name}}</div>
 	<input class="excel-row-column-cp" type="number" min="10" max="9999" [(ngModel)]="poke.cp" (keyup)="cpCalc()" (change)="cpCalc()">
@@ -47,9 +51,20 @@
 			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="checkModel.Stamina" btnCheckbox>Stamina</label>
 		</div>
 		
-		<div style="display: inline-block;">
+		<div style="display: inline-block;" *ngIf="filterFlag != 'selected'">
 			<button class="btn btn-sm btn-success micro-button" (click)="addRow()">+</button>
 			<button class="btn btn-sm btn-danger micro-button" (click)="removeRow()" *ngIf="poke.new">-</button>
+		</div>
+	</div>
+
+	<!-- Subrow Section -->
+	<div *ngIf="expandFlag && poke.cp">
+		<div style="display:inline-block;">
+			Current Candy Count
+			<input style="width:55px;" type="number" [(ngModel)]="poke.candyHave" min="0">
+			<div *ngFor="let evol of poke.evol" style="display:inline-block; width:198px;">
+				Candy needed for {{evol.name}} {{evol.candy - poke.candyHave}}
+			</div>
 		</div>
 	</div>
 </div>

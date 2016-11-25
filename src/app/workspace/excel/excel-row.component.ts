@@ -10,6 +10,8 @@ import { PokemonService } from '../../pokemon/pokemon.service';
 export class ExcelRowComponent {
 	@Input() poke: pokemon;
 	@Input() pokeIndex: number;
+	@Input() expandAll: number;
+	@Input() filterFlag: string;
 	
 	public radioModel:string = 'Perfect';
 	public checkModel:any = {Attack: false, Defense: false, Stamina: false};
@@ -61,5 +63,8 @@ export class ExcelRowComponent {
 		this.pokeSrv.remove(this.pokeIndex);
 	}
 	
+	expandRow() {
+		
+	}
 }
 

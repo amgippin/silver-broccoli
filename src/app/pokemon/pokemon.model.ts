@@ -5,6 +5,7 @@ export class pokemon {
 	topCp: number;
 
 	candy?: number;
+	candyHave?: number;
 	cp?: number;
 	evol?: any;
 	maxMulti?: number;

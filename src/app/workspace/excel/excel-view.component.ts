@@ -14,6 +14,7 @@ export class ExcelViewComponent {
 	public pokeList: pokemon[] = this.pokeSrv.getPokemonList();
 	
 	public filterFlag: string = 'all';
+	public singleModel: number = 0;
 	
 	filterPokemon() {
 		if (this.filterFlag === 'selected') {

@@ -3,10 +3,15 @@
 	<option value="selected">CP Available</option>
 	<option value="unselected">CP Unavailable</option>
 </select>
+<button class="btn btn-sm" (click)="filterPokemon()">Force Update</button>
+<div class="btn-group" style="display: inline-block;">
+	<button type="button" class="btn btn-sm" [(ngModel)]="singleModel" btnCheckbox btnCheckboxTrue="1" btnCheckboxFalse="0">Expand All</button>
+</div>
 
 <div>
 	<div style="padding-top:10px;">
 		<div>
+			<div style="width:10px;display:inline-block;">&nbsp;</div>
 			<div class="excel-row-column-id">#</div>
 			<div class="excel-row-column-name">Name</div>
 			<div class="excel-row-column-cp">Cp</div>
@@ -17,6 +22,7 @@
 			<div class="excel-row-column-cp">Min Cp</div>
 			<div class="excel-row-column-cp">Max Cp</div>
 		</div>
-		<excel-row *ngFor="let poke of pokeList; let i = index;" [poke]="poke" [pokeIndex]="i"></excel-row>
+		<excel-row *ngFor="let poke of pokeList; let i = index;" 
+			[poke]="poke" [pokeIndex]="i" [expandAll]="singleModel" [filterFlag]="filterFlag"></excel-row>
 	</div>
 </div>
