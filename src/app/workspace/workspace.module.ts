@@ -6,9 +6,10 @@ import { ViewareaComponent } from './viewarea/viewarea.component';
 import { ExcelRowComponent } from './excel-row.component';
 import { PokemonService } from '../pokemon/pokemon.service';
 import { PokemonModule } from '../pokemon/pokemon.module';
+import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 @NgModule({
-	imports: [ BrowserModule, FormsModule, PokemonModule ],
+	imports: [ BrowserModule, FormsModule, Ng2BootstrapModule, PokemonModule ],
 	declarations:	[ SidebarComponent, ViewareaComponent, ExcelRowComponent ],
 	providers: [ PokemonService ],
 	exports: [ ExcelRowComponent ]

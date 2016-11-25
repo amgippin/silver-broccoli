@@ -5,3 +5,7 @@
 Thanks too:
 https://pogotoolkit.com/#combatPower=100&page=cpcalc&selectedPokemon=140
 http://pokemongohub.net/pokemon-go-max-cp-per-level-chart/
+
+Bootstramp: 
+http://getbootstrap.com/examples/theme/
+https://github.com/valor-software/ng2-bootstrap/tree/development/demo

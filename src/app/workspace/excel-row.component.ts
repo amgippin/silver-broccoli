@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { pokemon } from '../pokemon/pokemon.model';
 import { PokemonService } from '../pokemon/pokemon.service';
+import { ButtonsModule, ButtonCheckboxDirective, ButtonRadioDirective } from 'ng2-bootstrap/ng2-bootstrap';
 
 @Component({
   selector: 'excel-row',
@@ -10,6 +11,9 @@ import { PokemonService } from '../pokemon/pokemon.service';
 export class ExcelRowComponent {
 	@Input() poke: pokemon;
 	pokeList: pokemon[] = this.pokeSrv.getPokemon();
+	
+	public radioModel:string = 'Perfect';
+	public checkModel:any = {Attack: false, Defense: false, Stamina: false};
 	
 	constructor(private pokeSrv: PokemonService) { }
 	
@@ -23,10 +27,23 @@ export class ExcelRowComponent {
 	
 	cpCalc() {
 		//TODO: Got to be a cleaner way... but may not be worth the lose of performance
-		if (!this.poke.evol || !this.poke.cp) { return }
+		if (!this.poke.evol) { return } 
+		
+		if (!this.poke.cp || this.poke.cp === 0) { 			
+			if(this.poke.evol.length == 2) {
+				this.poke.evol[1].minCp = null;
+				this.poke.evol[1].maxCp = null;
+			}
+			
+			this.poke.evol[0].minCp = null;
+			this.poke.evol[0].maxCp = null;
+			
+			return
+		}
+		
 		if (this.poke.cp > 9999) this.poke.cp = 9999;
 		
-		if(this.poke.evol.length === 2) {
+		if (this.poke.evol.length === 2) {
 			this.poke.evol[0].minCp = Math.floor(this.poke.cp * this.poke.evol[0].minMulti);
 			this.poke.evol[0].maxCp = Math.floor(this.poke.cp * this.poke.evol[0].maxMulti);
 			this.poke.evol[1].minCp = Math.floor(this.poke.evol[0].minCp * this.poke.evol[1].minMulti);
