@@ -71,7 +71,7 @@
 			<div class="excel-row-column-cp">Min Cp</div>
 			<div class="excel-row-column-cp">Max Cp</div>
 		</div>
-		<excel-row *ngFor="let poke of pokeList" [poke]="poke"></excel-row>
+		<excel-row *ngFor="let poke of pokeList; let i = index;" [poke]="poke" [pokeIndex]="i"></excel-row>
 	</div>
 </div>
 

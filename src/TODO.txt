@@ -9,3 +9,7 @@ http://pokemongohub.net/pokemon-go-max-cp-per-level-chart/
 Bootstramp: 
 http://getbootstrap.com/examples/theme/
 https://github.com/valor-software/ng2-bootstrap/tree/development/demo
+
+Helpful:
+http://www.typescriptlang.org/play/index.html
+

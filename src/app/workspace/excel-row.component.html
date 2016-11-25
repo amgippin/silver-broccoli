@@ -20,21 +20,6 @@
 	</div>
 	
 	<div style="display:inline-block;">
-		<!--<table style="border: 1px purple solid; height:20px">
-			<tr>
-				<th>P</th>
-				<th>S</th>
-				<th>D</th>
-				<th>I</th>
-			</tr>
-			<tr>
-				<td><input type="radio" value="yes" name="analysis" checked></td>
-				<td><input type="radio" value="strong" name="analysis"></td>
-				<td><input type="radio" value="decent" name="analysis"></td>
-				<td><input type="radio" value="no" name="analysis"></td>
-			</tr>
-			Perfect, Strong, Decent, Improvement
-		</table>-->
 		<div class="btn-group" style="display: inline-block;">
 			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="radioModel" btnRadio="Perfect">Perfect</label>
 			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="radioModel" btnRadio="Strong">Strong</label>
@@ -43,11 +28,15 @@
 		</div>
 		
 		<div class="btn-group" style="display: inline-block;">
-			<label class="btn btn-sm btn-success micro-button" [(ngModel)]="checkModel.Attack" btnCheckbox>Attack</label>
-			<label class="btn btn-sm btn-success micro-button" [(ngModel)]="checkModel.Defense" btnCheckbox>Defense</label>
-			<label class="btn btn-sm btn-success micro-button" [(ngModel)]="checkModel.Stamina" btnCheckbox>Stamina</label>
+			<label class="btn btn-sm btn-warning micro-button" [(ngModel)]="checkModel.Attack" btnCheckbox>Attack</label>
+			<label class="btn btn-sm btn-warning micro-button" [(ngModel)]="checkModel.Defense" btnCheckbox>Defense</label>
+			<label class="btn btn-sm btn-warning micro-button" [(ngModel)]="checkModel.Stamina" btnCheckbox>Stamina</label>
 		</div>
 		
+		<div style="display: inline-block;">
+			<button class="btn btn-sm btn-success micro-button" (click)="addRow()">+</button>
+			<button class="btn btn-sm btn-danger micro-button" (click)="removeRow()" *ngIf="poke.new">-</button>
+		</div>
 	</div>
 	
 	

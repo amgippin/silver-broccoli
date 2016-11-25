@@ -1055,4 +1055,4 @@ export const POKEMON: pokemon[] = [
 		candyDis:5,
 		topCp:3090
 	}
-]; 
+];

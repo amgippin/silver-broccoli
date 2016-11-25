@@ -10,19 +10,16 @@ import { ButtonsModule, ButtonCheckboxDirective, ButtonRadioDirective } from 'ng
   styleUrls: ['app/workspace/workspace.component.css']
 })
 export class WorkspaceComponent {	
-	pokeList: pokemon[];
+	public pokeList: pokemon[] = this.pokeSrv.pokemonList;
 	selPokemon: pokemon;
 	
 	constructor(private pokeSrv: PokemonService) { }
   
 	ngOnInit(): void {
-		this.getPokemon();
-		this.selectPoke(this.pokeList[0]);
+		this.selectPoke(this.pokeSrv.pokemonList[0]);
 	}
 	
 	getPokemon(): void {
-		this.pokeList = this.pokeSrv.getPokemon();
-		
 		
 		/*for (let i in this.selPokemon.evol) {
 			//Convert the evol id to a copy of the actual pokemon from the list
@@ -44,5 +41,7 @@ export class WorkspaceComponent {
 	selectPoke(pokemon): void {
 		this.selPokemon = pokemon;
 	}
+	
+	
 	
 }
