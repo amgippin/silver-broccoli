@@ -1,0 +1,16 @@
+<div>
+	<div style="padding-top:10px;">
+		<div>
+			<div class="excel-row-column-id">#</div>
+			<div class="excel-row-column-name">Name</div>
+			<div class="excel-row-column-cp">Cp</div>
+			<div class="excel-row-column-name">Evol #1</div>
+			<div class="excel-row-column-cp">Min Cp</div>
+			<div class="excel-row-column-cp">Max Cp</div>
+			<div class="excel-row-column-name">Evol #2</div>
+			<div class="excel-row-column-cp">Min Cp</div>
+			<div class="excel-row-column-cp">Max Cp</div>
+		</div>
+		<excel-row *ngFor="let poke of pokeList; let i = index;" [poke]="poke" [pokeIndex]="i"></excel-row>
+	</div>
+</div>

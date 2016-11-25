@@ -27,6 +27,8 @@ src/app/pokemon/*.map
 src/app/pokemon/*.js
 src/app/workspace/*.map
 src/app/workspace/*.js
+src/app/workspace/excel/*.map
+src/app/workspace/excel/*.js
 src/app/workspace/sidebar/*.map
 src/app/workspace/sidebar/*.js
 src/app/workspace/viewarea/*.map

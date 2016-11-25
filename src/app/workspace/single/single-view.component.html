@@ -1,0 +1,15 @@
+<div>
+	<div style="width:150px; height:100%; display: inline-block; border: 1px red solid; overflow-y: scroll">
+		<div *ngFor="let poke of pokeList" (click)="selectPoke(poke)" class="sidebar-line-item">
+			{{poke.id}}: {{poke.name}}
+		</div>
+	</div>
+	<div style="display: inline-block; vertical-align: top;">
+		<div style="font-size: 30px">{{selPokemon.name}}</div>
+		<div *ngIf="selPokemon.evol">
+			<template ngFor let-evol [ngForOf]=selPokemon.evol>
+				<div>{{evol.name}}</div>
+			</template>
+		</div>
+	</div>
+</div>

@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
-import { pokemon } from '../pokemon/pokemon.model';
-import { PokemonService } from '../pokemon/pokemon.service';
-import { ButtonsModule, ButtonCheckboxDirective, ButtonRadioDirective } from 'ng2-bootstrap/ng2-bootstrap';
+import { pokemon } from '../../pokemon/pokemon.model';
+import { PokemonService } from '../../pokemon/pokemon.service';
 
 @Component({
   selector: 'excel-row',
-  templateUrl: 'app/workspace/excel-row.component.html',
-  styleUrls: ['app/workspace/workspace.component.css']
+  templateUrl: 'app/workspace/excel/excel-row.component.html',
+  styleUrls: ['app/workspace/excel/excel.css']
 })
 export class ExcelRowComponent {
 	@Input() poke: pokemon;

@@ -1,0 +1,7 @@
+.sidebar-line-item {
+	border-width: 0px 0px 1px; 
+	border-style: solid; 
+	border-color: lightgrey;
+	padding: 5px;
+	vertical-align: middle;
+}

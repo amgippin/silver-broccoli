@@ -2,7 +2,7 @@
 - Search filtering
 - Laungage file?
 - Eevee...
-- Make Pokemon list a dictionary or hash
+- Make Pokemon list a dictionary or has
 
 Thanks too:
 https://pogotoolkit.com/#combatPower=100&page=cpcalc&selectedPokemon=140
