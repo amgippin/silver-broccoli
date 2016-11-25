@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { PokemonService } from 'app/pokemon/pokemon.service';
-import { pokemon } from 'app/pokemon/pokemon.model';
+import { PokemonService } from '../pokemon/pokemon.service';
+import { pokemon } from '../pokemon/pokemon.model';
 import { ExcelRowComponent } from './excel-row.component';
 
 @Component({
@@ -8,7 +8,7 @@ import { ExcelRowComponent } from './excel-row.component';
   templateUrl: 'app/workspace/workspace.component.html',
   styleUrls: ['app/workspace/workspace.component.css']
 })
-export class WorkspaceComponent implements OnInit {	
+export class WorkspaceComponent {	
 	pokeList: pokemon[];
 	selPokemon: pokemon;
 	

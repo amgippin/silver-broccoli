@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { pokemon } from 'app/pokemon/pokemon.model';
-import { POKEMON } from 'app/pokemon/pokemon.list';
+import { pokemon } from './pokemon.model';
+import { POKEMON } from './pokemon.list';
 
 @Injectable()
 export class PokemonService {

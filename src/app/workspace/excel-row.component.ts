@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { pokemon } from '../pokemon/pokemon.model';
-import { PokemonService } from 'app/pokemon/pokemon.service';
+import { PokemonService } from '../pokemon/pokemon.service';
 
 @Component({
   selector: 'excel-row',
   templateUrl: 'app/workspace/excel-row.component.html',
   styleUrls: ['app/workspace/workspace.component.css']
 })
-export class ExcelRowComponent implements OnInit {
+export class ExcelRowComponent {
 	@Input() poke: pokemon;
 	pokeList: pokemon[] = this.pokeSrv.getPokemon();
 	
@@ -22,6 +22,7 @@ export class ExcelRowComponent implements OnInit {
 	}
 	
 	cpCalc() {
+		//TODO: Got to be a cleaner way... but may not be worth the lose of performance
 		if (!this.poke.evol || !this.poke.cp) { return }
 		if (this.poke.cp > 9999) this.poke.cp = 9999;
 		

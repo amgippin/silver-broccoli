@@ -1,4 +1,4 @@
-import { pokemon } from 'app/pokemon/pokemon.model';
+import { pokemon } from './pokemon.model';
 
 export const POKEMON: pokemon[] = [
 	{	id:1,
@@ -61,7 +61,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1324,
 		candy:100,
 		minMulti:1.35,
-		maxMulti:2.1
+		maxMulti:2.1,
 		evol: [{ id:9 }]
 	},	
 	{	id:9,
