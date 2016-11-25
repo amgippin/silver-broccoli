@@ -12,4 +12,28 @@ export class ExcelViewComponent {
 	constructor(private pokeSrv: PokemonService) { }
 	
 	public pokeList: pokemon[] = this.pokeSrv.getPokemonList();
+	
+	public filterFlag: string = 'all';
+	
+	filterPokemon() {
+		if (this.filterFlag === 'selected') {
+			this.pokeList = this.pokeSrv.getPokemonList();
+			this.pokeList = this.pokeList.filter(this.hasCp);
+		} else if (this.filterFlag === 'unselected') {
+			this.pokeList = this.pokeSrv.getPokemonList();
+			this.pokeList = this.pokeList.filter(this.hasNoCp);
+		} else {
+			this.pokeList = this.pokeSrv.getPokemonList();
+		}
+		
+	}
+	
+	private hasCp(pokemon) {
+		return pokemon.cp;
+	}
+	
+	private hasNoCp(pokemon) {
+		return !pokemon.cp;
+	}
+
 }

@@ -1,4 +1,4 @@
-<div>
+<div style="border-top: 1px grey solid;">
 	<div class="excel-row-column-id">{{poke.id}}</div>
 	<div class="excel-row-column-name">{{poke.name}}</div>
 	<input class="excel-row-column-cp" type="number" min="10" max="9999" [(ngModel)]="poke.cp" (keyup)="cpCalc()" (change)="cpCalc()">
@@ -42,9 +42,9 @@
 		</div>
 		
 		<div class="btn-group" style="display: inline-block;">
-			<label class="btn btn-sm btn-warning micro-button" [(ngModel)]="checkModel.Attack" btnCheckbox>Attack</label>
-			<label class="btn btn-sm btn-warning micro-button" [(ngModel)]="checkModel.Defense" btnCheckbox>Defense</label>
-			<label class="btn btn-sm btn-warning micro-button" [(ngModel)]="checkModel.Stamina" btnCheckbox>Stamina</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="checkModel.Attack" btnCheckbox>Attack</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="checkModel.Defense" btnCheckbox>Defense</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="checkModel.Stamina" btnCheckbox>Stamina</label>
 		</div>
 		
 		<div style="display: inline-block;">

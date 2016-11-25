@@ -34,7 +34,7 @@ export class ExcelRowComponent {
 
 		if (!this.poke.cp || this.poke.cp === 0) {
 			this.poke.evol[0].minCp = null;
-			this.poke.evol[0].minCp = null;
+			this.poke.evol[0].maxCp = null;
 			
 			if (this.poke.evol.length === 2) {
 				this.poke.evol[1].minCp = null;

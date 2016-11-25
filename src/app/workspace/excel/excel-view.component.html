@@ -1,3 +1,9 @@
+<select class="btn btn-sm" [(ngModel)]="filterFlag" (click)="filterPokemon()">
+	<option value="all">All</option>
+	<option value="selected">CP Available</option>
+	<option value="unselected">CP Unavailable</option>
+</select>
+
 <div>
 	<div style="padding-top:10px;">
 		<div>
