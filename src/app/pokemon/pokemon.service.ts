@@ -4,10 +4,14 @@ import { POKEMON } from './pokemon.list';
 
 @Injectable()
 export class PokemonService {
-	private pokemonList = Object.create(POKEMON);
+	private pokemonList = JSON.parse(JSON.stringify(POKEMON));;
 	
 	getPokemonList(): pokemon[] {
 		return this.pokemonList;
+	}
+	
+	getPokemonRefList(): pokemon[] {
+		return POKEMON;
 	}
 	
 	getPokemonById(id): pokemon {
@@ -28,5 +32,9 @@ export class PokemonService {
 	
 	remove(index){
 		this.pokemonList.splice(index, 1)
+	}
+	
+	loadHash() {
+		window.alert('tag');
 	}
 }

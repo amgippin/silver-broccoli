@@ -8,6 +8,13 @@ export class pokemon {
 	candyHave?: number;
 	cp?: number;
 	evol?: any;
+	preEvol?: any;
+	extra?: pokemon[];
+	masterIndex?: number;
 	maxMulti?: number;
 	minMulti?: number;
+	minCpReq?: number[];
+	
+	battleAppraise?: string;
+	statAppraise?: any;
 }

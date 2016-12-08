@@ -11,14 +11,30 @@ import { PokemonService } from '../../pokemon/pokemon.service';
 export class SingleViewComponent { 
 	constructor(private pokeSrv: PokemonService) { }
 	
-	public pokeList: pokemon[] = this.pokeSrv.getPokemonList();
-	private selPokemon: pokemon;
+	public pokemonSideBarList = this.pokeSrv.getPokemonRefList();
+	public pokemonVieaAreaList = this.pokeSrv.getPokemonList();
+	
+	public selPokemon: pokemon;
 	
 	ngOnInit(): void {
-		this.selectPoke(this.pokeList[0]);
+		this.selectPoke(this.pokemonSideBarList[0].id);
+		//if(!this.selPokemon.statAppraise) { this.selPokemon.statAppraise = { var Attack=false, var Defense=false, var Stamina=false}};
 	}
 	
-	selectPoke(pokemon): void {
-		this.selPokemon = pokemon;
+	selectPoke(pokemonId:number): void {
+		this.selPokemon = JSON.parse(JSON.stringify(this.pokemonSideBarList[pokemonId-1]));
+		var extra: pokemon[] = [];
+		
+		for (var i in this.pokemonVieaAreaList) {
+			this.pokemonVieaAreaList[i].masterIndex = +i;
+			if (this.pokemonVieaAreaList[i].id === pokemonId) {
+				extra.push(this.pokemonVieaAreaList[i]);
+			}
+		}
+		this.selPokemon.extra = extra;
+	}
+	
+	forceUpdate(): void {
+		//this.selectPoke(this.poke.id);
 	}
 }

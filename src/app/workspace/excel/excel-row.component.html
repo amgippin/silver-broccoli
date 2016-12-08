@@ -10,21 +10,23 @@
 	<!--TODO: There has to be a dynamic way to build this-->
 	<div style="display:inline-block;" *ngIf="poke.id != 133">
 		<div style="display:inline-block;" *ngIf="!poke.evol">
-			<div class="excel-row-gap">&nbsp;</div>
-			<div class="excel-row-gap">&nbsp;</div>
+			<div class="excel-row-column-name">&nbsp;</div>
+			<div class="excel-row-column-name">&nbsp;</div>
 		</div>
 		<div style="display:inline-block;" *ngIf="poke.evol">
-			<div class="excel-row-column-name">{{poke.evol[0].name}}</div>
-			<div class="excel-row-column-cp">{{poke.evol[0].minCp}}</div>
-			<div class="excel-row-column-cp">{{poke.evol[0].maxCp}}</div>
+			<div class="excel-row-column-name">
+				{{poke.evol[0].name}}
+				<div>{{poke.evol[0].minCp}}-{{poke.evol[0].maxCp}}</div>
+			</div>
 			
 			<div style="display:inline-block;" *ngIf="poke.evol.length == 2">
-				<div class="excel-row-column-name">{{poke.evol[1].name}}</div>
-				<div class="excel-row-column-cp">{{poke.evol[1].minCp}}</div>
-				<div class="excel-row-column-cp">{{poke.evol[1].maxCp}}</div>
+				<div class="excel-row-column-name">
+					{{poke.evol[1].name}}
+					<div>{{poke.evol[1].minCp}}-{{poke.evol[1].maxCp}}</div>
+				</div>
 			</div>
 			<div style="display:inline-block;" *ngIf="poke.evol.length != 2">
-				<div class="excel-row-gap">&nbsp;</div>
+				<div class="excel-row-column-name">&nbsp;</div>
 			</div>
 		</div>
 	</div>
@@ -39,16 +41,16 @@
 	
 	<div style="display:inline-block;">
 		<div class="btn-group" style="display: inline-block;">
-			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="radioModel" btnRadio="Perfect">Perfect</label>
-			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="radioModel" btnRadio="Strong">Strong</label>
-			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="radioModel" btnRadio="Decent">Decent</label>
-			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="radioModel" btnRadio="Improvement">Improve</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Perfect">Perfect</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Strong">Strong</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Decent">Decent</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Improvement">Improve</label>
 		</div>
 		
 		<div class="btn-group" style="display: inline-block;">
-			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="checkModel.Attack" btnCheckbox>Attack</label>
-			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="checkModel.Defense" btnCheckbox>Defense</label>
-			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="checkModel.Stamina" btnCheckbox>Stamina</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.statAppraise.Attack" btnCheckbox>Attack</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.statAppraise.Defense" btnCheckbox>Defense</label>
+			<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.statAppraise.Stamina" btnCheckbox>Stamina</label>
 		</div>
 		
 		<div style="display: inline-block;" *ngIf="filterFlag != 'selected'">

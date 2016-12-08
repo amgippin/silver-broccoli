@@ -13,7 +13,7 @@ import { PokemonModule } from '../../pokemon/pokemon.module';
 @NgModule({
 	imports: [ BrowserModule, FormsModule, Ng2BootstrapModule, PokemonModule ],
 	declarations:	[ ExcelViewComponent, ExcelRowComponent ],
-	exports: [ ExcelViewComponent ]
+	exports: [ ExcelViewComponent, ExcelRowComponent ]
 })
 
 export class ExcelViewModule { }
