@@ -16,16 +16,37 @@
 		<div style="display:inline-block;" *ngIf="poke.evol">
 			<div class="excel-row-column-name">
 				{{poke.evol[0].name}}
-				<div>{{poke.evol[0].minCp}}-{{poke.evol[0].maxCp}}</div>
+				<div *ngIf="poke.cp">{{poke.evol[0].minCp}}-{{poke.evol[0].maxCp}}</div>
 			</div>
 			
 			<div style="display:inline-block;" *ngIf="poke.evol.length == 2">
 				<div class="excel-row-column-name">
 					{{poke.evol[1].name}}
-					<div>{{poke.evol[1].minCp}}-{{poke.evol[1].maxCp}}</div>
+					<div *ngIf="poke.cp">{{poke.evol[1].minCp}}-{{poke.evol[1].maxCp}}</div>
 				</div>
 			</div>
 			<div style="display:inline-block;" *ngIf="poke.evol.length != 2">
+				<div class="excel-row-column-name">&nbsp;</div>
+			</div>
+		</div>
+		
+		<div style="display:inline-block;" *ngIf="!poke.preEvol">
+			<div class="excel-row-column-name">&nbsp;</div>
+			<div class="excel-row-column-name">&nbsp;</div>
+		</div>
+		<div style="display:inline-block;" *ngIf="poke.preEvol">
+			<div class="excel-row-column-name">
+				{{poke.preEvol[0].name}}
+				<div *ngIf="poke.cp">{{poke.preEvol[0].cpReq}}</div>
+			</div>
+			
+			<div style="display:inline-block;" *ngIf="poke.preEvol.length == 2">
+				<div class="excel-row-column-name">
+					{{poke.preEvol[1].name}}
+					<div *ngIf="poke.cp">{{poke.preEvol[1].cpReq}}</div>
+				</div>
+			</div>
+			<div style="display:inline-block;" *ngIf="poke.preEvol.length != 2">
 				<div class="excel-row-column-name">&nbsp;</div>
 			</div>
 		</div>

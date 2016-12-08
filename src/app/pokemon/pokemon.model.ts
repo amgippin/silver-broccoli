@@ -13,7 +13,7 @@ export class pokemon {
 	masterIndex?: number;
 	maxMulti?: number;
 	minMulti?: number;
-	minCpReq?: number[];
+	cpReq?: number;
 	
 	battleAppraise?: string;
 	statAppraise?: any;
