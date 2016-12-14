@@ -35,4 +35,4 @@ src/app/workspace/cp/single/*.map
 src/app/workspace/cp/single/*.js
 src/app/workspace/buddy/*.map
 src/app/workspace/buddy/*.js
-arc/**/.js
+src/**/**/.js

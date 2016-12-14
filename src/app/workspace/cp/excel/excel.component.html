@@ -13,28 +13,53 @@
 		<th>PreEvol #1</th>
 		<th>PreEvol #2</th>
 	</tr>
-	<tr *ngFor="let poke of pokemonInventory | filterCpAvil:filterFlag">
+	<tr *ngFor="let poke of pokemonInventory | filterCpAvil:filterFlag; let i = index;">
 		<td>{{poke.id}}</td>
 		<td>{{poke.name}}</td>
 		<td><input style="width:80px;" type="number" min="0" max="9999" [(ngModel)]="poke.cp" (keyup)="cpCalc(poke)" (change)="cpCalc(poke)"></td>
 		<td>
 			<div *ngIf="poke.cp && poke.evol && poke.evol.length > 0" class="micro-button">
-				test
+				<div>{{poke.evol[0].name}}</div>
+				<div>{{poke.evol[0].minCp}}-{{poke.evol[0].maxCp}}</div>
 			</div>
 		</td>
 		<td>
 			<div *ngIf="poke.cp && poke.evol && poke.evol.length == 2" class="micro-button">
-				test
+				<div>{{poke.evol[1].name}}</div>
+				<div>{{poke.evol[1].minCp}}-{{poke.evol[1].maxCp}}</div>
 			</div>
 		</td>
 		<td>
 			<div *ngIf="poke.cp && poke.preEvol && poke.preEvol.length > 0" class="micro-button">
-				test
+				<div>{{poke.preEvol[0].name}}</div>
+				<div>{{poke.preEvol[0].minCp}}</div>
 			</div>
 		</td>
 		<td>
 			<div *ngIf="poke.cp && poke.preEvol && poke.preEvol.length == 2" class="micro-button">
-				test
+				<div>{{poke.preEvol[1].name}}</div>
+				<div>{{poke.preEvol[1].minCp}}</div>
+			</div>
+		</td>
+		<td>
+			<div class="btn-group" style="display: inline-block;">
+				<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Perfect">Perfect</label>
+				<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Strong">Strong</label>
+				<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Decent">Decent</label>
+				<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Improvement">Improve</label>
+			</div>
+		</td>
+		<td>
+			<div class="btn-group" style="display: inline-block;">
+				<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.statAppraise.Attack" btnCheckbox>Attack</label>
+				<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.statAppraise.Defense" btnCheckbox>Defense</label>
+				<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.statAppraise.Stamina" btnCheckbox>Stamina</label>
+			</div>
+		</td>
+		<td>
+			<div style="display: inline-block;" *ngIf="filterFlag != 'selected'">
+				<button class="btn btn-sm btn-success micro-button" (click)="addRow(poke.id, i)">+</button>
+				<button class="btn btn-sm btn-danger micro-button" (click)="removeRow(i)" *ngIf="poke.new">-</button>
 			</div>
 		</td>
 	</tr>

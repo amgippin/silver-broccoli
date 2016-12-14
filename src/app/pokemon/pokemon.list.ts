@@ -28,7 +28,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.20,
 		maxMulti:1.60,
 		gen: 1,
-		preEvol: [{id:1}, {id:2}]
+		preEvol: [{id:2}, {id:1}]
 	},
 	{	id:4,
 		name:'Charmander',
@@ -56,7 +56,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.71,
 		maxMulti:1.79,
 		gen: 1,
-		preEvol: [{ id:4 }, { id:5 }]
+		preEvol: [{ id:5 }, { id:4 }]
 	},	
 	{	id:7,
 		name:'Squirtle',

@@ -32,19 +32,7 @@ export class BuddyComponent {
 	candyInput(pokemon) {
 		if (pokemon.candyHave < 0) { pokemon.candyHave = 0; }
 	
-		for (let i in pokemon.evol) {
-			pokemon.evol[i].name = this.pokedex.get(pokemon.evol[i].id).name;
-			
-			if ( +i === 0 ) {
-				pokemon.evol[i].candyNeed = pokemon.candy - pokemon.candyHave;
-				pokemon.evol[i].catchNeed = Math.ceil(pokemon.evol[i].candyNeed/3);
-				pokemon.evol[i].disNeed = pokemon.evol[i].candyNeed * this.pokedex.get(pokemon.evol[i].id).candyDis;
-			} else if ( +i > 0 ) {
-				pokemon.evol[i].candyNeed = this.pokedex.get(pokemon.evol[+i-1].id).candy - pokemon.candyHave;
-				pokemon.evol[i].catchNeed = Math.ceil(pokemon.evol[i].candyNeed/3);
-				pokemon.evol[i].disNeed = pokemon.evol[i].candyNeed * this.pokedex.get(pokemon.evol[i].id).candyDis;
-			}
-		}
+		this.pokeSrv.candyInput(pokemon);
 	}
 	
 	removePokemon(pokemon) {
