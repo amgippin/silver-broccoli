@@ -1,5 +1,9 @@
+<div class="btn-group" style="display: inline-block;">
+	<label class="btn btn-sm btn-success" [(ngModel)]="radioModel" btnRadio="1">Gen 1</label>
+	<label class="btn btn-sm btn-success" [(ngModel)]="radioModel" btnRadio="2">Gen 2</label>
+</div>
 <div style="padding-top: 15px;">
-	<label style="width:90px;" *ngFor="let poke of pokemonInventory" 
+	<label style="width:90px;" *ngFor="let poke of pokemonInventory | filterGen:radioModel" 
 		class="btn btn-sm btn-primary micro-button" 
 		(click)="selectPoke(poke)" 
 		[(ngModel)]="poke.selected"
@@ -14,19 +18,25 @@
 			<th>Evol 1</th>
 			<th>Evol 2</th>
 		</tr>
-		<tr *ngFor="let poke of buddyList">
-			<td class="btn btn-sm btn-danger micro-button" (click)="removePokemon(poke)">-</td>
+		<tr *ngFor="let poke of buddyList" style="height:60px;">
+			<td style="margin-top: 18px" class="btn btn-sm btn-danger micro-button" (click)="removePokemon(poke)">-</td>
 			<td>{{poke.name}}</td>
 			<td><input type="number" [(ngModel)]="poke.candyHave" (keyup)="candyInput(poke)" (change)="candyInput(poke)"></td>
-			<td *ngIf="poke.candyHave && poke.evol && poke.evol.length > 0">
-				<div>Candy Needed: {{poke.evol[0].candyNeed}}</div>
-				<div>Max Catches: {{poke.evol[0].catchNeed}}</div>
-				<div>Distance (km): {{poke.evol[0].disNeed}}</div>
+			<td>
+				<div *ngIf="poke.candyHave && poke.evol && poke.evol.length > 0" class="micro-button">
+					<div>{{poke.evol[0].name}}</div>
+					<div>Candy Needed: {{poke.evol[0].candyNeed}}</div>
+					<div>Max Catches: {{poke.evol[0].catchNeed}}</div>
+					<div>Distance (km): {{poke.evol[0].disNeed}}</div>
+				</div>
 			</td>
-			<td *ngIf="poke.candyHave && poke.evol && poke.evol.length === 2">
-				<div>Candy Needed: {{poke.evol[1].candyNeed}}</div>
-				<div>Max Catches: {{poke.evol[1].catchNeed}}</div>
-				<div>Distance (km): {{poke.evol[1].disNeed}}</div>
+			<td>
+				<div *ngIf="poke.candyHave && poke.evol && poke.evol.length === 2" class="micro-button">
+					<div>{{poke.evol[1].name}}</div>
+					<div>Candy Needed: {{poke.evol[1].candyNeed}}</div>
+					<div>Max Catches: {{poke.evol[1].catchNeed}}</div>
+					<div>Distance (km): {{poke.evol[1].disNeed}}</div>
+				</div>
 			</td>
 		</tr>
 	</table>

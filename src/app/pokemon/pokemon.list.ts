@@ -5,6 +5,7 @@ export const POKEMON: pokemon[] = [
 		name:'Bulbasaur',
 		candyDis:3,
 		topCp:981,
+		candy:25,
 		gen: 1,
 		evol: [{id:2}, {id:3}],
 		cp:100
@@ -13,7 +14,7 @@ export const POKEMON: pokemon[] = [
 		name:'Ivysaur',
 		candyDis:3,
 		topCp:1552,
-		candy:25,
+		candy:100,
 		minMulti:1.53,
 		maxMulti:1.58,
 		gen: 1,
@@ -24,7 +25,6 @@ export const POKEMON: pokemon[] = [
 		name:'Venusaur',
 		candyDis:3,
 		topCp:2568,
-		candy:100,
 		minMulti:1.20,
 		maxMulti:1.60,
 		gen: 1,
@@ -1259,8 +1259,8 @@ export const POKEMON: pokemon[] = [
 		candyDis:5,
 		topCp:3090,
 		gen: 1
-	}/*,
-	{	id:152,
+	},
+	/*{	id:152,
 		name: 'Chikorita',
 		candyDis:1000,
 		topCp:1000,
@@ -1422,14 +1422,15 @@ export const POKEMON: pokemon[] = [
 		minMulti:0.00,
 		maxMulti:0.00,
 		evol: [{ id: }, { id: }]
-	},
+	},*/
 	{	id:172,
 		name: 'Pichu',
 		candyDis:1000,
 		topCp:1000,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		evol: [{ id: 25 }, { id: 26 }]
 	},
 	{	id:173,
 		name: 'Cleffa',
@@ -1437,7 +1438,8 @@ export const POKEMON: pokemon[] = [
 		topCp:1000,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		evol: [{ id: 35 }, { id: 36 }]
 	},
 	{	id:174,
 		name: 'Igglybuff',
@@ -1445,7 +1447,8 @@ export const POKEMON: pokemon[] = [
 		topCp:1000,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		evol: [{ id: 39 }, { id: 40 }]
 	},
 	{	id:175,
 		name: 'Togepi',
@@ -1453,9 +1456,10 @@ export const POKEMON: pokemon[] = [
 		topCp:1000,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2
+		//evol: [{ id: }, { id: }]
 	},
-	{	id:176,
+	/*{	id:176,
 		name: 'Togetic',
 		candyDis:1000,
 		topCp:1000,
@@ -1950,14 +1954,15 @@ export const POKEMON: pokemon[] = [
 		minMulti:0.00,
 		maxMulti:0.00,
 		evol: [{ id: }, { id: }]
-	},
+	},*/
 	{	id:238,
 		name: 'Smoochum',
 		candyDis:1000,
 		topCp:1000,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		evol: [{ id: 124 }]
 	},
 	{	id:239,
 		name: 'Elekid',
@@ -1965,7 +1970,8 @@ export const POKEMON: pokemon[] = [
 		topCp:1000,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		evol: [{ id: 125 }]
 	},
 	{	id:240,
 		name: 'Magby',
@@ -1973,9 +1979,10 @@ export const POKEMON: pokemon[] = [
 		topCp:1000,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		evol: [{ id: 126}]
 	},
-	{	id:241,
+	/*{	id:241,
 		name: 'Miltank',
 		candyDis:1000,
 		topCp:1000,

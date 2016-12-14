@@ -1,1 +1,41 @@
-<div>Excel View</div>
+<select class="btn btn-sm" [(ngModel)]="filterFlag">
+	<option value="all">All</option>
+	<option value="avail" >CP Available</option>
+	<option value="unavail">CP Unavailable</option>
+</select>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Cp</th>
+		<th>Evol #1</th>
+		<th>Evol #2</th>
+		<th>PreEvol #1</th>
+		<th>PreEvol #2</th>
+	</tr>
+	<tr *ngFor="let poke of pokemonInventory | filterCpAvil:filterFlag">
+		<td>{{poke.id}}</td>
+		<td>{{poke.name}}</td>
+		<td><input style="width:80px;" type="number" min="0" max="9999" [(ngModel)]="poke.cp" (keyup)="cpCalc(poke)" (change)="cpCalc(poke)"></td>
+		<td>
+			<div *ngIf="poke.cp && poke.evol && poke.evol.length > 0" class="micro-button">
+				test
+			</div>
+		</td>
+		<td>
+			<div *ngIf="poke.cp && poke.evol && poke.evol.length == 2" class="micro-button">
+				test
+			</div>
+		</td>
+		<td>
+			<div *ngIf="poke.cp && poke.preEvol && poke.preEvol.length > 0" class="micro-button">
+				test
+			</div>
+		</td>
+		<td>
+			<div *ngIf="poke.cp && poke.preEvol && poke.preEvol.length == 2" class="micro-button">
+				test
+			</div>
+		</td>
+	</tr>
+</table>
