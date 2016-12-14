@@ -8,18 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var ViewareaComponent = (function () {
-    function ViewareaComponent() {
+var core_1 = require("@angular/core");
+var SingleComponent = (function () {
+    function SingleComponent() {
     }
-    ViewareaComponent = __decorate([
-        core_1.Component({
-            selector: 'viewarea',
-            templateUrl: 'app/workspace/viewarea/viewarea.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ViewareaComponent);
-    return ViewareaComponent;
+    return SingleComponent;
 }());
-exports.ViewareaComponent = ViewareaComponent;
-//# sourceMappingURL=viewarea.component.js.map
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], SingleComponent.prototype, "pokemonInventory", void 0);
+SingleComponent = __decorate([
+    core_1.Component({
+        selector: 'single-view',
+        templateUrl: 'app/workspace/cp/single/single.component.html'
+    }),
+    __metadata("design:paramtypes", [])
+], SingleComponent);
+exports.SingleComponent = SingleComponent;
+//# sourceMappingURL=single.component.js.map

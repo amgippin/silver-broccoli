@@ -6,22 +6,15 @@ import { PokemonService } from '../pokemon/pokemon.service';
 
 @Component({
   selector: 'workspace',
-  templateUrl: 'app/workspace/workspace.component.html',
-  styleUrls: ['app/workspace/workspace.component.css']
+  templateUrl: 'app/workspace/workspace.component.html'
 })
 export class WorkspaceComponent {	
-	public radioModel: string = 'excel';
-
-	/*
+	public radioModel: string = 'buddy';
+	public pokemonInventory: pokemon[] = [];
+	
 	constructor(private pokeSrv: PokemonService) { }
 	
-	public pokeList: pokemon[] = this.pokeSrv.getPokemonList();
-	private selPokemon: pokemon;
-	ngOnInit(): void {
-		this.selectPoke(this.pokeList[0]);
+	ngOnInit() {
+		this.pokemonInventory = this.pokeSrv.getPokemonFreshInventory();
 	}
-	
-	selectPoke(pokemon): void {
-		this.selPokemon = pokemon;
-	}	*/
 }

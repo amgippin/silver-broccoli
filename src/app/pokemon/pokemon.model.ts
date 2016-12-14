@@ -8,6 +8,7 @@ export class pokemon {
 	candyHave?: number;
 	cp?: number;
 	evol?: any;
+	gen?: number;
 	preEvol?: any;
 	extra?: pokemon[];
 	masterIndex?: number;
@@ -17,4 +18,6 @@ export class pokemon {
 	
 	battleAppraise?: string;
 	statAppraise?: any;
+	candyNeed?: number;
+	selected?: any;
 }

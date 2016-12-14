@@ -1,0 +1,7 @@
+<div class="btn-group" style="display: inline-block;">
+	<label class="btn btn-sm btn-success" [(ngModel)]="radioModel" btnRadio="excel">Quick View</label>
+	<label class="btn btn-sm btn-success" [(ngModel)]="radioModel" btnRadio="single">Detailed View</label>
+</div>
+
+<excel-view *ngIf="radioModel === 'excel'" [pokemonInventory]="pokemonInventory"></excel-view>
+<single-view *ngIf="radioModel === 'single'" [pokemonInventory]="pokemonInventory"></single-view>

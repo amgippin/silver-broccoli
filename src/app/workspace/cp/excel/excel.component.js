@@ -8,18 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var SidebarComponent = (function () {
-    function SidebarComponent() {
+var core_1 = require("@angular/core");
+var ExcelComponent = (function () {
+    function ExcelComponent() {
     }
-    SidebarComponent = __decorate([
-        core_1.Component({
-            selector: 'sidebar',
-            templateUrl: 'app/workspace/sidebar/sidebar.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], SidebarComponent);
-    return SidebarComponent;
+    return ExcelComponent;
 }());
-exports.SidebarComponent = SidebarComponent;
-//# sourceMappingURL=sidebar.component.js.map
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], ExcelComponent.prototype, "pokemonInventory", void 0);
+ExcelComponent = __decorate([
+    core_1.Component({
+        selector: 'excel-view',
+        templateUrl: 'app/workspace/cp/excel/excel.component.html'
+    }),
+    __metadata("design:paramtypes", [])
+], ExcelComponent);
+exports.ExcelComponent = ExcelComponent;
+//# sourceMappingURL=excel.component.js.map

@@ -1,10 +1,11 @@
 <div class="btn-group" style="display: inline-block;">
-	<label class="btn btn-sm btn-primary" [(ngModel)]="radioModel" btnRadio="excel">Excel View</label>
-	<label class="btn btn-sm btn-primary" [(ngModel)]="radioModel" btnRadio="single">Single View</label>
+	<label class="btn btn-sm btn-primary" [(ngModel)]="radioModel" btnRadio="cp">Evolution Assistance</label>
+	<label class="btn btn-sm btn-primary" [(ngModel)]="radioModel" btnRadio="buddy">Buddy Comparator</label>
 </div>
 
-<excel-view *ngIf="radioModel === 'excel'"></excel-view>
-<single-view *ngIf="radioModel === 'single'"></single-view>
+<buddy-related *ngIf="radioModel === 'buddy'"></buddy-related>
+<cp-related *ngIf="radioModel === 'cp'" [pokemonInventory]="pokemonInventory"></cp-related>
+
 
 
 

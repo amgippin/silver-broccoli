@@ -4,8 +4,23 @@ import { POKEMON } from './pokemon.list';
 
 @Injectable()
 export class PokemonService {
-	private pokemonList = JSON.parse(JSON.stringify(POKEMON));;
+	private pokemonList = JSON.parse(JSON.stringify(POKEMON));
 	
+	getPokemonFreshInventory(): pokemon[] {
+		return this.pokemonList;
+	}
+	
+	getPokedex(): Map {
+		var pokedex = new Map();
+		
+		for ( let poke of POKEMON ) {
+			pokedex.set(poke.id, poke) 
+		}
+	
+		return pokedex;
+	}
+	
+	//TODO: Clean up
 	getPokemonList(): pokemon[] {
 		return this.pokemonList;
 	}
