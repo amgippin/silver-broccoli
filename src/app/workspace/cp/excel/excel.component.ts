@@ -17,7 +17,7 @@ export class ExcelComponent {
 	@Input() pokemonInventory: pokemon[];
 	
 	public filterFlag: string = 'all';
-	public readonly pokedex: Map = this.pokeSrv.getPokedex();
+	public readonly pokedex: Map<number, pokemon> = this.pokeSrv.getPokedex();
 	
 	ngOnInit() {
 		for(let poke of this.pokemonInventory) {

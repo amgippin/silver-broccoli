@@ -1,1 +1,10 @@
-<div>Single View</div>
+<div style="padding-top:15px;">
+	<div style="border:solid black 1px; width:100px;">
+		<input style="width:100%;" [(ngModel)]="sidebarSearch">
+		<div *ngFor="let poke of sidebarList" (click)="selectPoke(poke)">{{poke.id}}: {{poke.name}}</div>
+		<!--<div *ngFor="let poke of sidebarList | searchFilter:sidebarSearch">{{poke.id}}: {{poke.name}}</div>-->
+	</div>
+	<div>
+		Test
+	</div>
+</div>

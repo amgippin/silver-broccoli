@@ -8,8 +8,7 @@ import { PokemonService } from '../../pokemon/pokemon.service';
 @Component({
   selector: 'buddy-related',
   templateUrl: 'app/workspace/buddy/buddy.component.html',
-  styleUrls: ['app/workspace/buddy/buddy.css', 'app/workspace/shared.css'],
-  pipes: [FitlerGenPipe]
+  styleUrls: ['app/workspace/buddy/buddy.css', 'app/workspace/shared.css']
 })
 export class BuddyComponent {
 	constructor(
@@ -19,7 +18,7 @@ export class BuddyComponent {
 	public radioModel = '1';
 	
 	public buddyList: pokemon[] = [];
-	public readonly pokedex: Map = this.pokeSrv.getPokedex();
+	public readonly pokedex: Map<number, pokemon> = this.pokeSrv.getPokedex();
 	public pokemonInventory: pokemon[] = this.pokeSrv.getPokemonFreshInventory();
 	
 	selectPoke(pokemon) {
