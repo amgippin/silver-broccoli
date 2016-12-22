@@ -36,21 +36,24 @@ export class PokemonService {
 	}
 	
 	cpCalc(pokemon) {
-		for (let i in pokemon.evol) {
-			pokemon.evol[i].name = this.pokedex.get(pokemon.evol[i].id).name;
-			if ( +i === 0 ) {
-				pokemon.evol[i].minCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[i].id).minMulti);
-				pokemon.evol[i].maxCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[i].id).maxMulti);
-			} else if ( +i > 0 ) {
-				pokemon.evol[i].minCp = Math.floor(pokemon.evol[i-1].minCp * this.pokedex.get(pokemon.evol[i].id).minMulti);
-				pokemon.evol[i].maxCp = Math.floor(pokemon.evol[i-1].maxCp * this.pokedex.get(pokemon.evol[i].id).maxMulti);
-			}
+		if (pokemon.evol && pokemon.evol.length === 1 ) {
+			pokemon.evol[0].name = this.pokedex.get(pokemon.evol[0].id).name;
+			pokemon.evol[0].minCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[0].id).minMulti);
+			pokemon.evol[0].maxCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[0].id).maxMulti);
+		} else if (pokemon.evol && pokemon.evol.length === 2) {
+			pokemon.evol[0].name = this.pokedex.get(pokemon.evol[0].id).name;
+			pokemon.evol[0].minCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[0].id).minMulti);
+			pokemon.evol[0].maxCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[0].id).maxMulti);
+			
+			pokemon.evol[1].name = this.pokedex.get(pokemon.evol[1].id).name;
+			pokemon.evol[1].minCp = Math.floor(pokemon.evol[0].minCp * this.pokedex.get(pokemon.evol[1].id).minMulti);
+			pokemon.evol[1].maxCp = Math.floor(pokemon.evol[0].maxCp * this.pokedex.get(pokemon.evol[1].id).maxMulti);
 		}
 		
 		if (pokemon.preEvol && pokemon.preEvol.length === 1 ) {
 			pokemon.preEvol[0].name = this.pokedex.get(pokemon.preEvol[0].id).name;
 			pokemon.preEvol[0].minCp = Math.ceil(pokemon.cp/pokemon.minMulti);
-		} else if (pokemon.preEvol && pokemon.preEvol.length === 2) {			
+		} else if (pokemon.preEvol && pokemon.preEvol.length === 2) {
 			pokemon.preEvol[0].name = this.pokedex.get(pokemon.preEvol[0].id).name;
 			pokemon.preEvol[0].minCp = Math.ceil(pokemon.cp/pokemon.minMulti);
 			
