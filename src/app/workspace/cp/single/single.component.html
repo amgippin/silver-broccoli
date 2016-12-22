@@ -1,10 +1,10 @@
 <div style="padding-top:15px;">
-	<div style="border:solid black 1px; width:100px;">
-		<input style="width:100%;" [(ngModel)]="sidebarSearch">
+	<div style="border:solid black 1px; width:100px;display:inline-block;">
 		<div *ngFor="let poke of sidebarList" (click)="selectPoke(poke)">{{poke.id}}: {{poke.name}}</div>
 		<!--<div *ngFor="let poke of sidebarList | searchFilter:sidebarSearch">{{poke.id}}: {{poke.name}}</div>-->
 	</div>
-	<div>
-		Test
+	<div style="display:inline-block; width:150px; vertical-align:top;" >
+		<h1>{{selPokemon.name}}</h1>
+		
 	</div>
 </div>
