@@ -9,5 +9,5 @@ import { pokemon } from '../../pokemon/pokemon.model';
 export class CpComponent {	
 	@Input() pokemonInventory: pokemon[];
 	
-	public radioModel: string = 'single';
+	public radioModel: string = 'single'; // excel, single
 }

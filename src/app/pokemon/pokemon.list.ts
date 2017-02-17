@@ -7,7 +7,8 @@ export const POKEMON: pokemon[] = [
 		topCp:981,
 		candy:25,
 		gen: 1,
-		evol: [{id:2}, {id:3}],
+		evol1: [{ id:2 }],
+		evol2: [{ id:3 }],
 		cp:100
 	},
 	{	id:2,
@@ -18,17 +19,17 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.53,
 		maxMulti:1.58,
 		gen: 1,
-		evol: [{ id:3 }],
-		preEvol: [{id:1}]
+		evol1: [{ id:3 }],
+		preEvol: [{ id:1 }]
 	},
 	{	id:3,
 		name:'Venusaur',
 		candyDis:3,
 		topCp:2568,
 		minMulti:1.20,
-		maxMulti:1.60,
+		maxMulti:1.61,
 		gen: 1,
-		preEvol: [{id:2}, {id:1}]
+		preEvol: [{ id:2 }, { id:1 }]
 	},
 	{	id:4,
 		name:'Charmander',
@@ -36,7 +37,8 @@ export const POKEMON: pokemon[] = [
 		topCp:831,
 		candy:25,
 		gen: 1,
-		evol: [{ id:5 }, { id:6 }]
+		evol1: [{ id:5 }],
+		evol2: [{ id:6 }]
 	},
 	{	id:5,
 		name:'Charmeleon',
@@ -46,7 +48,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.64,
 		maxMulti:1.70,	
 		gen: 1,		
-		evol: [{ id:6 }],
+		evol1: [{ id:6 }],
 		preEvol: [{ id:4 }]
 	},
 	{	id:6,
@@ -64,7 +66,8 @@ export const POKEMON: pokemon[] = [
 		topCp:808,
 		candy:25,
 		gen: 1,
-		evol: [{ id:8 }, { id:9 }]
+		evol1: [{ id:8 }],
+		evol2: [{ id:9 }]
 	},	
 	{	id:8,
 		name:'Wartortle',
@@ -74,7 +77,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.35,
 		maxMulti:2.1,
 		gen: 1,
-		evol: [{ id:9 }],
+		evol1: [{ id:9 }],
 		preEvol: [{ id:7 }]
 	},	
 	{	id:9,
@@ -84,7 +87,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.4,
 		maxMulti:1.68,
 		gen: 1,
-		preEvol: [{ id:7 }, { id:8 }]
+		preEvol: [{ id:8 }, { id:7 }]
 	},	
 	{	id:10,
 		name:'Caterpie',
@@ -92,7 +95,8 @@ export const POKEMON: pokemon[] = [
 		topCp:393,
 		candy:12,
 		gen: 1,
-		evol: [{ id:11 }, { id:12 }]
+		evol1: [{ id:11 }],
+		evol2: [{ id:12 }]
 	},	
 	{	id:11,
 		name:'Metapod',
@@ -102,7 +106,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.04,
 		maxMulti:1.08,
 		gen: 1,
-		evol: [{ id:12 }],
+		evol1: [{ id:12 }],
 		preEvol: [{ id:10 }]
 	},	
 	{	id:12,
@@ -112,7 +116,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:3.05,
 		maxMulti:3.79,
 		gen: 1,
-		preEvol: [{ id:10 }, { id:11 }]
+		preEvol: [{ id:11 }, { id:10 }]
 	},	
 	{	id:13,
 		name:'Weedle',
@@ -120,7 +124,8 @@ export const POKEMON: pokemon[] = [
 		topCp:397,
 		candy:12,
 		gen: 1,
-		evol: [{ id:14 }, { id:15 }]
+		evol1: [{ id:14 }],
+		evol2: [{ id:15 }]
 	},	
 	{	id:14,
 		name:'Kakuna',
@@ -130,7 +135,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.06,
 		maxMulti:1.12,
 		gen: 1,
-		evol: [{ id:15 }],
+		evol1: [{ id:15 }],
 		preEvol: [{ id:13 }]
 	},	
 	{	id:15,
@@ -140,7 +145,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:3.01,
 		maxMulti:3.42,
 		gen: 1,
-		preEvol: [{ id:13 }, { id:14 }]
+		preEvol: [{ id:14 }, { id:13 }]
 	},			
 	{	id:16,
 		name:'Pidgey',
@@ -148,7 +153,8 @@ export const POKEMON: pokemon[] = [
 		topCp:580,
 		candy:12,
 		gen: 1,
-		evol: [{ id:17 }, { id:18 }]
+		evol1: [{ id:17 }],
+		evol2: [{ id:18 }]
 	},
 	{	id:17,
 		name:'Pidgeotto',
@@ -158,7 +164,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.71,
 		maxMulti:1.95,
 		gen: 1,
-		evol: [{ id:18 }],
+		evol1: [{ id:18 }],
 		preEvol: [{ id:16 }]
 	},	
 	{	id:18,
@@ -168,7 +174,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.73,
 		maxMulti:1.80,
 		gen: 1,
-		preEvol: [{ id:16 }, { id:17 }]
+		preEvol: [{ id:17 }, { id:16 }]
 	},	
 	{	id:19,
 		name:'Rattata',
@@ -176,7 +182,7 @@ export const POKEMON: pokemon[] = [
 		topCp:588,
 		candy:25,
 		gen: 1,
-		evol: [{ id:20 }]
+		evol1: [{ id:20 }]
 	},	
 	{	id:20,
 		name:'Raticate',
@@ -193,7 +199,7 @@ export const POKEMON: pokemon[] = [
 		topCp:673,
 		candy:25,
 		gen: 1,
-		evol: [{ id:22 }]
+		evol1: [{ id:22 }]
 	},		
 	{	id:22,
 		name:'Fearow',
@@ -210,7 +216,7 @@ export const POKEMON: pokemon[] = [
 		topCp:778,
 		candy:25,
 		gen: 1,
-		evol: [{ id:24 }]
+		evol1: [{ id:24 }]
 	},		
 	{	id:24,
 		name:'Arbok',
@@ -226,8 +232,11 @@ export const POKEMON: pokemon[] = [
 		candyDis:1,
 		topCp:787,
 		candy:25,
+		minMulti:1.65,
+		maxMulti:2.18,
 		gen: 1,
-		evol: [{ id:26 }]
+		evol1: [{ id:26 }],
+		preEvol: [{id:172}]
 	},		
 	{	id:26,
 		name:'Raichu',
@@ -236,7 +245,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:2.33,
 		maxMulti:2.38,
 		gen: 1,
-		preEvol: [{ id:25 }]
+		preEvol: [{ id:25 }, {id:172}]
 	},
 	{	id:27,
 		name:'Sandshrew',
@@ -244,7 +253,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1194,
 		candy:25,
 		gen: 1,
-		evol: [{ id:28 }]
+		evol1: [{ id:28 }]
 	},		
 	{	id:28,
 		name:'Sandslash',
@@ -261,7 +270,8 @@ export const POKEMON: pokemon[] = [
 		topCp:736,
 		candy:25,
 		gen: 1,
-		evol: [{ id:30 }, { id:31 }]
+		evol1: [{ id:30 }],
+		evol2: [{ id:31 }]
 	},		
 	{	id:30,
 		name:'Nidorina',
@@ -271,7 +281,7 @@ export const POKEMON: pokemon[] = [
 		maxMulti:1.66,
 		candy:100,
 		gen: 1,
-		evol: [{ id:31 }],
+		evol1: [{ id:31 }],
 		preEvol: [{ id:29 }]
 	},
 	{	id:31,
@@ -281,7 +291,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.77,
 		maxMulti:1.83,
 		gen: 1,
-		preEvol: [{ id:29 }, { id:30 }]
+		preEvol: [{ id:30 }, { id:29 }]
 	},		
 	{	id:32,
 		name:'Nidoran M',
@@ -289,7 +299,8 @@ export const POKEMON: pokemon[] = [
 		topCp:739,
 		candy:25,
 		gen: 1,
-		evol: [{ id:33 }, { id:34 }]
+		evol1: [{ id:33 }],
+		evol2: [{ id:34 }]
 	},
 	{	id:33,
 		name:'Nidorino',
@@ -299,7 +310,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.64,
 		maxMulti:1.7,
 		gen: 1,
-		evol: [{ id:34 }],
+		evol1: [{ id:34 }],
 		preEvol: [{ id:32 }]
 	},		
 	{	id:34,
@@ -309,15 +320,18 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.64,
 		maxMulti:1.86,
 		gen: 1,
-		preEvol: [{ id:32 }, { id:33 }]
+		preEvol: [{ id:33 }, { id:32 }]
 	},	
 	{	id:35,
 		name:'Clefairy',
 		candyDis:1,
 		topCp:1085,
 		candy:50,
+		minMulti:1.62,
+		maxMulti:2.04,
 		gen: 1,
-		evol: [{ id:36 }]
+		evol1: [{ id:36 }],
+		preEvol: [{ id:173 }]
 	},		
 	{	id:36,
 		name:'Clefable',
@@ -326,7 +340,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:2.02,
 		maxMulti:2.14,
 		gen: 1,
-		preEvol: [{ id:35 }]
+		preEvol: [{ id:35 }, { id:173}]
 	},
 	{	id:37,
 		name:'Vulpix',
@@ -334,7 +348,7 @@ export const POKEMON: pokemon[] = [
 		topCp:774,
 		candy:50,
 		gen: 1,
-		evol: [{ id:38 }]
+		evol1: [{ id:38 }]
 	},		
 	{	id:38,
 		name:'Ninetales',
@@ -350,17 +364,20 @@ export const POKEMON: pokemon[] = [
 		candyDis:1,
 		topCp:713,
 		candy:50,
+		minMulti:0.96,
+		maxMulti:1.20,
 		gen: 1,
-		evol: [{ id:40 }]
+		evol1: [{ id:40 }],
+		preEvol: [{ id:174 }]
 	},		
 	{	id:40,
 		name:'Wigglytuff',
 		candyDis:1,
 		topCp:1906,
-		minMulti:2.41,
-		maxMulti:2.47,
+		minMulti:2.28,
+		maxMulti:3.30,
 		gen: 1,
-		preEvol: [{ id:39 }]
+		preEvol: [{ id:39 }, { id:174 }]
 	},	
 	{	id:41,
 		name:'Zubat',
@@ -368,7 +385,8 @@ export const POKEMON: pokemon[] = [
 		topCp:569,
 		candy:50,
 		gen: 1,
-		evol: [{ id:42 }]//, { id:169 }]
+		evol1: [{ id:42 }],
+		evol2: [{ id:169 }]
 	},		
 	{	id:42,
 		name:'Golbat',
@@ -377,7 +395,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:2.60,
 		maxMulti:3.67,
 		gen: 1,
-		//evol:[{ id:169 }],
+		evol1:[{ id:169 }],
 		preEvol: [{ id:41 }]
 	},
 	{	id:43,
@@ -386,8 +404,9 @@ export const POKEMON: pokemon[] = [
 		topCp:1069,
 		candy:25,
 		gen: 1,
-		evol: [{ id:44 }, { id:45 }]
-	},		
+		evol1: [{ id:44 }],
+		evol2: [{ id:45 }, { id:182} ]
+	},
 	{	id:44,
 		name:'Gloom',
 		candyDis:3,
@@ -396,7 +415,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.48,
 		maxMulti:1.51,
 		gen: 1,
-		evol: [{ id:45 }],
+		evol1: [{ id:45 }, { id:182}],
 		preEvol: [{ id:43 }]
 	},
 	{	id:45,
@@ -406,15 +425,15 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.48,
 		maxMulti:1.53,
 		gen: 1,
-		preEvol: [{ id:43 }, { id:44 }]
-	},		
+		preEvol: [{ id:44 }, { id:43 }]
+	},
 	{	id:46,
 		name:'Paras',
 		candyDis:3,
 		topCp:836,
 		candy:50,
 		gen: 1,
-		evol: [{ id:47 }]
+		evol1: [{ id:47 }]
 	},	
 	{	id:47,
 		name:'Parasect',
@@ -431,7 +450,7 @@ export const POKEMON: pokemon[] = [
 		topCp:902,
 		candy:50,
 		gen: 1,
-		evol: [{ id:49 }]
+		evol1: [{ id:49 }]
 	},
 	{	id:49,
 		name:'Venonmoth',
@@ -448,7 +467,7 @@ export const POKEMON: pokemon[] = [
 		topCp:465,
 		candy:50,
 		gen: 1,
-		evol: [{ id:51 }]
+		evol1: [{ id:51 }]
 	},
 	{	id:51,
 		name:'Dugltrio',
@@ -465,7 +484,7 @@ export const POKEMON: pokemon[] = [
 		topCp:638,
 		candy:50,
 		gen: 1,
-		evol: [{ id:53 }]
+		evol1: [{ id:53 }]
 	},	
 	{	id:53,
 		name:'Persian',
@@ -482,7 +501,7 @@ export const POKEMON: pokemon[] = [
 		topCp:966,
 		candy:50,
 		gen: 1,
-		evol: [{ id:55 }]
+		evol1: [{ id:55 }]
 	},
 	{	id:55,
 		name:'Golduck',
@@ -499,7 +518,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1002,
 		candy:50,
 		gen: 1,
-		evol: [{ id:57 }]
+		evol1: [{ id:57 }]
 	},
 	{	id:57,
 		name:'Primeape',
@@ -516,7 +535,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1110,
 		candy:50,
 		gen: 1,
-		evol: [{ id:59 }]
+		evol1: [{ id:59 }]
 	},	
 	{	id:59,
 		name:'Arcanine',
@@ -533,7 +552,8 @@ export const POKEMON: pokemon[] = [
 		topCp:695,
 		candy:25,
 		gen: 1,
-		evol: [{ id:61 }, { id:62 }]
+		evol1: [{ id:61 }],
+		evol2: [{ id:62 }, { id:186 }]
 	},
 	{	id:61,
 		name:'Poliwhirl',
@@ -543,7 +563,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.72,
 		maxMulti:1.77,
 		gen: 1,
-		evol: [{ id:62 }],
+		evol1: [{ id:62 }, { id:186}],
 		preEvol: [{ id:60 }]
 	},		
 	{	id:62,
@@ -553,7 +573,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.9,
 		maxMulti:1.96,
 		gen: 1,
-		preEvol: [{ id:60 }, { id:61 }]
+		preEvol: [{ id:61 }, { id:60 }]
 	},
 	{	id:63,
 		name:'Abra',
@@ -561,7 +581,8 @@ export const POKEMON: pokemon[] = [
 		topCp:1148,
 		candy:25,
 		gen: 1,
-		evol: [{ id:64 }, { id:65 }]
+		evol1: [{ id:64 }],
+		evol2: [{ id:65 }]
 	},		
 	{	id:64,
 		name:'Kadabra',
@@ -571,7 +592,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.36,
 		maxMulti:1.95,
 		gen: 1,
-		evol: [{ id:65 }],
+		evol1: [{ id:65 }],
 		preEvol: [{ id:63 }]
 	},	
 	{	id:65,
@@ -581,7 +602,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.4,
 		maxMulti:1.65,
 		gen: 1,
-		preEvol: [{ id:63 }, { id:64 }]
+		preEvol: [{ id:64 }, { id:63 }]
 	},		
 	{	id:66,
 		name:'Machop',
@@ -589,7 +610,8 @@ export const POKEMON: pokemon[] = [
 		topCp:1199,
 		candy:25,
 		gen: 1,
-		evol: [{ id:67 }, { id:68 }]
+		evol1: [{ id:67 }],
+		evol2: [{ id:68 }]
 	},
 	{	id:67,
 		name:'Machoke',
@@ -599,7 +621,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.62,
 		maxMulti:1.67,
 		gen: 1,
-		evol: [{ id:68 }],
+		evol1: [{ id:68 }],
 		preEvol: [{ id:66 }]
 	},		
 	{	id:68,
@@ -609,7 +631,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.38,
 		maxMulti:1.7,
 		gen: 1,
-		preEvol: [{ id:66 }, { id:67 }]
+		preEvol: [{ id:67 }, { id:66 }]
 	},
 	{	id:69,
 		name:'Bellsprout',
@@ -617,7 +639,8 @@ export const POKEMON: pokemon[] = [
 		topCp:916,
 		candy:25,
 		gen: 1,
-		evol: [{ id:70 }, { id:71 }]
+		evol1: [{ id:70 }],
+		evol2: [{ id:71 }]
 	},		
 	{	id:70,
 		name:'Weepinbell',
@@ -627,7 +650,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.54,
 		maxMulti:1.6,
 		gen: 1,
-		evol: [{ id:71 }],
+		evol1: [{ id:71 }],
 		preEvol: [{ id:69 }]
 	},	
 	{	id:71,
@@ -637,7 +660,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.47,
 		maxMulti:1.59,
 		gen: 1,
-		preEvol: [{ id:69 }, { id:70 }]
+		preEvol: [{ id:70 }, { id:69 }]
 	},		
 	{	id:72,
 		name:'Tentacool',
@@ -645,7 +668,7 @@ export const POKEMON: pokemon[] = [
 		topCp:956,
 		candy:50,
 		gen: 1,
-		evol: [{ id:73 }]
+		evol1: [{ id:73 }]
 	},
 	{	id:73,
 		name:'Tentacruel',
@@ -662,7 +685,8 @@ export const POKEMON: pokemon[] = [
 		topCp:1193,
 		candy:25,
 		gen: 1,
-		evol: [{ id:75 }, { id:76 }]
+		evol1: [{ id:75 }],
+		evol2: [{ id:76 }]
 	},
 	{	id:75,
 		name:'Graveler',
@@ -672,7 +696,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.7,
 		maxMulti:1.76,
 		gen: 1,
-		evol: [{ id:76 }],
+		evol1: [{ id:76 }],
 		preEvol: [{ id:74 }]
 	},		
 	{	id:76,
@@ -682,7 +706,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.62,
 		maxMulti:1.72,
 		gen: 1,
-		preEvol: [{ id:74 }, { id:75 }]
+		preEvol: [{ id:75 }, { id:74 }]
 	},	
 	{	id:77,
 		name:'Ponyta',
@@ -690,7 +714,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1502,
 		candy:50,
 		gen: 1,
-		evol: [{ id:78 }]
+		evol1: [{ id:78 }]
 	},		
 	{	id:78,
 		name:'Rapidash',
@@ -707,7 +731,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1204,
 		candy:50,
 		gen: 1,
-		evol: [{ id:80 }]
+		evol1: [{ id:80 }, { id:199}]
 	},	
 	{	id:80,
 		name:'Slowbro',
@@ -724,7 +748,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1083,
 		candy:50,
 		gen: 1,
-		evol: [{ id:82 }]
+		evol1: [{ id:82 }]
 	},		
 	{	id:82,
 		name:'Magneton',
@@ -747,7 +771,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1011,
 		candy:50,
 		gen: 1,
-		evol: [{ id:85 }]
+		evol1: [{ id:85 }]
 	},
 	{	id:85,
 		name:'Dodrio',
@@ -764,7 +788,7 @@ export const POKEMON: pokemon[] = [
 		topCp:899,
 		candy:50,
 		gen: 1,
-		evol: [{ id:87 }]
+		evol1: [{ id:87 }]
 	},
 	{	id:87,
 		name:'Dewgong',
@@ -781,7 +805,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1269,
 		candy:50,
 		gen: 1,
-		evol: [{ id:89 }]
+		evol1: [{ id:89 }]
 	},	
 	{	id:89,
 		name:'Muk',
@@ -798,7 +822,7 @@ export const POKEMON: pokemon[] = [
 		topCp:958,
 		candy:50,
 		gen: 1,
-		evol: [{ id:91 }]
+		evol1: [{ id:91 }]
 	},
 	{	id:91,
 		name:'Cloyster',
@@ -815,7 +839,8 @@ export const POKEMON: pokemon[] = [
 		topCp:1002,
 		candy:25,
 		gen: 1,
-		evol: [{ id:93 }, { id:94 }]
+		evol1: [{ id:93 }],
+		evol2: [{ id:94 }]
 	},
 	{	id:93,
 		name:'Haunter',
@@ -825,7 +850,8 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.75,
 		maxMulti:1.83,
 		gen: 1,
-		evol: [{ id:94 }]
+		evol1: [{ id:94 }]
+		preEvol: [{ id:92 }]
 	},		
 	{	id:94,
 		name:'Gengar',
@@ -834,13 +860,14 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.51,
 		maxMulti:1.8,
 		gen: 1,
-		preEvol: [{ id:92 }, { id:93 }]
+		preEvol: [{ id:93 }, { id:92 }]
 	},	
 	{	id:95,
 		name:'Onix',
 		candyDis:5,
 		topCp:1002,
-		gen: 1
+		gen: 1,
+		evol1: [{ id:208 }]
 	},		
 	{	id:96,
 		name:'Drowzee',
@@ -848,7 +875,7 @@ export const POKEMON: pokemon[] = [
 		topCp:992,
 		candy:50,
 		gen: 1,
-		evol: [{ id:97 }]
+		evol1: [{ id:97 }]
 	},
 	{	id:97,
 		name:'Hypno',
@@ -865,7 +892,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1386,
 		candy:50,
 		gen: 1,
-		evol: [{ id:99 }]
+		evol1: [{ id:99 }]
 	},
 	{	id:99,
 		name:'Kingler',
@@ -882,7 +909,7 @@ export const POKEMON: pokemon[] = [
 		topCp:857,
 		candy:50,
 		gen: 1,
-		evol: [{ id:101 }]
+		evol1: [{ id:101 }]
 	},	
 	{	id:101,
 		name:'Electrode',
@@ -899,7 +926,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1102,
 		candy:50,
 		gen: 1,
-		evol: [{ id:103 }]
+		evol1: [{ id:103 }]
 	},
 	{	id:103,
 		name:'Exeggutor',
@@ -916,7 +943,7 @@ export const POKEMON: pokemon[] = [
 		topCp:943,
 		candy:50,
 		gen: 1,
-		evol: [{ id:105 }]
+		evol1: [{ id:105 }]
 	},
 	{	id:105,
 		name:'Marowak',
@@ -931,13 +958,19 @@ export const POKEMON: pokemon[] = [
 		name:'Hitmonlee',
 		candyDis:5,
 		topCp:2406,
-		gen: 1
+		minMulti:0,
+		maxMulti:0,
+		gen: 1,
+		preEvol: [{ id:236 }]
 	},	
 	{	id:107,
 		name:'Hitmonchan',
 		candyDis:5,
 		topCp:2098,
-		gen: 1
+		minMulti:0,
+		maxMulti:0,
+		gen: 1,
+		preEvol: [{ id:236 }]
 	},		
 	{	id:108,
 		name:'Lickitung',
@@ -951,7 +984,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1091,
 		candy:50,
 		gen: 1,
-		evol: [{ id:110 }]
+		evol1: [{ id:110 }]
 	},		
 	{	id:110,
 		name:'Weezing',
@@ -968,7 +1001,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1679,
 		candy:50,
 		gen: 1,
-		evol: [{ id:112 }]
+		evol1: [{ id:112 }]
 	},		
 	{	id:112,
 		name:'Rhydon',
@@ -983,7 +1016,8 @@ export const POKEMON: pokemon[] = [
 		name:'Chansey',
 		candyDis:5,
 		topCp:1469,
-		gen: 1
+		gen: 1,
+		evol1: [{ id:242 }]
 	},		
 	{	id:114,
 		name:'Tangela',
@@ -1003,7 +1037,8 @@ export const POKEMON: pokemon[] = [
 		topCp:921,
 		candy:50,
 		gen: 1,
-		evol: [{ id:117 }]
+		evol1: [{ id:117 }],
+		evol2: [{ id:230}]
 	},
 	{	id:117,
 		name:'Seadra',
@@ -1012,6 +1047,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:2.19,
 		maxMulti:2.23,
 		gen: 1,
+		evol1: [{ id:230 }],
 		preEvol: [{ id:116 }]
 	},		
 	{	id:118,
@@ -1020,7 +1056,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1006,
 		candy:50,
 		gen: 1,
-		evol: [{ id:119 }]
+		evol1: [{ id:119 }]
 	},	
 	{	id:119,
 		name:'Seaking',
@@ -1037,7 +1073,7 @@ export const POKEMON: pokemon[] = [
 		topCp:926,
 		candy:50,
 		gen: 1,
-		evol: [{ id:121 }]
+		evol1: [{ id:121 }]
 	},
 	{	id:121,
 		name:'Starmie',
@@ -1058,25 +1094,35 @@ export const POKEMON: pokemon[] = [
 		name:'Scyther',
 		candyDis:5,
 		topCp:2464,
-		gen: 1
+		gen: 1,
+		evol1: [{ id:212 }]
 	},		
 	{	id:124,
 		name:'Jynx',
 		candyDis:5,
 		topCp:2512,
-		gen: 1
+		minMulti:2.63,
+		maxMulti:3.53,
+		gen: 1,
+		preEvol: [{ id:238 }]
 	},	
 	{	id:125,
 		name:'Electabuzz',
 		candyDis:5,
 		topCp:2196,
-		gen: 1
+		minMulti:1.30,
+		maxMulti:2.22,
+		gen: 1,
+		preEvol: [{ id:239 }]
 	},		
 	{	id:126,
 		name:'Magmar',
 		candyDis:5,
 		topCp:2254,
-		gen: 1
+		minMulti:1.33,
+		maxMulti:1.99,
+		gen: 1,
+		preEvol: [{ id:240 }]
 	},
 	{	id:127,
 		name:'Pinsir',
@@ -1093,7 +1139,7 @@ export const POKEMON: pokemon[] = [
 		candyDis:1,
 		topCp:220,
 		candy:400,
-		evol: [{ id:130 }]
+		evol1: [{ id:130 }]
 	},	
 	{	id:130,
 		name:'Gyarados',
@@ -1121,7 +1167,7 @@ export const POKEMON: pokemon[] = [
 		topCp:969,
 		candy:25,
 		gen: 1,
-		evol: [{ id:134 }, { id:135 }, { id:136}]
+		evol1: [{ id:134 }, { id:135 }, { id:136}, { id:196}, { id:197 }]
 	},		
 	{	id:134,
 		name:'Vaporeon',
@@ -1154,7 +1200,8 @@ export const POKEMON: pokemon[] = [
 		name:'Porygon',
 		candyDis:3,
 		topCp:1567,
-		gen: 1
+		gen: 1,
+		evol1: [{ id:233 }]
 	},		
 	{	id:138,
 		name:'Omanyte',
@@ -1162,7 +1209,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1345,
 		candy:50,
 		gen: 1,
-		evol: [{ id:139 }]
+		evol1: [{ id:139 }]
 	},
 	{	id:139,
 		name:'Omastar',
@@ -1179,7 +1226,7 @@ export const POKEMON: pokemon[] = [
 		topCp:1172,
 		candy:50,
 		gen: 1,
-		evol: [{ id:141 }]
+		evol1: [{ id:141 }]
 	},
 	{	id:141,
 		name:'Kabutops',
@@ -1226,7 +1273,8 @@ export const POKEMON: pokemon[] = [
 		topCp:860,
 		candy:25,
 		gen: 1,
-		evol: [{ id:148 }, { id:149 }]
+		evol1: [{ id:148 }],
+		evol2: [{ id:149 }]
 	},		
 	{	id:148,
 		name:'Dragonair',
@@ -1236,7 +1284,7 @@ export const POKEMON: pokemon[] = [
 		minMulti:1.78,
 		maxMulti:1.85,
 		gen: 1,
-		evol: [{ id:149 }],
+		evol1: [{ id:149 }],
 		preEvol: [{ id:147 }]
 	},	
 	{	id:149,
@@ -1260,814 +1308,776 @@ export const POKEMON: pokemon[] = [
 		topCp:3090,
 		gen: 1
 	},
-	/*{	id:152,
+	{	id:152,
 		name: 'Chikorita',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id:153 }, { id:154 }]
+		candyDis:0,
+		topCp:771,
+		gen: 2,
+		evol1: [{ id:153 }],
+		evol2: [{ id:154 }]
 	},
 	{	id:153,
 		name: 'Bayleef',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1296,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id:154}],
+		gen: 2,
+		evol1: [{ id:154}],
 		preEvol: [{ id:152}]
 	},
 	{	id:154,
 		name: 'Meganium',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2227,
 		minMulti:0.00,
 		maxMulti:0.00,
+		gen: 2,
 		preEvol: [{ id:152 }, { id:153 }]
 	},
 	{	id:155,
 		name: 'Cyndaquil',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id:156 }, { id:157 }]
+		candyDis:0,
+		topCp:831,
+		gen: 2,
+		evol1: [{ id:156 }],
+		evol2: [{ id:157 }]
 	},
 	{	id:156,
 		name: 'Quilava',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1484,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: 157 }],
+		gen: 2,
+		evol1: [{ id: 157 }],
 		preEvol: [{ id: 155 }]
 	},
 	{	id:157,
 		name: 'Typhlosion',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2686,
 		minMulti:0.00,
 		maxMulti:0.00,
+		gen: 2,
 		preEvol: [{ id:155 }, { id:156 }]
 	},
 	{	id:158,
 		name: 'Totodile',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id:159 }, { id:160 }]
+		candyDis:0,
+		topCp:1011,
+		gen: 2,
+		evol1: [{ id:159 }],
+		evol2: [{ id:160 }]
 	},
 	{	id:159,
 		name: 'Croconaw',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1598,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id:160 }],
+		gen: 2,
+		evol1: [{ id:160 }],
 		preEvol: [{ id:158 }]
 	},
 	{	id:160,
 		name: 'Feraligatr',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2721,
 		minMulti:0.00,
 		maxMulti:0.00,
+		gen: 2,
 		preEvol: [{ id:158 }, { id:159 }]
 	},
 	{	id:161,
 		name: 'Sentret',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id:162 }]
+		candyDis:0,
+		topCp:519,
+		gen: 2,
+		evol1: [{ id:162 }]
 	},
 	{	id:162,
 		name: 'Furret',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1667,
 		minMulti:0.00,
 		maxMulti:0.00,
+		gen: 2,
 		preEvol: [{ id:161 }]
 	},
 	{	id:163,
 		name: 'Hoothoot',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id:164 }]
+		candyDis:0,
+		topCp:640,
+		gen: 2,
+		evol1: [{ id:164 }]
 	},
 	{	id:164,
 		name: 'Noctowl',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2040,
 		minMulti:0.00,
 		maxMulti:0.00,
+		gen: 2,
 		preEvol: [{ id:163 }]
 	},
 	{	id:165,
 		name: 'Ledyba',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id:166 }]
+		candyDis:0,
+		topCp:663,
+		gen: 2,
+		evol1: [{ id:166 }]
 	},
 	{	id:166,
 		name: 'Ledian',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1275,
 		minMulti:0.00,
 		maxMulti:0.00,
+		gen: 2,
 		preEvol: [{ id:165 }]
 	},
 	{	id:167,
 		name: 'Spinarak',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id:168 }]
+		candyDis:0,
+		topCp:685,
+		gen: 2,
+		evol1: [{ id:168 }]
 	},
 	{	id:168,
 		name: 'Ariados',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1636,
 		minMulti:0.00,
 		maxMulti:0.00,
+		gen: 2,
 		preEvol: [{ id:167 }]
 	},
 	{	id:169,
 		name: 'Crobat',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2466,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id:41 }, { id:42 }]
+		gen: 2,
+		preEvol: [{ id:42 }, { id:41 }]
 	},
 	{	id:170,
 		name: 'Chinchou',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1067,
+		gen: 2,
+		evol1: [{ id:171 }]
 	},
 	{	id:171,
 		name: 'Lanturn',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
-	},*/
-	{	id:172,
-		name: 'Pichu',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2077,
 		minMulti:0.00,
 		maxMulti:0.00,
 		gen: 2,
-		evol: [{ id: 25 }, { id: 26 }]
+		preEvol: [{ id:170 }]
+	},
+	{	id:172,
+		name: 'Pichu',
+		candyDis:1,
+		topCp:376,
+		gen: 2,
+		evol1: [{ id: 25 }],
+		evol2: [{ id: 26 }]
 	},
 	{	id:173,
 		name: 'Cleffa',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
+		candyDis:1,
+		topCp:620,
 		gen: 2,
-		evol: [{ id: 35 }, { id: 36 }]
+		evol1: [{ id: 35 }],
+		evol2: [{ id: 36 }]
 	},
 	{	id:174,
 		name: 'Igglybuff',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
+		candyDis:1,
+		topCp:512,
 		gen: 2,
-		evol: [{ id: 39 }, { id: 40 }]
+		evol1: [{ id: 39 }],
+		evol2: [{ id: 40 }]
 	},
 	{	id:175,
 		name: 'Togepi',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		gen: 2
-		//evol: [{ id: }, { id: }]
+		candyDis:5,
+		topCp:540,
+		gen: 2,
+		evol1: [{ id:176 }]
 	},
-	/*{	id:176,
+	{	id:176,
 		name: 'Togetic',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:5,
+		topCp:1553,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:175 }]
 	},
 	{	id:177,
 		name: 'Natu',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:925,
+		gen: 2,
+		evol1: [{ id:178 }]
 	},
 	{	id:178,
 		name: 'Xatu',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1975,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:177 }]
 	},
 	{	id:179,
 		name: 'Mareep',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:887,
+		gen: 2,
+		evol1: [{ id:180 }],
+		evol2: [{ id:181 }]
 	},
 	{	id:180,
 		name: 'Flaaffy',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1402,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		evol1: [{ id:181 }],
+		preEvol: [{ id:179 }]
 	},
 	{	id:181,
 		name: 'Ampharos',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2695,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:180 }, { id:179 }]
 	},
 	{	id:182,
 		name: 'Bellossom',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2108,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id: 44}, { id: 43}]
 	},
 	{	id:183,
 		name: 'Marill',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:420,
+		gen: 2,
+		evol1: [{ id:184 }]
 	},
 	{	id:184,
 		name: 'Azumarill',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1503,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:183 }]
 	},
 	{	id:185,
 		name: 'Sudowoodo',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:2065,
+		gen: 2
 	},
 	{	id:186,
 		name: 'Politoed',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2371,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:61 }, { id:60 }]
 	},
 	{	id:187,
 		name: 'Hoppip',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:508,
+		gen: 2,
+		evol1: [{ id:188 }],
+		evol2: [{ id:189 }]
 	},
 	{	id:188,
 		name: 'Skiploom',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:882,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		evol1: [{ id:189 }],
+		preEvol: [{ id:187 }]
 	},
 	{	id:189,
 		name: 'Jumpluff',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1553,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:188 }, { id:187 }]
 	},
 	{	id:190,
 		name: 'Aipom',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1188,
+		gen: 2
 	},
 	{	id:191,
 		name: 'Sunkern',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:316,
+		gen: 2,
+		evol1: [{ id:192 }]
 	},
 	{	id:192,
 		name: 'Sunflora',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2048,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:191 }]
 	},
 	{	id:193,
 		name: 'Yanma',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1326,
+		gen: 2
 	},
 	{	id:194,
 		name: 'Wooper',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:596,
+		gen: 2,
+		evol1: [{ id:195 }]
 	},
 	{	id:195,
 		name: 'Quagsire',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1929,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:194 }]
 	},
 	{	id:196,
 		name: 'Espeon',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:3000,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:133 }]
 	},
 	{	id:197,
 		name: 'Umbreon',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2052,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:133 }]
 	},
 	{	id:198,
 		name: 'Murkrow',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1392,
+		gen: 2
 	},
 	{	id:199,
 		name: 'Slowking',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2482,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:79 }]
 	},
 	{	id:200,
 		name: 'Misdreavus',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1781,
+		gen: 2
 	},
 	{	id:201,
 		name: 'Unown',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1022,
+		gen: 2
 	},
 	{	id:202,
 		name: 'Wobbuffet',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1024,
+		gen: 2
 	},
 	{	id:203,
 		name: 'Girafarig',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1863,
+		gen: 2,
 	},
 	{	id:204,
 		name: 'Pineco',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1045,
+		gen: 2,
+		evol1: [{ id:205 }]
 	},
 	{	id:205,
 		name: 'Forretress',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2263,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:204 }]
 	},
 	{	id:206,
 		name: 'Dunsparce',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1615,
+		gen: 2
 	},
 	{	id:207,
 		name: 'Gligar',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1758,
+		gen: 2
 	},
 	{	id:208,
-		name: 'ix',
-		candyDis:1000,
-		topCp:1000,
+		name: 'Steelix',
+		candyDis:0,
+		topCp:2439,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id: 95 }]
 	},
 	{	id:209,
 		name: 'Snubbull',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1124,
+		gen: 2,
+		evol1: [{ id:210 }]
 	},
 	{	id:210,
 		name: 'Granbull',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2440,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:209 }]
 	},
 	{	id:211,
 		name: 'Qwilfish',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1910,
+		gen: 2
 	},
 	{	id:212,
 		name: 'Scizor',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2801,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:123 }]
 	},
 	{	id:213,
 		name: 'Shuckle',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:300,
+		gen: 2
 	},
 	{	id:214,
 		name: 'Heracross',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:2938,
+		gen: 2
 	},
 	{	id:215,
 		name: 'Sneasel',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1868,
+		gen: 2
 	},
 	{	id:216,
 		name: 'Teddiursa',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1184,
+		gen: 2,
+		evol1: [{ id:217 }]
 	},
 	{	id:217,
 		name: 'Ursaring',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2760,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:216 }]
 	},
 	{	id:218,
 		name: 'Slugma',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:750,
+		gen: 2,
+		evol1: [{ id:219 }]
 	},
 	{	id:219,
 		name: 'Magcargo',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1543,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:218 }]
 	},
 	{	id:220,
 		name: 'Swinub',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:663,
+		gen: 2,
+		evol1: [{ id:221 }]
 	},
 	{	id:221,
 		name: 'Piloswine',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2284,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:220 }]
 	},
 	{	id:222,
 		name: 'Corsola',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1214,
+		gen: 2
 	},
 	{	id:223,
 		name: 'Remoraid',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:749,
+		gen: 2,
+		evol1: [{ id:224 }]
 	},
 	{	id:224,
 		name: 'Octillery',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2124,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:223 }]
 	},
 	{	id:225,
 		name: 'Delibird',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:937,
+		gen: 2
 	},
 	{	id:226,
 		name: 'Mantine',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:2045,
+		gen: 2
 	},
 	{	id:227,
 		name: 'Skarmory',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:2045,
+		gen: 2
 	},
 	{	id:228,
 		name: 'Houndour',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1110,
+		gen: 2,
+		evol1: [{ id:229 }]
 	},
 	{	id:229,
 		name: 'Houndoom',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2529,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:228 }]
 	},
 	{	id:230,
 		name: 'Kingdra',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2424,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:117 }, { id:116 }]
 	},
 	{	id:231,
 		name: 'Phanpy',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1175,
+		gen: 2,
+		evol1: [{ id:232 }]
 	},
 	{	id:232,
 		name: 'Donphan',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:3022,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:231 }]
 	},
 	{	id:233,
 		name: 'Porygon2',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:2546,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:137 }]
 	},
 	{	id:234,
 		name: 'Stantler',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:1988,
+		gen: 2
 	},
 	{	id:235,
 		name: 'Smeargle',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:389,
+		gen: 2
 	},
 	{	id:236,
 		name: 'Tyrogue',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:404,
+		gen: 2,
+		evol1: [{ id:106 }, { id:107 }, { id:237 }]
 	},
 	{	id:237,
 		name: 'Hitmontop',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
-	},*/
-	{	id:238,
-		name: 'Smoochum',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1905,
 		minMulti:0.00,
 		maxMulti:0.00,
 		gen: 2,
-		evol: [{ id: 124 }]
+		preEvol: [{ id:236 }]
+	},
+	{	id:238,
+		name: 'Smoochum',
+		candyDis:5,
+		topCp:1230,
+		gen: 2,
+		evol1: [{ id: 124 }]
 	},
 	{	id:239,
 		name: 'Elekid',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
+		candyDis:5,
+		topCp:1073,
 		gen: 2,
-		evol: [{ id: 125 }]
+		evol1: [{ id: 125 }]
 	},
 	{	id:240,
 		name: 'Magby',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
+		candyDis:5,
+		topCp:1178,
 		gen: 2,
-		evol: [{ id: 126}]
+		evol1: [{ id: 126}]
 	},
-	/*{	id:241,
+	{	id:241,
 		name: 'Miltank',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:2325,
+		gen: 2
 	},
 	{	id:242,
 		name: 'Blissey',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:3349,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:113 }]
 	},
 	{	id:243,
 		name: 'Raikou',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:3412,
+		gen: 2
 	},
 	{	id:244,
 		name: 'Entei',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:3412,
+		gen: 2
 	},
 	{	id:245,
 		name: 'Suicune',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:2823,
+		gen: 2
 	},
 	{	id:246,
 		name: 'Larvitar',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:904,
+		gen: 2,
+		evol1: [{ id:247 }],
+		evol2: [{ id:248 }]
 	},
 	{	id:247,
 		name: 'Pupitar',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:1608,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		evol1: [{ id:246 }],
+		preEvol: [{ id:248 }]
 	},
 	{	id:248,
 		name: 'Tyranitar',
-		candyDis:1000,
-		topCp:1000,
+		candyDis:0,
+		topCp:3670,
 		minMulti:0.00,
 		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		gen: 2,
+		preEvol: [{ id:247 }, { id:246 }]
 	},
 	{	id:249,
 		name: 'Lugia',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:3598,
+		gen: 2
 	},
 	{	id:250,
 		name: 'Ho-Oh',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
+		candyDis:0,
+		topCp:4650,
+		gen: 2
 	},
 	{	id:251,
 		name: 'Celebi',
-		candyDis:1000,
-		topCp:1000,
-		minMulti:0.00,
-		maxMulti:0.00,
-		evol: [{ id: }, { id: }]
-	}*/
+		candyDis:0,
+		topCp:3090,
+		gen: 2
+	}
 ];

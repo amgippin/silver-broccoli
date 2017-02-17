@@ -5,6 +5,71 @@
 	</div>
 	<div style="display:inline-block; width:150px; vertical-align:top;" >
 		<h1>{{selPokemon.name}}</h1>
+		<div *ngFor="let poke of pokeArray">
+			{{poke.name}}
+			{{poke.cp}}
+		</div>
 		
+		<table>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Cp</th>
+				<th>Evol #1</th>
+				<th>Evol #2</th>
+				<th>PreEvol #1</th>
+				<th>PreEvol #2</th>
+			</tr>
+			<tr *ngFor="let poke of pokeArray; let i = index;">
+				<td>{{poke.id}}</td>
+				<td>{{poke.name}}</td>
+				<td><input style="width:80px;" type="number" min="0" max="9999" [(ngModel)]="poke.cp" (keyup)="cpCalc(poke)" (change)="cpCalc(poke)"></td>
+				<td>
+					<div *ngFor="let temp of poke['evol1']" class="micro-button">
+						<div *ngIf="poke.cp">{{temp.name}}</div>
+						<div *ngIf="poke.cp">{{temp.minCp}}-{{temp.maxCp}}</div>
+					</div>
+				</td>
+				<td>
+					<div *ngFor="let temp of poke['evol2']" class="micro-button">
+						<div *ngIf="poke.cp">{{temp.name}}</div>
+						<div *ngIf="poke.cp">{{temp.minCp}}-{{temp.maxCp}}</div>
+					</div>
+				</td>
+				<td>
+					<div *ngIf="poke.cp && poke.preEvol && poke.preEvol.length > 0" class="micro-button">
+						<div>{{poke.preEvol[0].name}}</div>
+						<div>{{poke.preEvol[0].minCp}}</div>
+					</div>
+				</td>
+				<td>
+					<div *ngIf="poke.cp && poke.preEvol && poke.preEvol.length == 2" class="micro-button">
+						<div>{{poke.preEvol[1].name}}</div>
+						<div>{{poke.preEvol[1].minCp}}</div>
+					</div>
+				</td>
+				<td>
+					<div class="btn-group" style="display: inline-block;">
+						<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Perfect">Perfect</label>
+						<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Strong">Strong</label>
+						<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Decent">Decent</label>
+						<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.battleAppraise" btnRadio="Improvement">Improve</label>
+					</div>
+				</td>
+				<td>
+					<div class="btn-group" style="display: inline-block;">
+						<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.statAppraise.Attack" btnCheckbox>Attack</label>
+						<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.statAppraise.Defense" btnCheckbox>Defense</label>
+						<label class="btn btn-sm btn-primary micro-button" [(ngModel)]="poke.statAppraise.Stamina" btnCheckbox>Stamina</label>
+					</div>
+				</td>
+				<td>
+					<div style="display: inline-block;" *ngIf="filterFlag != 'selected'">
+						<button class="btn btn-sm btn-success micro-button" (click)="addRow(poke.id, i)">+</button>
+						<button class="btn btn-sm btn-danger micro-button" (click)="removeRow(i)" *ngIf="poke.new">-</button>
+					</div>
+				</td>
+			</tr>
+		</table>
 	</div>
 </div>

@@ -32,17 +32,17 @@ export class ExcelComponent {
 		if (!newPoke.statAppraise) { newPoke.statAppraise = {Attack: false, Defence: false, Stamina: false} }
 		newPoke.new = true;
 		this.pokemonInventory.splice(+index+1, 0, newPoke);
-		
-		//this.pokemonInventory.splice(+i, 0, poke);
 	}
+	
 	cpCalc(pokemon) {
 		if(pokemon.cp < 0 || pokemon.cp > 9999) { 
 			pokemon.cp = null; 
 			
 			//TODO: Better Warning
 			window.alert('invalid input');
+		} else {
+			this.pokeSrv.cpCalc(pokemon);
 		}
-		this.pokeSrv.cpCalc(pokemon);
 	}
 
 	removeRow(index) {

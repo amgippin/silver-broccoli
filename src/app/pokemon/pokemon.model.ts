@@ -6,8 +6,10 @@ export class pokemon {
 
 	candy?: number;
 	candyHave?: number;
-	cp?: number;
-	evol?: any;
+	cp?: number;	
+	evol1?: any;
+	evol2?: any;
+	
 	gen?: number;
 	preEvol?: any;
 	extra?: pokemon[];

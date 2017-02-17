@@ -4,11 +4,10 @@ import { POKEMON } from './pokemon.list';
 
 @Injectable()
 export class PokemonService {
-	private pokemonList = JSON.parse(JSON.stringify(POKEMON));
 	private pokedex = new Map<number, pokemon>();
 	
 	getPokemonFreshInventory(): pokemon[] {
-		return this.pokemonList;
+		return JSON.parse(JSON.stringify(POKEMON));
 	}
 	
 	getPokedex(): Map<number, pokemon> {
@@ -36,18 +35,20 @@ export class PokemonService {
 	}
 	
 	cpCalc(pokemon) {
-		if (pokemon.evol && pokemon.evol.length === 1 ) {
-			pokemon.evol[0].name = this.pokedex.get(pokemon.evol[0].id).name;
-			pokemon.evol[0].minCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[0].id).minMulti);
-			pokemon.evol[0].maxCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[0].id).maxMulti);
-		} else if (pokemon.evol && pokemon.evol.length === 2) {
-			pokemon.evol[0].name = this.pokedex.get(pokemon.evol[0].id).name;
-			pokemon.evol[0].minCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[0].id).minMulti);
-			pokemon.evol[0].maxCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol[0].id).maxMulti);
+		if(pokemon.evol1) {
+			for(var i = 0; i < pokemon.evol1.length; i++){
+				pokemon.evol1[i].name = this.pokedex.get(pokemon.evol1[i].id).name;
+				pokemon.evol1[i].minCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol1[i].id).minMulti);
+				pokemon.evol1[i].maxCp = Math.floor(pokemon.cp * this.pokedex.get(pokemon.evol1[i].id).maxMulti);
+			}
 			
-			pokemon.evol[1].name = this.pokedex.get(pokemon.evol[1].id).name;
-			pokemon.evol[1].minCp = Math.floor(pokemon.evol[0].minCp * this.pokedex.get(pokemon.evol[1].id).minMulti);
-			pokemon.evol[1].maxCp = Math.floor(pokemon.evol[0].maxCp * this.pokedex.get(pokemon.evol[1].id).maxMulti);
+			if(pokemon.evol2) {
+				for(var i = 0; i < pokemon.evol2.length; i++){
+					pokemon.evol2[i].name = this.pokedex.get(pokemon.evol2[i].id).name;
+					pokemon.evol2[i].minCp = Math.floor(pokemon.evol1[0].minCp * this.pokedex.get(pokemon.evol2[i].id).minMulti);
+					pokemon.evol2[i].maxCp = Math.floor(pokemon.evol1[0].maxCp * this.pokedex.get(pokemon.evol2[i].id).maxMulti);
+				}
+			}
 		}
 		
 		if (pokemon.preEvol && pokemon.preEvol.length === 1 ) {
@@ -60,5 +61,8 @@ export class PokemonService {
 			pokemon.preEvol[1].name = this.pokedex.get(pokemon.preEvol[1].id).name;
 			pokemon.preEvol[1].minCp = Math.ceil(pokemon.cp/this.pokedex.get(pokemon.preEvol[0].id).minMulti/pokemon.minMulti);
 		}
+		
+		
+		
 	}
 }

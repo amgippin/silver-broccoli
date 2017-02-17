@@ -18,15 +18,15 @@
 		<td>{{poke.name}}</td>
 		<td><input style="width:80px;" type="number" min="0" max="9999" [(ngModel)]="poke.cp" (keyup)="cpCalc(poke)" (change)="cpCalc(poke)"></td>
 		<td>
-			<div *ngIf="poke.cp && poke.evol && poke.evol.length > 0" class="micro-button">
-				<div>{{poke.evol[0].name}}</div>
-				<div>{{poke.evol[0].minCp}}-{{poke.evol[0].maxCp}}</div>
+			<div *ngFor="let temp of poke['evol1']" class="micro-button">
+				<div *ngIf="poke.cp">{{temp.name}}</div>
+				<div *ngIf="poke.cp">{{temp.minCp}}-{{temp.maxCp}}</div>
 			</div>
 		</td>
 		<td>
-			<div *ngIf="poke.cp && poke.evol && poke.evol.length == 2" class="micro-button">
-				<div>{{poke.evol[1].name}}</div>
-				<div>{{poke.evol[1].minCp}}-{{poke.evol[1].maxCp}}</div>
+			<div *ngFor="let temp of poke['evol2']" class="micro-button">
+				<div *ngIf="poke.cp">{{temp.name}}</div>
+				<div *ngIf="poke.cp">{{temp.minCp}}-{{temp.maxCp}}</div>
 			</div>
 		</td>
 		<td>
