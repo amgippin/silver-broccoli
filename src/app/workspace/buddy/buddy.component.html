@@ -23,19 +23,19 @@
 			<td>{{poke.name}}</td>
 			<td><input type="number" [(ngModel)]="poke.candyHave" (keyup)="candyInput(poke)" (change)="candyInput(poke)"></td>
 			<td>
-				<div *ngIf="poke.candyHave && poke.evol && poke.evol.length > 0" class="micro-button">
-					<div>{{poke.evol[0].name}}</div>
-					<div>Candy Needed: {{poke.evol[0].candyNeed}}</div>
-					<div>Max Catches: {{poke.evol[0].catchNeed}}</div>
-					<div>Distance (km): {{poke.evol[0].disNeed}}</div>
+				<div *ngFor="let temp of poke['evol1']" class="micro-button">
+					<div *ngIf="poke.candyHave">{{temp.name}}</div>
+					<div *ngIf="poke.candyHave">Candy Needed: {{temp.candyNeed}}</div>
+					<div *ngIf="poke.candyHave">Max Catches: {{temp.catchNeed}}</div>
+					<div *ngIf="poke.candyHave">Distance (km): {{temp.disNeed}}</div>
 				</div>
 			</td>
 			<td>
-				<div *ngIf="poke.candyHave && poke.evol && poke.evol.length === 2" class="micro-button">
-					<div>{{poke.evol[1].name}}</div>
-					<div>Candy Needed: {{poke.evol[1].candyNeed}}</div>
-					<div>Max Catches: {{poke.evol[1].catchNeed}}</div>
-					<div>Distance (km): {{poke.evol[1].disNeed}}</div>
+				<div *ngFor="let temp of poke['evol2']" class="micro-button">
+					<div *ngIf="poke.candyHave">{{temp.name}}</div>				
+					<div *ngIf="poke.candyHave">Candy Needed: {{temp.candyNeed}}</div>
+					<div *ngIf="poke.candyHave">Max Catches: {{temp.catchNeed}}</div>
+					<div *ngIf="poke.candyHave">Distance (km): {{temp.disNeed}}</div>
 				</div>
 			</td>
 		</tr>

@@ -9,7 +9,7 @@ import { PokemonService } from '../pokemon/pokemon.service';
   templateUrl: 'app/workspace/workspace.component.html'
 })
 export class WorkspaceComponent {	
-	public radioModel: string = 'cp';
+	public radioModel: string = 'buddy'; // buddy, cp
 	public pokemonInventory: pokemon[] = [];
 	
 	constructor(private pokeSrv: PokemonService) { }

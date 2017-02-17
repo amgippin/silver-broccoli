@@ -19,17 +19,23 @@ export class PokemonService {
 	}
 
 	candyInput(pokemon) {
-		for (let i in pokemon.evol) {
-			pokemon.evol[i].name = this.pokedex.get(pokemon.evol[i].id).name;
+		if(pokemon.evol1) {
+			for(var i = 0; i < pokemon.evol1.length; i++){
+				pokemon.evol1[i].name = this.pokedex.get(pokemon.evol1[i].id).name;
+				
+				pokemon.evol1[i].candyNeed = pokemon.candy - pokemon.candyHave;
+				pokemon.evol1[i].catchNeed = Math.ceil(pokemon.evol1[i].candyNeed/3);
+				pokemon.evol1[i].disNeed = pokemon.evol1[i].candyNeed * this.pokedex.get(pokemon.evol1[i].id).candyDis;
+			}
 			
-			if ( +i === 0 ) {
-				pokemon.evol[i].candyNeed = pokemon.candy - pokemon.candyHave;
-				pokemon.evol[i].catchNeed = Math.ceil(pokemon.evol[i].candyNeed/3);
-				pokemon.evol[i].disNeed = pokemon.evol[i].candyNeed * this.pokedex.get(pokemon.evol[i].id).candyDis;
-			} else if ( +i > 0 ) {
-				pokemon.evol[i].candyNeed = this.pokedex.get(pokemon.evol[+i-1].id).candy - pokemon.candyHave;
-				pokemon.evol[i].catchNeed = Math.ceil(pokemon.evol[i].candyNeed/3);
-				pokemon.evol[i].disNeed = pokemon.evol[i].candyNeed * this.pokedex.get(pokemon.evol[i].id).candyDis;
+			if(pokemon.evol2) {
+				for(var i = 0; i < pokemon.evol2.length; i++){
+					pokemon.evol2[i].name = this.pokedex.get(pokemon.evol2[i].id).name;
+					
+					pokemon.evol2[i].candyNeed = this.pokedex.get(pokemon.evol1[0].id).candy - pokemon.candyHave;
+					pokemon.evol2[i].catchNeed = Math.ceil(pokemon.evol2[i].candyNeed/3);
+					pokemon.evol2[i].disNeed = pokemon.evol2[i].candyNeed * this.pokedex.get(pokemon.evol2[i].id).candyDis;
+				}
 			}
 		}
 	}
