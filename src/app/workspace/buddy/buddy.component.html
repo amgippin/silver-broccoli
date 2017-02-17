@@ -2,42 +2,45 @@
 	<label class="btn btn-sm btn-success" [(ngModel)]="radioModel" btnRadio="1">Gen 1</label>
 	<label class="btn btn-sm btn-success" [(ngModel)]="radioModel" btnRadio="2">Gen 2</label>
 </div>
-<div style="padding-top: 15px;">
-	<label style="width:90px;" *ngFor="let poke of pokemonInventory | filterGen:radioModel" 
-		class="btn btn-sm btn-primary micro-button" 
-		(click)="selectPoke(poke)" 
-		[(ngModel)]="poke.selected"
-		btnCheckbox>{{poke.id}}: {{poke.name}}</label>
-</div>
-<div>
-	<table>
-		<tr>
-			<th></th>
-			<th class="name-width">Name</th>
-			<th>How many candy do you have?</th>
-			<th>Evol 1</th>
-			<th>Evol 2</th>
-		</tr>
-		<tr *ngFor="let poke of buddyList" style="height:60px;">
-			<td style="margin-top: 18px" class="btn btn-sm btn-danger micro-button" (click)="removePokemon(poke)">-</td>
-			<td>{{poke.name}}</td>
-			<td><input type="number" [(ngModel)]="poke.candyHave" (keyup)="candyInput(poke)" (change)="candyInput(poke)"></td>
-			<td>
-				<div *ngFor="let temp of poke['evol1']" class="micro-button">
-					<div *ngIf="poke.candyHave">{{temp.name}}</div>
-					<div *ngIf="poke.candyHave">Candy Needed: {{temp.candyNeed}}</div>
-					<div *ngIf="poke.candyHave">Max Catches: {{temp.catchNeed}}</div>
-					<div *ngIf="poke.candyHave">Distance (km): {{temp.disNeed}}</div>
-				</div>
-			</td>
-			<td>
-				<div *ngFor="let temp of poke['evol2']" class="micro-button">
-					<div *ngIf="poke.candyHave">{{temp.name}}</div>				
-					<div *ngIf="poke.candyHave">Candy Needed: {{temp.candyNeed}}</div>
-					<div *ngIf="poke.candyHave">Max Catches: {{temp.catchNeed}}</div>
-					<div *ngIf="poke.candyHave">Distance (km): {{temp.disNeed}}</div>
-				</div>
-			</td>
-		</tr>
-	</table>
+<div style="padding-top: 15px;">	
+	<div class="sidebar">
+		<div style="width:100%" *ngFor="let poke of pokemonInventory | filterGen:radioModel" 
+			[ngClass]="{selected: poke.selected}"
+			(click)="selectPoke(poke)">
+			{{poke.id}}: {{poke.name}}
+		</div>
+	</div>
+	
+	<div style="display:inline-block;vertical-align:top;">
+		<table>
+			<tr>
+				<th></th>
+				<th class="name-width">Name</th>
+				<th>How many candy do you have?</th>
+				<th>Evol 1</th>
+				<th>Evol 2</th>
+			</tr>
+			<tr *ngFor="let poke of buddyList" style="height:60px;">
+				<td style="margin-top: 18px" class="btn btn-sm btn-danger micro-button" (click)="removePokemon(poke)">-</td>
+				<td>{{poke.name}}</td>
+				<td><input type="number" [(ngModel)]="poke.candyHave" (keyup)="candyInput(poke)" (change)="candyInput(poke)"></td>
+				<td *ngIf="poke.candyHave > -1">
+					<div *ngFor="let temp of poke['evol1']" class="micro-button">
+						<div>{{temp.name}}</div>
+						<div>Candy Needed: {{temp.candyNeed}}</div>
+						<div>Max Catches: {{temp.catchNeed}}</div>
+						<div>Distance (km): {{temp.disNeed}}</div>
+					</div>
+				</td>
+				<td *ngIf="poke.candyHave > -1">
+					<div *ngFor="let temp of poke['evol2']" class="micro-button">
+						<div>{{temp.name}}</div>				
+						<div>Candy Needed: {{temp.candyNeed}}</div>
+						<div>Max Catches: {{temp.catchNeed}}</div>
+						<div>Distance (km): {{temp.disNeed}}</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
 </div>

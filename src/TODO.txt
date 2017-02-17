@@ -14,3 +14,6 @@ https://github.com/valor-software/ng2-bootstrap/tree/development/demo
 
 Helpful:
 http://www.typescriptlang.org/play/index.html
+
+
+- Make sidebar component

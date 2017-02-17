@@ -12,9 +12,7 @@ import { SearchFilterPipe } from './search.pipe';
 export class SingleComponent implements OnInit {	
 	@Input() pokemonInventory: pokemon[];
 	
-	constructor(
-		private pokeSrv: PokemonService,
-	) { }
+	constructor(private pokeSrv: PokemonService) { }
 
 	public readonly pokedex: Map<number, pokemon> = this.pokeSrv.getPokedex();
 	public readonly sidebarList: pokemon[] = this.pokeSrv.getPokemonFreshInventory();

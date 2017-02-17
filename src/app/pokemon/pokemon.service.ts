@@ -19,25 +19,42 @@ export class PokemonService {
 	}
 
 	candyInput(pokemon) {
+		var candyNeed = pokemon.candy;
+		
 		if(pokemon.evol1) {
 			for(var i = 0; i < pokemon.evol1.length; i++){
 				pokemon.evol1[i].name = this.pokedex.get(pokemon.evol1[i].id).name;
+				pokemon.evol1[i].candyNeed = pokemon.candy - pokemon.candyHave;	
 				
-				pokemon.evol1[i].candyNeed = pokemon.candy - pokemon.candyHave;
-				pokemon.evol1[i].catchNeed = Math.ceil(pokemon.evol1[i].candyNeed/3);
-				pokemon.evol1[i].disNeed = pokemon.evol1[i].candyNeed * this.pokedex.get(pokemon.evol1[i].id).candyDis;
+				if(pokemon.evol1[i].candyNeed >= 0) {
+					pokemon.evol1[i].catchNeed = Math.ceil(pokemon.evol1[i].candyNeed/3);
+					pokemon.evol1[i].disNeed = pokemon.evol1[i].candyNeed * this.pokedex.get(pokemon.evol1[i].id).candyDis;
+				} else {
+					pokemon.evol1[i].candyNeed = 0;
+					pokemon.evol1[i].catchNeed = 0;
+					pokemon.evol1[i].disNeed = 0;
+				}
 			}
 			
 			if(pokemon.evol2) {
 				for(var i = 0; i < pokemon.evol2.length; i++){
 					pokemon.evol2[i].name = this.pokedex.get(pokemon.evol2[i].id).name;
 					
-					pokemon.evol2[i].candyNeed = this.pokedex.get(pokemon.evol1[0].id).candy - pokemon.candyHave;
-					pokemon.evol2[i].catchNeed = Math.ceil(pokemon.evol2[i].candyNeed/3);
-					pokemon.evol2[i].disNeed = pokemon.evol2[i].candyNeed * this.pokedex.get(pokemon.evol2[i].id).candyDis;
+					pokemon.evol2[i].candyNeed = pokemon.candy + this.pokedex.get(pokemon.evol1[0].id).candy - pokemon.candyHave;
+
+					if(pokemon.evol2[i].candyNeed >= 0) {
+						pokemon.evol2[i].catchNeed = Math.ceil(pokemon.evol2[i].candyNeed/3);
+						pokemon.evol2[i].disNeed = pokemon.evol2[i].candyNeed * this.pokedex.get(pokemon.evol2[i].id).candyDis;
+					} else {
+						pokemon.evol2[i].candyNeed = 0;
+						pokemon.evol2[i].catchNeed = 0;
+						pokemon.evol2[i].disNeed = 0;
+					}
 				}
 			}
 		}
+		
+		pokemon.candyNeed = candyNeed;
 	}
 	
 	cpCalc(pokemon) {
@@ -67,8 +84,5 @@ export class PokemonService {
 			pokemon.preEvol[1].name = this.pokedex.get(pokemon.preEvol[1].id).name;
 			pokemon.preEvol[1].minCp = Math.ceil(pokemon.cp/this.pokedex.get(pokemon.preEvol[0].id).minMulti/pokemon.minMulti);
 		}
-		
-		
-		
 	}
 }

@@ -11,33 +11,30 @@ import { PokemonService } from '../../pokemon/pokemon.service';
   styleUrls: ['app/workspace/buddy/buddy.css', 'app/workspace/shared.css']
 })
 export class BuddyComponent {
-	constructor(
-		private pokeSrv: PokemonService,
-	) { }
+	constructor(private pokeSrv: PokemonService) { }
 	
 	public radioModel = '1';
 	
 	public buddyList: pokemon[] = [];
 	public readonly pokedex: Map<number, pokemon> = this.pokeSrv.getPokedex();
-	public pokemonInventory: pokemon[] = this.pokeSrv.getPokemonFreshInventory();
+	public pokemonInventory: pokemon[] = this.pokeSrv.getPokemonFreshInventory();	
 	
 	selectPoke(pokemon) {
 		pokemon.selected = !pokemon.selected;
 		
-		if(pokemon.selected) { this.buddyList.push(pokemon) }
-		else { this.removePokemon(pokemon) }
+		if (pokemon.selected) this.buddyList.push(pokemon);
+		else this.removePokemon(pokemon);
 	}
 
 	candyInput(pokemon) {
-		if (pokemon.candyHave < 0) { pokemon.candyHave = 0; }
-	
-		this.pokeSrv.candyInput(pokemon);
+		if(pokemon.candyHave > -1) this.pokeSrv.candyInput(pokemon);
+		else pokemon.candyHave = 0; 
 	}
 	
 	removePokemon(pokemon) {
-		for (let i in this.buddyList) {
-			if (this.buddyList[+i].id === pokemon.id) {
-				this.buddyList.splice(+i, 1);
+		for (var i = 0; i < this.buddyList.length; i++) {
+			if (this.buddyList[i].id === pokemon.id) {
+				this.buddyList.splice(i, 1);
 				pokemon.selected = false;
 				return;
 			}
