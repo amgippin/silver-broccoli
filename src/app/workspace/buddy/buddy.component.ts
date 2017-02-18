@@ -1,9 +1,7 @@
 import { Component, Input } from '@angular/core';
 
-import { FitlerGenPipe } from './buddy.pipe';
 import { pokemon } from '../../pokemon/pokemon.model';
 import { PokemonService } from '../../pokemon/pokemon.service';
-
 
 @Component({
   selector: 'buddy-related',
@@ -17,27 +15,19 @@ export class BuddyComponent {
 	
 	public buddyList: pokemon[] = [];
 	public readonly pokedex: Map<number, pokemon> = this.pokeSrv.getPokedex();
-	public pokemonInventory: pokemon[] = this.pokeSrv.getPokemonFreshInventory();	
+	public pokemonInventory: pokemon[] = this.pokeSrv.getPokemonFreshInventory();
 	
-	selectPoke(pokemon) {
-		pokemon.selected = !pokemon.selected;
-		
-		if (pokemon.selected) this.buddyList.push(pokemon);
-		else this.removePokemon(pokemon);
-	}
-
-	candyInput(pokemon) {
+	onCandyInput(pokemon) {
 		if(pokemon.candyHave > -1) this.pokeSrv.candyInput(pokemon);
-		else pokemon.candyHave = 0; 
+		else pokemon.candyHave = 0;
 	}
 	
-	removePokemon(pokemon) {
-		for (var i = 0; i < this.buddyList.length; i++) {
-			if (this.buddyList[i].id === pokemon.id) {
-				this.buddyList.splice(i, 1);
-				pokemon.selected = false;
-				return;
-			}
-		}
+	onClearList(event) {
+		this.buddyList = [];
+		this.pokemonInventory = this.pokeSrv.getPokemonFreshInventory();
+	}
+	
+	onListUpdate(event) {
+		this.buddyList = event;
 	}
 }

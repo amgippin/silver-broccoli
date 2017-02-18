@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 
 import { pokemon } from '../../../pokemon/pokemon.model';
 import { PokemonService } from '../../../pokemon/pokemon.service';
-import { SearchFilterPipe } from './search.pipe';
 
 @Component({
   selector: 'single-view',
@@ -21,9 +20,7 @@ export class SingleComponent implements OnInit {
 	pokeArray: pokemon[] = [];
 	selPokemon: pokemon = null;
 	
-	ngOnInit() {
-		this.selectPoke(this.sidebarList[0]);
-		
+	ngOnInit() {		
 		for(let poke of this.pokemonInventory) {
 			if(poke.cp) { this.cpCalc(poke); }
 		
@@ -31,14 +28,26 @@ export class SingleComponent implements OnInit {
 		}
 	}
 	
-	addRow(pokemonId, index) {
+	onAdd(pokemonId, index) {
 		var newPoke = JSON.parse(JSON.stringify(this.pokedex.get(pokemonId)));
 		if (!newPoke.statAppraise) { newPoke.statAppraise = {Attack: false, Defence: false, Stamina: false} }
 		newPoke.new = true;
 		this.pokemonInventory.splice(+index+1, 0, newPoke);
 	}
 	
-	cpCalc(pokemon) {
+	onCalc(pokemon) {
+		this.cpCalc(pokemon);
+	}
+	
+	onPokemonSelect(event) {
+		this.selectPoke(event);
+	}
+	
+	onRemove(index) {
+		this.pokemonInventory.splice(index, 1);
+	}
+	
+	private cpCalc(pokemon) {
 		if(pokemon.cp < 0 || pokemon.cp > 9999) { 
 			pokemon.cp = null; 
 			
@@ -47,12 +56,8 @@ export class SingleComponent implements OnInit {
 		}
 		this.pokeSrv.cpCalc(pokemon);
 	}
-
-	removeRow(index) {
-		this.pokemonInventory.splice(index, 1);
-	}
 	
-	selectPoke(pokemon) {
+	private selectPoke(pokemon) {
 		var result = []
 		this.selPokemon = pokemon;
 		
@@ -67,3 +72,4 @@ export class SingleComponent implements OnInit {
 		this.pokeArray = result;
 	}
 }
+

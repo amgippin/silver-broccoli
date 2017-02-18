@@ -1,16 +1,3 @@
 .micro-button {
 	font-size:10px;
 }
-
-.selected {
-	background-color:red;
-}
-
-.sidebar {
-	border:solid black 1px; 
-	display:inline-block; 
-	height:90%; 
-	overflow-y:scroll;
-	width:120px; 
-}
-

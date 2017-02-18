@@ -1,30 +1,23 @@
-<div class="btn-group" style="display: inline-block;">
-	<label class="btn btn-sm btn-success" [(ngModel)]="radioModel" btnRadio="1">Gen 1</label>
-	<label class="btn btn-sm btn-success" [(ngModel)]="radioModel" btnRadio="2">Gen 2</label>
-</div>
 <div style="padding-top: 15px;">	
-	<div class="sidebar">
-		<div style="width:100%" *ngFor="let poke of pokemonInventory | filterGen:radioModel" 
-			[ngClass]="{selected: poke.selected}"
-			(click)="selectPoke(poke)">
-			{{poke.id}}: {{poke.name}}
-		</div>
-	</div>
+	<sidebar 
+		[inputList]="pokemonInventory"
+		[returnList]="true"
+		(clearList)="onClearList($event)"
+		(outputList)="onListUpdate($event)">
+	</sidebar>
 	
 	<div style="display:inline-block;vertical-align:top;">
 		<table>
 			<tr>
-				<th></th>
-				<th class="name-width">Name</th>
+				<th>Name</th>
 				<th>How many candy do you have?</th>
 				<th>Evol 1</th>
 				<th>Evol 2</th>
 			</tr>
 			<tr *ngFor="let poke of buddyList" style="height:60px;">
-				<td style="margin-top: 18px" class="btn btn-sm btn-danger micro-button" (click)="removePokemon(poke)">-</td>
-				<td>{{poke.name}}</td>
-				<td><input type="number" [(ngModel)]="poke.candyHave" (keyup)="candyInput(poke)" (change)="candyInput(poke)"></td>
-				<td *ngIf="poke.candyHave > -1">
+				<td class="name-width">{{poke.name}}</td>
+				<td><input type="number" [(ngModel)]="poke.candyHave" (keyup)="onCandyInput(poke)" (change)="onCandyInput(poke)"></td>
+				<td style="width:90px;" *ngIf="poke.candyHave > -1">
 					<div *ngFor="let temp of poke['evol1']" class="micro-button">
 						<div>{{temp.name}}</div>
 						<div>Candy Needed: {{temp.candyNeed}}</div>
@@ -32,7 +25,7 @@
 						<div>Distance (km): {{temp.disNeed}}</div>
 					</div>
 				</td>
-				<td *ngIf="poke.candyHave > -1">
+				<td style="width:90px;" *ngIf="poke.candyHave > -1">
 					<div *ngFor="let temp of poke['evol2']" class="micro-button">
 						<div>{{temp.name}}</div>				
 						<div>Candy Needed: {{temp.candyNeed}}</div>

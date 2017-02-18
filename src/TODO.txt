@@ -15,5 +15,14 @@ https://github.com/valor-software/ng2-bootstrap/tree/development/demo
 Helpful:
 http://www.typescriptlang.org/play/index.html
 
+- Clean up/seperate pokemon model
+- Candy input has two service calls
+- CP input has two service calls
+- Correct Workspace scrolling
+- Detailed View Update
 
-- Make sidebar component
+- Sidebar Component
+	- List height
+	- On remove reset stuff
+	- Sort
+		- Search
