@@ -102,7 +102,7 @@ export const POKEMON: pokemon[] = [
 		name:'Metapod',
 		candyDis:1,
 		topCp:357,
-		candy:25,
+		candy:50,
 		minMulti:0.94,
 		maxMulti:1.09,
 		gen: 1,
@@ -131,7 +131,7 @@ export const POKEMON: pokemon[] = [
 		name:'Kakuna',
 		candyDis:1,
 		topCp:392,
-		candy:25,
+		candy:50,
 		minMulti:0.88,
 		maxMulti:0.97,
 		gen: 1,
@@ -160,7 +160,7 @@ export const POKEMON: pokemon[] = [
 		name:'Pidgeotto',
 		candyDis:1,
 		topCp:1085,
-		candy:25,
+		candy:50,
 		minMulti:1.62,
 		maxMulti:2.17,
 		gen: 1,
@@ -197,7 +197,7 @@ export const POKEMON: pokemon[] = [
 		name:'Spearow',
 		candyDis:1,
 		topCp:673,
-		candy:25,
+		candy:50,
 		gen: 1,
 		evol1: [{ id:22 }]
 	},		
@@ -214,7 +214,7 @@ export const POKEMON: pokemon[] = [
 		name:'Ekans',
 		candyDis:3,
 		topCp:778,
-		candy:25,
+		candy:50,
 		gen: 1,
 		evol1: [{ id:24 }]
 	},		
@@ -231,7 +231,7 @@ export const POKEMON: pokemon[] = [
 		name:'Pikachu',
 		candyDis:1,
 		topCp:787,
-		candy:25,
+		candy:50,
 		minMulti:1.89,
 		maxMulti:2.43,
 		gen: 1,
@@ -251,7 +251,7 @@ export const POKEMON: pokemon[] = [
 		name:'Sandshrew',
 		candyDis:3,
 		topCp:1194,
-		candy:25,
+		candy:50,
 		gen: 1,
 		evol1: [{ id:28 }]
 	},		
@@ -392,6 +392,7 @@ export const POKEMON: pokemon[] = [
 		name:'Golbat',
 		candyDis:1,
 		topCp:1830,
+		candy:100,
 		minMulti:2.74,
 		maxMulti:3.89,
 		gen: 1,
@@ -866,6 +867,7 @@ export const POKEMON: pokemon[] = [
 		name:'Onix',
 		candyDis:5,
 		topCp:1002,
+		candy:50,
 		gen: 1,
 		evol1: [{ id:208 }]
 	},		
@@ -1016,6 +1018,7 @@ export const POKEMON: pokemon[] = [
 		name:'Chansey',
 		candyDis:5,
 		topCp:1469,
+		candy: 50,
 		gen: 1,
 		evol1: [{ id:242 }]
 	},		
@@ -1035,7 +1038,7 @@ export const POKEMON: pokemon[] = [
 		name:'Horsea',
 		candyDis:3,
 		topCp:921,
-		candy:50,
+		candy:25,
 		gen: 1,
 		evol1: [{ id:117 }],
 		evol2: [{ id:230}]
@@ -1044,6 +1047,7 @@ export const POKEMON: pokemon[] = [
 		name:'Seadra',
 		candyDis:3,
 		topCp:1979,
+		candy:100,
 		minMulti:1.77,
 		maxMulti:2.47,
 		gen: 1,
@@ -1094,6 +1098,7 @@ export const POKEMON: pokemon[] = [
 		name:'Scyther',
 		candyDis:5,
 		topCp:2464,
+		candy: 50,
 		gen: 1,
 		evol1: [{ id:212 }]
 	},		
@@ -1200,6 +1205,7 @@ export const POKEMON: pokemon[] = [
 		name:'Porygon',
 		candyDis:3,
 		topCp:1567,
+		candy: 50,
 		gen: 1,
 		evol1: [{ id:233 }]
 	},		
@@ -1312,7 +1318,8 @@ export const POKEMON: pokemon[] = [
 		name: 'Chikorita',
 		candyDis:3,
 		topCp:771,
-		gen: 2,
+		candy:25,
+		gen:2,
 		evol1: [{ id:153 }],
 		evol2: [{ id:154 }]
 	},
@@ -1320,6 +1327,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Bayleef',
 		candyDis:3,
 		topCp:1296,
+		candy:50,
 		minMulti:1.35,
 		maxMulti:1.87,
 		gen: 2,
@@ -1339,6 +1347,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Cyndaquil',
 		candyDis:3,
 		topCp:831,
+		candy:25,
 		gen: 2,
 		evol1: [{ id:156 }],
 		evol2: [{ id:157 }]
@@ -1347,6 +1356,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Quilava',
 		candyDis:3,
 		topCp:1484,
+		candy:100,
 		minMulti:1.55,
 		maxMulti:1.99,
 		gen: 2,
@@ -1366,6 +1376,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Totodile',
 		candyDis:3,
 		topCp:1011,
+		candy:25,
 		gen: 2,
 		evol1: [{ id:159 }],
 		evol2: [{ id:160 }]
@@ -1374,6 +1385,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Croconaw',
 		candyDis:3,
 		topCp:1598,
+		candy:100,
 		minMulti:1.19,
 		maxMulti:1.77,
 		gen: 2,
@@ -1393,6 +1405,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Sentret',
 		candyDis:1,
 		topCp:519,
+		candy:25,
 		gen: 2,
 		evol1: [{ id:162 }]
 	},
@@ -1409,6 +1422,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Hoothoot',
 		candyDis:1,
 		topCp:640,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:164 }]
 	},
@@ -1425,6 +1439,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Ledyba',
 		candyDis:1,
 		topCp:663,
+		candy:25,
 		gen: 2,
 		evol1: [{ id:166 }]
 	},
@@ -1441,6 +1456,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Spinarak',
 		candyDis:1,
 		topCp:685,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:168 }]
 	},
@@ -1466,6 +1482,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Chinchou',
 		candyDis:3,
 		topCp:1067,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:171 }]
 	},
@@ -1482,6 +1499,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Pichu',
 		candyDis:1,
 		topCp:376,
+		candy:25,
 		gen: 2,
 		evol1: [{ id: 25 }],
 		evol2: [{ id: 26 }]
@@ -1490,6 +1508,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Cleffa',
 		candyDis:1,
 		topCp:620,
+		candy:25,
 		gen: 2,
 		evol1: [{ id: 35 }],
 		evol2: [{ id: 36 }]
@@ -1498,6 +1517,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Igglybuff',
 		candyDis:1,
 		topCp:512,
+		candy:25,
 		gen: 2,
 		evol1: [{ id: 39 }],
 		evol2: [{ id: 40 }]
@@ -1506,6 +1526,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Togepi',
 		candyDis:3,
 		topCp:540,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:176 }]
 	},
@@ -1522,6 +1543,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Natu',
 		candyDis:3,
 		topCp:925,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:178 }]
 	},
@@ -1538,6 +1560,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Mareep',
 		candyDis:5,
 		topCp:887,
+		candy:25,
 		gen: 2,
 		evol1: [{ id:180 }],
 		evol2: [{ id:181 }]
@@ -1546,6 +1569,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Flaaffy',
 		candyDis:5,
 		topCp:1402,
+		candy:100,
 		minMulti:1.25,
 		maxMulti:1.70,
 		gen: 2,
@@ -1574,6 +1598,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Marill',
 		candyDis:3,
 		topCp:420,
+		candy:25,
 		gen: 2,
 		evol1: [{ id:184 }]
 	},
@@ -1605,6 +1630,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Hoppip',
 		candyDis:3,
 		topCp:508,
+		candy:25,
 		gen: 2,
 		evol1: [{ id:188 }],
 		evol2: [{ id:189 }]
@@ -1613,6 +1639,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Skiploom',
 		candyDis:3,
 		topCp:882,
+		candy:100,
 		minMulti:1.58,
 		maxMulti:1.91,
 		gen: 2,
@@ -1638,6 +1665,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Sunkern',
 		candyDis:3,
 		topCp:316,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:192 }]
 	},
@@ -1660,6 +1688,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Wooper',
 		candyDis:3,
 		topCp:596,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:195 }]
 	},
@@ -1733,6 +1762,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Pineco',
 		candyDis:5,
 		topCp:1045,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:205 }]
 	},
@@ -1770,6 +1800,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Snubbull',
 		candyDis:3,
 		topCp:1124,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:210 }]
 	},
@@ -1819,6 +1850,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Teddiursa',
 		candyDis:3,
 		topCp:1184,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:217 }]
 	},
@@ -1835,6 +1867,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Slugma',
 		candyDis:1,
 		topCp:750,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:219 }]
 	},
@@ -1851,6 +1884,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Swinub',
 		candyDis:3,
 		topCp:663,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:221 }]
 	},
@@ -1873,6 +1907,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Remoraid',
 		candyDis:1,
 		topCp:749,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:224 }]
 	},
@@ -1907,6 +1942,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Houndour',
 		candyDis:3,
 		topCp:1110,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:229 }]
 	},
@@ -1932,6 +1968,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Phanpy',
 		candyDis:3,
 		topCp:1175,
+		candy:50,
 		gen: 2,
 		evol1: [{ id:232 }]
 	},
@@ -1969,6 +2006,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Tyrogue',
 		candyDis:5,
 		topCp:404,
+		candy:25,
 		gen: 2,
 		evol1: [{ id:106 }, { id:107 }, { id:237 }]
 	},
@@ -1985,6 +2023,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Smoochum',
 		candyDis:5,
 		topCp:1230,
+		candy:25,
 		gen: 2,
 		evol1: [{ id: 124 }]
 	},
@@ -1992,6 +2031,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Elekid',
 		candyDis:5,
 		topCp:1073,
+		candy:25,
 		gen: 2,
 		evol1: [{ id: 125 }]
 	},
@@ -1999,6 +2039,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Magby',
 		candyDis:5,
 		topCp:1178,
+		candy:25,
 		gen: 2,
 		evol1: [{ id: 126}]
 	},
@@ -2039,6 +2080,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Larvitar',
 		candyDis:5,
 		topCp:904,
+		candy:25,
 		gen: 2,
 		evol1: [{ id:247 }],
 		evol2: [{ id:248 }]
@@ -2047,6 +2089,7 @@ export const POKEMON: pokemon[] = [
 		name: 'Pupitar',
 		candyDis:5,
 		topCp:1608,
+		candy:100,
 		minMulti:1.44,
 		maxMulti:1.98,
 		gen: 2,
