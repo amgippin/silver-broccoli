@@ -1,0 +1,3731 @@
+[{
+		"id": 1,
+		"name": "Bulbasaur",
+		"candyDis": 3,
+		"topcp": 981,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 2
+		}],
+		"evol2": [{
+			"id": 3
+		}],
+		"cp": 100,
+		"bStamina": 90,
+		"bAttack": 118,
+		"bDefense": 118
+	},
+	{
+		"id": 2,
+		"name": "Ivysaur",
+		"candyDis": 3,
+		"topcp": 1552,
+		"candy": 100,
+		"minMulti": 1.15,
+		"maxMulti": 1.71,
+		"gen": 1,
+		"evol1": [{
+			"id": 3
+		}],
+		"preEvol": [{
+			"id": 1
+		}],
+		"bStamina": 120,
+		"bAttack": 151,
+		"bDefense": 151
+	},
+	{
+		"id": 3,
+		"name": "Venusaur",
+		"candyDis": 3,
+		"topcp": 2568,
+		"minMulti": 1.13,
+		"maxMulti": 1.97,
+		"gen": 1,
+		"preEvol": [{
+			"id": 2
+		}, {
+			"id": 1
+		}],
+		"bStamina": 160,
+		"bAttack": 198,
+		"bDefense": 198
+	},
+	{
+		"id": 4,
+		"name": "Charmander",
+		"candyDis": 3,
+		"topcp": 831,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 5
+		}],
+		"evol2": [{
+			"id": 6
+		}],
+		"bStamina": 78,
+		"bAttack": 116,
+		"bDefense": 96
+	},
+	{
+		"id": 5,
+		"name": "Charmeleon",
+		"candyDis": 3,
+		"topcp": 1484,
+		"candy": 100,
+		"minMulti": 1.55,
+		"maxMulti": 1.99,
+		"gen": 1,
+		"evol1": [{
+			"id": 6
+		}],
+		"preEvol": [{
+			"id": 4
+		}],
+		"bStamina": 116,
+		"bAttack": 158,
+		"bDefense": 129
+	},
+	{
+		"id": 6,
+		"name": "Charizard",
+		"candyDis": 3,
+		"topcp": 2686,
+		"minMulti": 1.19,
+		"maxMulti": 2.06,
+		"gen": 1,
+		"preEvol": [{
+			"id": 5
+		}, {
+			"id": 4
+		}],
+		"bStamina": 156,
+		"bAttack": 223,
+		"bDefense": 176
+	},
+	{
+		"id": 7,
+		"name": "Squirtle",
+		"candyDis": 3,
+		"topcp": 808,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 8
+		}],
+		"evol2": [{
+			"id": 9
+		}],
+		"bStamina": 88,
+		"bAttack": 94,
+		"bDefense": 122
+	},
+	{
+		"id": 8,
+		"name": "Wartortle",
+		"candyDis": 3,
+		"topcp": 1324,
+		"candy": 100,
+		"minMulti": 1.38,
+		"maxMulti": 1.75,
+		"gen": 1,
+		"evol1": [{
+			"id": 9
+		}],
+		"preEvol": [{
+			"id": 7
+		}],
+		"bStamina": 118,
+		"bAttack": 126,
+		"bDefense": 155
+	},
+	{
+		"id": 9,
+		"name": "Blastoise",
+		"candyDis": 3,
+		"topcp": 2291,
+		"minMulti": 1.36,
+		"maxMulti": 2.03,
+		"gen": 1,
+		"preEvol": [{
+			"id": 8
+		}, {
+			"id": 7
+		}],
+		"bStamina": 158,
+		"bAttack": 171,
+		"bDefense": 210
+	},
+	{
+		"id": 10,
+		"name": "Caterpie",
+		"candyDis": 1,
+		"topcp": 393,
+		"candy": 12,
+		"gen": 1,
+		"evol1": [{
+			"id": 11
+		}],
+		"evol2": [{
+			"id": 12
+		}],
+		"bStamina": 90,
+		"bAttack": 55,
+		"bDefense": 62
+	},
+	{
+		"id": 11,
+		"name": "Metapod",
+		"candyDis": 1,
+		"topcp": 357,
+		"candy": 50,
+		"minMulti": 0.94,
+		"maxMulti": 1.09,
+		"gen": 1,
+		"evol1": [{
+			"id": 12
+		}],
+		"preEvol": [{
+			"id": 10
+		}],
+		"bStamina": 100,
+		"bAttack": 45,
+		"bDefense": 94
+	},
+	{
+		"id": 12,
+		"name": "Butterfree",
+		"candyDis": 1,
+		"topcp": 1701,
+		"minMulti": 3.57,
+		"maxMulti": 5.21,
+		"gen": 1,
+		"preEvol": [{
+			"id": 11
+		}, {
+			"id": 10
+		}],
+		"bStamina": 120,
+		"bAttack": 167,
+		"bDefense": 151
+	},
+	{
+		"id": 13,
+		"name": "Weedle",
+		"candyDis": 1,
+		"topcp": 397,
+		"candy": 12,
+		"gen": 1,
+		"evol1": [{
+			"id": 14
+		}],
+		"evol2": [{
+			"id": 15
+		}],
+		"bStamina": 80,
+		"bAttack": 63,
+		"bDefense": 55
+	},
+	{
+		"id": 14,
+		"name": "Kakuna",
+		"candyDis": 1,
+		"topcp": 392,
+		"candy": 50,
+		"minMulti": 0.88,
+		"maxMulti": 0.97,
+		"gen": 1,
+		"evol1": [{
+			"id": 15
+		}],
+		"preEvol": [{
+			"id": 13
+		}],
+		"bStamina": 90,
+		"bAttack": 46,
+		"bDefense": 86
+	},
+	{
+		"id": 15,
+		"name": "Beedrill",
+		"candyDis": 1,
+		"topcp": 1777,
+		"minMulti": 4.00,
+		"maxMulti": 5.68,
+		"gen": 1,
+		"preEvol": [{
+			"id": 14
+		}, {
+			"id": 13
+		}],
+		"bStamina": 130,
+		"bAttack": 169,
+		"bDefense": 150
+	},
+	{
+		"id": 16,
+		"name": "Pidgey",
+		"candyDis": 1,
+		"topcp": 580,
+		"candy": 12,
+		"gen": 1,
+		"evol1": [{
+			"id": 17
+		}],
+		"evol2": [{
+			"id": 18
+		}],
+		"bStamina": 80,
+		"bAttack": 85,
+		"bDefense": 76
+	},
+	{
+		"id": 17,
+		"name": "Pidgeotto",
+		"candyDis": 1,
+		"topcp": 1085,
+		"candy": 50,
+		"minMulti": 1.62,
+		"maxMulti": 2.17,
+		"gen": 1,
+		"evol1": [{
+			"id": 18
+		}],
+		"preEvol": [{
+			"id": 16
+		}],
+		"bStamina": 126,
+		"bAttack": 117,
+		"bDefense": 108
+	},
+	{
+		"id": 18,
+		"name": "Pidgeot",
+		"candyDis": 1,
+		"topcp": 1994,
+		"minMulti": 1.48,
+		"maxMulti": 2.00,
+		"gen": 1,
+		"preEvol": [{
+			"id": 17
+		}, {
+			"id": 16
+		}],
+		"bStamina": 166,
+		"bAttack": 166,
+		"bDefense": 157
+	},
+	{
+		"id": 19,
+		"name": "Rattata",
+		"candyDis": 1,
+		"topcp": 588,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 20
+		}],
+		"bStamina": 60,
+		"bAttack": 103,
+		"bDefense": 70
+	},
+	{
+		"id": 20,
+		"name": "Raticate",
+		"candyDis": 1,
+		"topcp": 1549,
+		"minMulti": 2.32,
+		"maxMulti": 3.04,
+		"gen": 1,
+		"preEvol": [{
+			"id": 19
+		}],
+		"bStamina": 110,
+		"bAttack": 161,
+		"bDefense": 144
+	},
+	{
+		"id": 21,
+		"name": "Spearow",
+		"candyDis": 1,
+		"topcp": 673,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 22
+		}],
+		"bStamina": 80,
+		"bAttack": 112,
+		"bDefense": 61
+	},
+	{
+		"id": 22,
+		"name": "Fearow",
+		"candyDis": 1,
+		"topcp": 1814,
+		"minMulti": 2.17,
+		"maxMulti": 3.16,
+		"gen": 1,
+		"preEvol": [{
+			"id": 21
+		}],
+		"bStamina": 130,
+		"bAttack": 182,
+		"bDefense": 135
+	},
+	{
+		"id": 23,
+		"name": "Ekans",
+		"candyDis": 3,
+		"topcp": 778,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 24
+		}],
+		"bStamina": 70,
+		"bAttack": 110,
+		"bDefense": 102
+	},
+	{
+		"id": 24,
+		"name": "Arbok",
+		"candyDis": 3,
+		"topcp": 1737,
+		"minMulti": 1.81,
+		"maxMulti": 2.58,
+		"gen": 1,
+		"preEvol": [{
+			"id": 23
+		}],
+		"bStamina": 120,
+		"bAttack": 167,
+		"bDefense": 158
+	},
+	{
+		"id": 25,
+		"name": "Pikachu",
+		"candyDis": 1,
+		"topcp": 787,
+		"candy": 50,
+		"minMulti": 1.89,
+		"maxMulti": 2.43,
+		"gen": 1,
+		"evol1": [{
+			"id": 26
+		}],
+		"preEvol": [{
+			"id": 172
+		}],
+		"bStamina": 70,
+		"bAttack": 112,
+		"bDefense": 101
+	},
+	{
+		"id": 26,
+		"name": "Raichu",
+		"candyDis": 1,
+		"topcp": 2015,
+		"minMulti": 2.12,
+		"maxMulti": 3.05,
+		"gen": 1,
+		"preEvol": [{
+			"id": 25
+		}, {
+			"id": 172
+		}],
+		"bStamina": 120,
+		"bAttack": 193,
+		"bDefense": 165
+	},
+	{
+		"id": 27,
+		"name": "Sandshrew",
+		"candyDis": 3,
+		"topcp": 1194,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 28
+		}],
+		"bStamina": 100,
+		"bAttack": 126,
+		"bDefense": 145
+	},
+	{
+		"id": 28,
+		"name": "Sandslash",
+		"candyDis": 3,
+		"topcp": 2328,
+		"minMulti": 1.38,
+		"maxMulti": 2.37,
+		"gen": 1,
+		"preEvol": [{
+			"id": 27
+		}],
+		"bStamina": 150,
+		"bAttack": 182,
+		"bDefense": 202
+	},
+	{
+		"id": 29,
+		"name": "Nidoran F",
+		"candyDis": 3,
+		"topcp": 736,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 30
+		}],
+		"evol2": [{
+			"id": 31
+		}],
+		"bStamina": 110,
+		"bAttack": 86,
+		"bDefense": 94
+	},
+	{
+		"id": 30,
+		"name": "Nidorina",
+		"candyDis": 3,
+		"topcp": 1218,
+		"minMulti": 1.46,
+		"maxMulti": 1.89,
+		"candy": 100,
+		"gen": 1,
+		"evol1": [{
+			"id": 31
+		}],
+		"preEvol": [{
+			"id": 29
+		}],
+		"bStamina": 140,
+		"bAttack": 117,
+		"bDefense": 126
+	},
+	{
+		"id": 31,
+		"name": "Nidoqueen",
+		"candyDis": 3,
+		"topcp": 2338,
+		"minMulti": 1.38,
+		"maxMulti": 2.08,
+		"gen": 1,
+		"preEvol": [{
+			"id": 30
+		}, {
+			"id": 29
+		}],
+		"bStamina": 180,
+		"bAttack": 180,
+		"bDefense": 174
+	},
+	{
+		"id": 32,
+		"name": "Nidoran M",
+		"candyDis": 3,
+		"topcp": 739,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 33
+		}],
+		"evol2": [{
+			"id": 34
+		}],
+		"bStamina": 92,
+		"bAttack": 105,
+		"bDefense": 76
+	},
+	{
+		"id": 33,
+		"name": "Nidorino",
+		"candyDis": 3,
+		"topcp": 1252,
+		"candy": 100,
+		"minMulti": 1.50,
+		"maxMulti": 1.95,
+		"gen": 1,
+		"evol1": [{
+			"id": 34
+		}],
+		"preEvol": [{
+			"id": 32
+		}],
+		"bStamina": 122,
+		"bAttack": 137,
+		"bDefense": 112
+	},
+	{
+		"id": 34,
+		"name": "Nidoking",
+		"candyDis": 3,
+		"topcp": 2386,
+		"minMulti": 1.41,
+		"maxMulti": 2.12,
+		"gen": 1,
+		"preEvol": [{
+			"id": 33
+		}, {
+			"id": 32
+		}],
+		"bStamina": 162,
+		"bAttack": 204,
+		"bDefense": 157
+	},
+	{
+		"id": 35,
+		"name": "Clefairy",
+		"candyDis": 1,
+		"topcp": 1085,
+		"candy": 50,
+		"minMulti": 1.46,
+		"maxMulti": 1.91,
+		"gen": 1,
+		"evol1": [{
+			"id": 36
+		}],
+		"preEvol": [{
+			"id": 173
+		}],
+		"bStamina": 140,
+		"bAttack": 107,
+		"bDefense": 116
+	},
+	{
+		"id": 36,
+		"name": "Clefable",
+		"candyDis": 1,
+		"topcp": 2353,
+		"minMulti": 1.75,
+		"maxMulti": 2.40,
+		"gen": 1,
+		"preEvol": [{
+			"id": 35
+		}, {
+			"id": 173
+		}],
+		"bStamina": 190,
+		"bAttack": 178,
+		"bDefense": 171
+	},
+	{
+		"id": 37,
+		"name": "Vulpix",
+		"candyDis": 3,
+		"topcp": 774,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 38
+		}],
+		"bStamina": 76,
+		"bAttack": 96,
+		"bDefense": 122
+	},
+	{
+		"id": 38,
+		"name": "Ninetales",
+		"candyDis": 3,
+		"topcp": 2157,
+		"minMulti": 2.25,
+		"maxMulti": 3.28,
+		"gen": 1,
+		"preEvol": [{
+			"id": 37
+		}],
+		"bStamina": 146,
+		"bAttack": 169,
+		"bDefense": 204
+	},
+	{
+		"id": 39,
+		"name": "Jigglypuff",
+		"candyDis": 1,
+		"topcp": 713,
+		"candy": 50,
+		"minMulti": 1.17,
+		"maxMulti": 1.50,
+		"gen": 1,
+		"evol1": [{
+			"id": 40
+		}],
+		"preEvol": [{
+			"id": 174
+		}],
+		"bStamina": 230,
+		"bAttack": 80,
+		"bDefense": 44
+	},
+	{
+		"id": 40,
+		"name": "Wigglytuff",
+		"candyDis": 1,
+		"topcp": 1906,
+		"minMulti": 2.28,
+		"maxMulti": 3.30,
+		"gen": 1,
+		"preEvol": [{
+			"id": 39
+		}, {
+			"id": 174
+		}],
+		"bStamina": 280,
+		"bAttack": 156,
+		"bDefense": 93
+	},
+	{
+		"id": 41,
+		"name": "Zubat",
+		"candyDis": 1,
+		"topcp": 569,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 42
+		}],
+		"evol2": [{
+			"id": 169
+		}],
+		"bStamina": 80,
+		"bAttack": 83,
+		"bDefense": 76
+	},
+	{
+		"id": 42,
+		"name": "Golbat",
+		"candyDis": 1,
+		"topcp": 1830,
+		"candy": 100,
+		"minMulti": 2.74,
+		"maxMulti": 3.89,
+		"gen": 1,
+		"evol1": [{
+			"id": 169
+		}],
+		"preEvol": [{
+			"id": 41
+		}],
+		"bStamina": 150,
+		"bAttack": 161,
+		"bDefense": 153
+	},
+	{
+		"id": 43,
+		"name": "Oddish",
+		"candyDis": 3,
+		"topcp": 1069,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 44
+		}],
+		"evol2": [{
+			"id": 45
+		}, {
+			"id": 182
+		}],
+		"bStamina": 90,
+		"bAttack": 131,
+		"bDefense": 116
+	},
+	{
+		"id": 44,
+		"name": "Gloom",
+		"candyDis": 3,
+		"topcp": 1512,
+		"candy": 100,
+		"minMulti": 1.12,
+		"maxMulti": 1.47,
+		"gen": 1,
+		"evol1": [{
+			"id": 45
+		}, {
+			"id": 182
+		}],
+		"preEvol": [{
+			"id": 43
+		}],
+		"bStamina": 120,
+		"bAttack": 153,
+		"bDefense": 139
+	},
+	{
+		"id": 45,
+		"name": "Vilplume",
+		"candyDis": 3,
+		"topcp": 2367,
+		"minMulti": 1.76,
+		"maxMulti": 2.41,
+		"gen": 1,
+		"preEvol": [{
+			"id": 44
+		}, {
+			"id": 43
+		}],
+		"bStamina": 150,
+		"bAttack": 202,
+		"bDefense": 170
+	},
+	{
+		"id": 46,
+		"name": "Paras",
+		"candyDis": 3,
+		"topcp": 836,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 47
+		}],
+		"bStamina": 70,
+		"bAttack": 121,
+		"bDefense": 99
+	},
+	{
+		"id": 47,
+		"name": "Parasect",
+		"candyDis": 3,
+		"topcp": 1657,
+		"minMulti": 1.48,
+		"maxMulti": 2.25,
+		"gen": 1,
+		"preEvol": [{
+			"id": 46
+		}],
+		"bStamina": 120,
+		"bAttack": 165,
+		"bDefense": 146
+	},
+	{
+		"id": 48,
+		"name": "Venonat",
+		"candyDis": 3,
+		"topcp": 902,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 49
+		}],
+		"bStamina": 120,
+		"bAttack": 100,
+		"bDefense": 102
+	},
+	{
+		"id": 49,
+		"name": "Venonmoth",
+		"candyDis": 3,
+		"topcp": 1937,
+		"minMulti": 1.73,
+		"maxMulti": 2.42,
+		"gen": 1,
+		"preEvol": [{
+			"id": 48
+		}],
+		"bStamina": 140,
+		"bAttack": 179,
+		"bDefense": 150
+	},
+	{
+		"id": 50,
+		"name": "Diglett",
+		"candyDis": 3,
+		"topcp": 465,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 51
+		}],
+		"bStamina": 20,
+		"bAttack": 109,
+		"bDefense": 88
+	},
+	{
+		"id": 51,
+		"name": "Dugltrio",
+		"candyDis": 3,
+		"topcp": 1333,
+		"minMulti": 2.60,
+		"maxMulti": 3.77,
+		"gen": 1,
+		"preEvol": [{
+			"id": 50
+		}],
+		"bStamina": 70,
+		"bAttack": 167,
+		"bDefense": 147
+	},
+	{
+		"id": 52,
+		"name": "Meowth",
+		"candyDis": 3,
+		"topcp": 638,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 53
+		}],
+		"bStamina": 80,
+		"bAttack": 92,
+		"bDefense": 81
+	},
+	{
+		"id": 53,
+		"name": "Persian",
+		"candyDis": 3,
+		"topcp": 1539,
+		"minMulti": 2.07,
+		"maxMulti": 2.83,
+		"gen": 1,
+		"preEvol": [{
+			"id": 52
+		}],
+		"bStamina": 130,
+		"bAttack": 150,
+		"bDefense": 139
+	},
+	{
+		"id": 54,
+		"name": "Psyduck",
+		"candyDis": 3,
+		"topcp": 966,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 55
+		}],
+		"bStamina": 100,
+		"bAttack": 122,
+		"bDefense": 96
+	},
+	{
+		"id": 55,
+		"name": "Golduck",
+		"candyDis": 3,
+		"topcp": 2270,
+		"minMulti": 1.69,
+		"maxMulti": 2.59,
+		"gen": 1,
+		"preEvol": [{
+			"id": 54
+		}],
+		"bStamina": 160,
+		"bAttack": 191,
+		"bDefense": 163
+	},
+	{
+		"id": 56,
+		"name": "Mankey",
+		"candyDis": 3,
+		"topcp": 1002,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 57
+		}],
+		"bStamina": 80,
+		"bAttack": 148,
+		"bDefense": 87
+	},
+	{
+		"id": 57,
+		"name": "Primeape",
+		"candyDis": 3,
+		"topcp": 2105,
+		"minMulti": 1.56,
+		"maxMulti": 2.38,
+		"gen": 1,
+		"preEvol": [{
+			"id": 56
+		}],
+		"bStamina": 130,
+		"bAttack": 207,
+		"bDefense": 144
+	},
+	{
+		"id": 58,
+		"name": "Growlithe",
+		"candyDis": 3,
+		"topcp": 1110,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 59
+		}],
+		"bStamina": 110,
+		"bAttack": 136,
+		"bDefense": 96
+	},
+	{
+		"id": 59,
+		"name": "Arcanine",
+		"candyDis": 3,
+		"topcp": 2839,
+		"minMulti": 2.11,
+		"maxMulti": 2.93,
+		"gen": 1,
+		"preEvol": [{
+			"id": 58
+		}],
+		"bStamina": 180,
+		"bAttack": 227,
+		"bDefense": 166
+	},
+	{
+		"id": 60,
+		"name": "Poliwag",
+		"candyDis": 3,
+		"topcp": 695,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 61
+		}],
+		"evol2": [{
+			"id": 62
+		}, {
+			"id": 186
+		}],
+		"bStamina": 80,
+		"bAttack": 101,
+		"bDefense": 82
+	},
+	{
+		"id": 61,
+		"name": "Poliwhirl",
+		"candyDis": 3,
+		"topcp": 1313,
+		"candy": 100,
+		"minMulti": 1.57,
+		"maxMulti": 2.22,
+		"gen": 1,
+		"evol1": [{
+			"id": 62
+		}, {
+			"id": 186
+		}],
+		"preEvol": [{
+			"id": 60
+		}],
+		"bStamina": 130,
+		"bAttack": 130,
+		"bDefense": 130
+	},
+	{
+		"id": 62,
+		"name": "Poliwrath",
+		"candyDis": 3,
+		"topcp": 2441,
+		"minMulti": 1.45,
+		"maxMulti": 2.18,
+		"gen": 1,
+		"preEvol": [{
+			"id": 61
+		}, {
+			"id": 60
+		}],
+		"bStamina": 180,
+		"bAttack": 182,
+		"bDefense": 187
+	},
+	{
+		"id": 63,
+		"name": "Abra",
+		"candyDis": 3,
+		"topcp": 1148,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 64
+		}],
+		"evol2": [{
+			"id": 65
+		}],
+		"bStamina": 50,
+		"bAttack": 195,
+		"bDefense": 103
+	},
+	{
+		"id": 64,
+		"name": "Kadabra",
+		"candyDis": 3,
+		"topcp": 1859,
+		"candy": 100,
+		"minMulti": 1.10,
+		"maxMulti": 1.82,
+		"gen": 1,
+		"evol1": [{
+			"id": 65
+		}],
+		"preEvol": [{
+			"id": 63
+		}],
+		"bStamina": 80,
+		"bAttack": 232,
+		"bDefense": 138
+	},
+	{
+		"id": 65,
+		"name": "Alakazam",
+		"candyDis": 3,
+		"topcp": 2887,
+		"minMulti": 0.84,
+		"maxMulti": 1.84,
+		"gen": 1,
+		"preEvol": [{
+			"id": 64
+		}, {
+			"id": 63
+		}],
+		"bStamina": 110,
+		"bAttack": 271,
+		"bDefense": 194
+	},
+	{
+		"id": 66,
+		"name": "Machop",
+		"candyDis": 3,
+		"topcp": 1199,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 67
+		}],
+		"evol2": [{
+			"id": 68
+		}],
+		"bStamina": 140,
+		"bAttack": 137,
+		"bDefense": 88
+	},
+	{
+		"id": 67,
+		"name": "Machoke",
+		"candyDis": 3,
+		"topcp": 1910,
+		"candy": 100,
+		"minMulti": 1.13,
+		"maxMulti": 1.90,
+		"gen": 1,
+		"evol1": [{
+			"id": 68
+		}],
+		"preEvol": [{
+			"id": 66
+		}],
+		"bStamina": 160,
+		"bAttack": 177,
+		"bDefense": 130
+	},
+	{
+		"id": 68,
+		"name": "Machamp",
+		"candyDis": 3,
+		"topcp": 2889,
+		"minMulti": 0.84,
+		"maxMulti": 1.85,
+		"gen": 1,
+		"preEvol": [{
+			"id": 67
+		}, {
+			"id": 66
+		}],
+		"bStamina": 180,
+		"bAttack": 234,
+		"bDefense": 162
+	},
+	{
+		"id": 69,
+		"name": "Bellsprout",
+		"candyDis": 3,
+		"topcp": 916,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 70
+		}],
+		"evol2": [{
+			"id": 71
+		}],
+		"bStamina": 100,
+		"bAttack": 139,
+		"bDefense": 64
+	},
+	{
+		"id": 70,
+		"name": "Weepinbell",
+		"candyDis": 3,
+		"topcp": 1475,
+		"candy": 100,
+		"minMulti": 1.32,
+		"maxMulti": 1.79,
+		"gen": 1,
+		"evol1": [{
+			"id": 71
+		}],
+		"preEvol": [{
+			"id": 69
+		}],
+		"bStamina": 130,
+		"bAttack": 172,
+		"bDefense": 95
+	},
+	{
+		"id": 71,
+		"name": "Victreebel",
+		"candyDis": 3,
+		"topcp": 2268,
+		"minMulti": 1.00,
+		"maxMulti": 1.72,
+		"gen": 1,
+		"preEvol": [{
+			"id": 70
+		}, {
+			"id": 69
+		}],
+		"bStamina": 160,
+		"bAttack": 207,
+		"bDefense": 138
+	},
+	{
+		"id": 72,
+		"name": "Tentacool",
+		"candyDis": 3,
+		"topcp": 956,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 73
+		}],
+		"bStamina": 80,
+		"bAttack": 97,
+		"bDefense": 182
+	},
+	{
+		"id": 73,
+		"name": "Tentacruel",
+		"candyDis": 3,
+		"topcp": 2374,
+		"minMulti": 1.76,
+		"maxMulti": 3.02,
+		"gen": 1,
+		"preEvol": [{
+			"id": 72
+		}],
+		"bStamina": 160,
+		"bAttack": 166,
+		"bDefense": 237
+	},
+	{
+		"id": 74,
+		"name": "Geodude",
+		"candyDis": 1,
+		"topcp": 1193,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 75
+		}],
+		"evol2": [{
+			"id": 76
+		}],
+		"bStamina": 80,
+		"bAttack": 132,
+		"bDefense": 163
+	},
+	{
+		"id": 75,
+		"name": "Graveler",
+		"candyDis": 1,
+		"topcp": 1815,
+		"candy": 100,
+		"minMulti": 1.07,
+		"maxMulti": 1.80,
+		"gen": 1,
+		"evol1": [{
+			"id": 76
+		}],
+		"preEvol": [{
+			"id": 74
+		}],
+		"bStamina": 110,
+		"bAttack": 164,
+		"bDefense": 196
+	},
+	{
+		"id": 76,
+		"name": "Golem",
+		"candyDis": 1,
+		"topcp": 2916,
+		"minMulti": 0.85,
+		"maxMulti": 1.87,
+		"gen": 1,
+		"preEvol": [{
+			"id": 75
+		}, {
+			"id": 74
+		}],
+		"bStamina": 160,
+		"bAttack": 211,
+		"bDefense": 229
+	},
+	{
+		"id": 77,
+		"name": "Ponyta",
+		"candyDis": 3,
+		"topcp": 1502,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 78
+		}],
+		"bStamina": 100,
+		"bAttack": 170,
+		"bDefense": 132
+	},
+	{
+		"id": 78,
+		"name": "Rapidash",
+		"candyDis": 3,
+		"topcp": 2252,
+		"minMulti": 0.99,
+		"maxMulti": 1.70,
+		"gen": 1,
+		"preEvol": [{
+			"id": 77
+		}],
+		"bStamina": 130,
+		"bAttack": 207,
+		"bDefense": 167
+	},
+	{
+		"id": 79,
+		"name": "Slowpoke",
+		"candyDis": 3,
+		"topcp": 1204,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 80
+		}, {
+			"id": 199
+		}],
+		"bStamina": 180,
+		"bAttack": 109,
+		"bDefense": 109
+	},
+	{
+		"id": 80,
+		"name": "Slowbro",
+		"candyDis": 3,
+		"topcp": 2482,
+		"minMulti": 1.47,
+		"maxMulti": 2.54,
+		"gen": 1,
+		"preEvol": [{
+			"id": 79
+		}],
+		"bStamina": 190,
+		"bAttack": 177,
+		"bDefense": 194
+	},
+	{
+		"id": 81,
+		"name": "Magnemite",
+		"candyDis": 3,
+		"topcp": 1083,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 82
+		}],
+		"bStamina": 50,
+		"bAttack": 165,
+		"bDefense": 128
+	},
+	{
+		"id": 82,
+		"name": "Magneton",
+		"candyDis": 3,
+		"topcp": 2237,
+		"minMulti": 1.66,
+		"maxMulti": 2.53,
+		"gen": 1,
+		"preEvol": [{
+			"id": 81
+		}],
+		"bStamina": 100,
+		"bAttack": 223,
+		"bDefense": 182
+	},
+	{
+		"id": 83,
+		"name": "Farfetch\"d",
+		"candyDis": 3,
+		"topcp": 1092,
+		"gen": 1,
+		"bStamina": 104,
+		"bAttack": 124,
+		"bDefense": 118
+	},
+	{
+		"id": 84,
+		"name": "Doduo",
+		"candyDis": 3,
+		"topcp": 1011,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 85
+		}],
+		"bStamina": 70,
+		"bAttack": 158,
+		"bDefense": 88
+	},
+	{
+		"id": 85,
+		"name": "Dodrio",
+		"candyDis": 3,
+		"topcp": 2138,
+		"minMulti": 1.59,
+		"maxMulti": 2.42,
+		"gen": 1,
+		"preEvol": [{
+			"id": 84
+		}],
+		"bStamina": 120,
+		"bAttack": 218,
+		"bDefense": 145
+	},
+	{
+		"id": 86,
+		"name": "Seel",
+		"candyDis": 3,
+		"topcp": 899,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 87
+		}],
+		"bStamina": 130,
+		"bAttack": 85,
+		"bDefense": 128
+	},
+	{
+		"id": 87,
+		"name": "Dewgong",
+		"candyDis": 3,
+		"topcp": 1894,
+		"minMulti": 1.69,
+		"maxMulti": 2.36,
+		"gen": 1,
+		"preEvol": [{
+			"id": 86
+		}],
+		"bStamina": 180,
+		"bAttack": 139,
+		"bDefense": 184
+	},
+	{
+		"id": 88,
+		"name": "Grimer",
+		"candyDis": 3,
+		"topcp": 1269,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 89
+		}],
+		"bStamina": 160,
+		"bAttack": 135,
+		"bDefense": 90
+	},
+	{
+		"id": 89,
+		"name": "Muk",
+		"candyDis": 3,
+		"topcp": 2709,
+		"minMulti": 1.60,
+		"maxMulti": 2.44,
+		"gen": 1,
+		"preEvol": [{
+			"id": 88
+		}],
+		"bStamina": 210,
+		"bAttack": 190,
+		"bDefense": 184
+	},
+	{
+		"id": 90,
+		"name": "Shellder",
+		"candyDis": 3,
+		"topcp": 958,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 91
+		}],
+		"bStamina": 60,
+		"bAttack": 116,
+		"bDefense": 168
+	},
+	{
+		"id": 91,
+		"name": "Cloyster",
+		"candyDis": 3,
+		"topcp": 2475,
+		"minMulti": 1.84,
+		"maxMulti": 3.13,
+		"gen": 1,
+		"preEvol": [{
+			"id": 90
+		}],
+		"bStamina": 100,
+		"bAttack": 186,
+		"bDefense": 323
+	},
+	{
+		"id": 92,
+		"name": "Gastly",
+		"candyDis": 3,
+		"topcp": 1002,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 93
+		}],
+		"evol2": [{
+			"id": 94
+		}],
+		"bStamina": 60,
+		"bAttack": 186,
+		"bDefense": 70
+	},
+	{
+		"id": 93,
+		"name": "Haunter",
+		"candyDis": 3,
+		"topcp": 1716,
+		"candy": 100,
+		"minMulti": 1.27,
+		"maxMulti": 1.88,
+		"gen": 1,
+		"evol1": [{
+			"id": 94
+		}],
+		"preEvol": [{
+			"id": 92
+		}],
+		"bStamina": 90,
+		"bAttack": 223,
+		"bDefense": 112
+	},
+	{
+		"id": 94,
+		"name": "Gengar",
+		"candyDis": 3,
+		"topcp": 2619,
+		"minMulti": 0.76,
+		"maxMulti": 1.66,
+		"gen": 1,
+		"preEvol": [{
+			"id": 93
+		}, {
+			"id": 92
+		}],
+		"bStamina": 120,
+		"bAttack": 261,
+		"bDefense": 156
+	},
+	{
+		"id": 95,
+		"name": "Onix",
+		"candyDis": 5,
+		"topcp": 1002,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 208
+		}],
+		"bStamina": 70,
+		"bAttack": 85,
+		"bDefense": 288
+	},
+	{
+		"id": 96,
+		"name": "Drowzee",
+		"candyDis": 3,
+		"topcp": 992,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 97
+		}],
+		"bStamina": 120,
+		"bAttack": 89,
+		"bDefense": 158
+	},
+	{
+		"id": 97,
+		"name": "Hypno",
+		"candyDis": 3,
+		"topcp": 2048,
+		"minMulti": 1.52,
+		"maxMulti": 2.31,
+		"gen": 1,
+		"preEvol": [{
+			"id": 96
+		}],
+		"bStamina": 170,
+		"bAttack": 144,
+		"bDefense": 215
+	},
+	{
+		"id": 98,
+		"name": "Krabby",
+		"candyDis": 3,
+		"topcp": 1386,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 99
+		}],
+		"bStamina": 60,
+		"bAttack": 181,
+		"bDefense": 156
+	},
+	{
+		"id": 99,
+		"name": "Kingler",
+		"candyDis": 3,
+		"topcp": 2694,
+		"minMulti": 1.19,
+		"maxMulti": 2.40,
+		"gen": 1,
+		"preEvol": [{
+			"id": 98
+		}],
+		"bStamina": 110,
+		"bAttack": 240,
+		"bDefense": 214
+	},
+	{
+		"id": 100,
+		"name": "Voltorb",
+		"candyDis": 3,
+		"topcp": 857,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 101
+		}],
+		"bStamina": 80,
+		"bAttack": 109,
+		"bDefense": 114
+	},
+	{
+		"id": 101,
+		"name": "Electrode",
+		"candyDis": 3,
+		"topcp": 1900,
+		"minMulti": 1.70,
+		"maxMulti": 2.61,
+		"gen": 1,
+		"preEvol": [{
+			"id": 100
+		}],
+		"bStamina": 120,
+		"bAttack": 173,
+		"bDefense": 179
+	},
+	{
+		"id": 102,
+		"name": "Exeggcute",
+		"candyDis": 3,
+		"topcp": 1102,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 103
+		}],
+		"bStamina": 120,
+		"bAttack": 107,
+		"bDefense": 140
+	},
+	{
+		"id": 103,
+		"name": "Exeggutor",
+		"candyDis": 3,
+		"topcp": 2916,
+		"minMulti": 2.17,
+		"maxMulti": 3.02,
+		"gen": 1,
+		"preEvol": [{
+			"id": 102
+		}],
+		"bStamina": 190,
+		"bAttack": 233,
+		"bDefense": 158
+	},
+	{
+		"id": 104,
+		"name": "Cubone",
+		"candyDis": 3,
+		"topcp": 943,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 105
+		}],
+		"bStamina": 100,
+		"bAttack": 90,
+		"bDefense": 165
+	},
+	{
+		"id": 105,
+		"name": "Marowak",
+		"candyDis": 3,
+		"topcp": 1691,
+		"minMulti": 1.51,
+		"maxMulti": 2.08,
+		"gen": 1,
+		"preEvol": [{
+			"id": 104
+		}],
+		"bStamina": 120,
+		"bAttack": 144,
+		"bDefense": 200
+	},
+	{
+		"id": 106,
+		"name": "Hitmonlee",
+		"candyDis": 5,
+		"topcp": 2406,
+		"minMulti": 5.42,
+		"maxMulti": 7.83,
+		"gen": 1,
+		"preEvol": [{
+			"id": 236
+		}],
+		"bStamina": 100,
+		"bAttack": 224,
+		"bDefense": 211
+	},
+	{
+		"id": 107,
+		"name": "Hitmonchan",
+		"candyDis": 5,
+		"topcp": 2098,
+		"minMulti": 4.73,
+		"maxMulti": 6.77,
+		"gen": 1,
+		"preEvol": [{
+			"id": 236
+		}],
+		"bStamina": 100,
+		"bAttack": 193,
+		"bDefense": 212
+	},
+	{
+		"id": 108,
+		"name": "Lickitung",
+		"candyDis": 3,
+		"topcp": 1322,
+		"gen": 1,
+		"bStamina": 180,
+		"bAttack": 108,
+		"bDefense": 137
+	},
+	{
+		"id": 109,
+		"name": "Koffing",
+		"candyDis": 3,
+		"topcp": 1091,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 110
+		}],
+		"bStamina": 80,
+		"bAttack": 119,
+		"bDefense": 164
+	},
+	{
+		"id": 110,
+		"name": "Weezing",
+		"candyDis": 3,
+		"topcp": 2183,
+		"minMulti": 1.62,
+		"maxMulti": 2.20,
+		"gen": 1,
+		"preEvol": [{
+			"id": 109
+		}],
+		"bStamina": 130,
+		"bAttack": 174,
+		"bDefense": 221
+	},
+	{
+		"id": 111,
+		"name": "Rhyhorn",
+		"candyDis": 3,
+		"topcp": 1679,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 112
+		}],
+		"bStamina": 160,
+		"bAttack": 140,
+		"bDefense": 157
+	},
+	{
+		"id": 112,
+		"name": "Rhydon",
+		"candyDis": 3,
+		"topcp": 3300,
+		"minMulti": 1.46,
+		"maxMulti": 2.14,
+		"gen": 1,
+		"preEvol": [{
+			"id": 111
+		}],
+		"bStamina": 210,
+		"bAttack": 222,
+		"bDefense": 206
+	},
+	{
+		"id": 113,
+		"name": "Chansey",
+		"candyDis": 5,
+		"topcp": 1469,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 242
+		}],
+		"bStamina": 500,
+		"bAttack": 60,
+		"bDefense": 176
+	},
+	{
+		"id": 114,
+		"name": "Tangela",
+		"candyDis": 3,
+		"topcp": 2208,
+		"gen": 1,
+		"bStamina": 130,
+		"bAttack": 183,
+		"bDefense": 205
+	},
+	{
+		"id": 115,
+		"name": "Kangaskhan",
+		"candyDis": 3,
+		"topcp": 2463,
+		"gen": 1,
+		"bStamina": 210,
+		"bAttack": 181,
+		"bDefense": 165
+	},
+	{
+		"id": 116,
+		"name": "Horsea",
+		"candyDis": 3,
+		"topcp": 921,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 117
+		}],
+		"evol2": [{
+			"id": 230
+		}],
+		"bStamina": 60,
+		"bAttack": 129,
+		"bDefense": 125
+	},
+	{
+		"id": 117,
+		"name": "Seadra",
+		"candyDis": 3,
+		"topcp": 1979,
+		"candy": 100,
+		"minMulti": 1.77,
+		"maxMulti": 2.47,
+		"gen": 1,
+		"evol1": [{
+			"id": 230
+		}],
+		"preEvol": [{
+			"id": 116
+		}],
+		"bStamina": 110,
+		"bAttack": 187,
+		"bDefense": 182
+	},
+	{
+		"id": 118,
+		"name": "Goldeen",
+		"candyDis": 3,
+		"topcp": 1006,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 119
+		}],
+		"bStamina": 90,
+		"bAttack": 123,
+		"bDefense": 115
+	},
+	{
+		"id": 119,
+		"name": "Seaking",
+		"candyDis": 3,
+		"topcp": 2040,
+		"minMulti": 1.52,
+		"maxMulti": 2.31,
+		"gen": 1,
+		"preEvol": [{
+			"id": 118
+		}],
+		"bStamina": 160,
+		"bAttack": 175,
+		"bDefense": 154
+	},
+	{
+		"id": 120,
+		"name": "Staryu",
+		"candyDis": 3,
+		"topcp": 926,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 121
+		}],
+		"bStamina": 60,
+		"bAttack": 137,
+		"bDefense": 112
+	},
+	{
+		"id": 121,
+		"name": "Starmie",
+		"candyDis": 3,
+		"topcp": 2303,
+		"minMulti": 2.06,
+		"maxMulti": 2.92,
+		"gen": 1,
+		"preEvol": [{
+			"id": 120
+		}],
+		"bStamina": 120,
+		"bAttack": 210,
+		"bDefense": 184
+	},
+	{
+		"id": 122,
+		"name": "Mr. Mime",
+		"candyDis": 5,
+		"topcp": 1984,
+		"gen": 1,
+		"bStamina": 80,
+		"bAttack": 192,
+		"bDefense": 233
+	},
+	{
+		"id": 123,
+		"name": "Scyther",
+		"candyDis": 5,
+		"topcp": 2464,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 212
+		}],
+		"bStamina": 140,
+		"bAttack": 218,
+		"bDefense": 170
+	},
+	{
+		"id": 124,
+		"name": "Jynx",
+		"candyDis": 5,
+		"topcp": 2512,
+		"minMulti": 1.49,
+		"maxMulti": 2.24,
+		"gen": 1,
+		"preEvol": [{
+			"id": 238
+		}],
+		"bStamina": 130,
+		"bAttack": 223,
+		"bDefense": 182
+	},
+	{
+		"id": 125,
+		"name": "Electabuzz",
+		"candyDis": 5,
+		"topcp": 2196,
+		"minMulti": 1.63,
+		"maxMulti": 2.22,
+		"gen": 1,
+		"preEvol": [{
+			"id": 239
+		}],
+		"bStamina": 130,
+		"bAttack": 198,
+		"bDefense": 173
+	},
+	{
+		"id": 126,
+		"name": "Magmar",
+		"candyDis": 5,
+		"topcp": 2254,
+		"minMulti": 1.33,
+		"maxMulti": 2.28,
+		"gen": 1,
+		"preEvol": [{
+			"id": 240
+		}],
+		"bStamina": 130,
+		"bAttack": 206,
+		"bDefense": 169
+	},
+	{
+		"id": 127,
+		"name": "Pinsir",
+		"candyDis": 5,
+		"topcp": 2770,
+		"bStamina": 130,
+		"bAttack": 238,
+		"bDefense": 197
+	},
+	{
+		"id": 128,
+		"name": "Tauros",
+		"candyDis": 3,
+		"topcp": 2488,
+		"bStamina": 150,
+		"bAttack": 198,
+		"bDefense": 197
+	},
+	{
+		"id": 129,
+		"name": "Magikarp",
+		"candyDis": 1,
+		"topcp": 220,
+		"candy": 400,
+		"evol1": [{
+			"id": 130
+		}],
+		"bStamina": 40,
+		"bAttack": 29,
+		"bDefense": 102
+	},
+	{
+		"id": 130,
+		"name": "Gyarados",
+		"candyDis": 1,
+		"topcp": 3281,
+		"minMulti": 14.06,
+		"maxMulti": 24.95,
+		"preEvol": [{
+			"id": 129
+		}],
+		"bStamina": 190,
+		"bAttack": 237,
+		"bDefense": 197
+	},
+	{
+		"id": 131,
+		"name": "Lapras",
+		"candyDis": 5,
+		"topcp": 2980,
+		"gen": 1,
+		"bStamina": 260,
+		"bAttack": 165,
+		"bDefense": 180
+	},
+	{
+		"id": 132,
+		"name": "Ditto",
+		"candyDis": 3,
+		"topcp": 718,
+		"gen": 1,
+		"bStamina": 96,
+		"bAttack": 91,
+		"bDefense": 91
+	},
+	{
+		"id": 133,
+		"name": "Eevee",
+		"candyDis": 5,
+		"topcp": 969,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 134
+		}, {
+			"id": 135
+		}, {
+			"id": 136
+		}, {
+			"id": 196
+		}, {
+			"id": 197
+		}],
+		"bStamina": 110,
+		"bAttack": 104,
+		"bDefense": 121
+	},
+	{
+		"id": 134,
+		"name": "Vaporeon",
+		"candyDis": 5,
+		"topcp": 3157,
+		"minMulti": 2.35,
+		"maxMulti": 3.70,
+		"gen": 1,
+		"preEvol": [{
+			"id": 133
+		}],
+		"bStamina": 260,
+		"bAttack": 205,
+		"bDefense": 177
+	},
+	{
+		"id": 135,
+		"name": "Jolteon",
+		"candyDis": 5,
+		"topcp": 2730,
+		"minMulti": 2.03,
+		"maxMulti": 3.15,
+		"gen": 1,
+		"preEvol": [{
+			"id": 133
+		}],
+		"bStamina": 130,
+		"bAttack": 232,
+		"bDefense": 201
+	},
+	{
+		"id": 136,
+		"name": "Flareon",
+		"candyDis": 5,
+		"topcp": 2904,
+		"minMulti": 2.16,
+		"maxMulti": 3.37,
+		"gen": 1,
+		"preEvol": [{
+			"id": 133
+		}],
+		"bStamina": 130,
+		"bAttack": 246,
+		"bDefense": 204
+	},
+	{
+		"id": 137,
+		"name": "Porygon",
+		"candyDis": 3,
+		"topcp": 1567,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 233
+		}],
+		"bStamina": 130,
+		"bAttack": 153,
+		"bDefense": 139
+	},
+	{
+		"id": 138,
+		"name": "Omanyte",
+		"candyDis": 5,
+		"topcp": 1345,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 139
+		}],
+		"bStamina": 70,
+		"bAttack": 155,
+		"bDefense": 174
+	},
+	{
+		"id": 139,
+		"name": "Omastar",
+		"candyDis": 5,
+		"topcp": 2685,
+		"minMulti": 1.19,
+		"maxMulti": 2.41,
+		"gen": 1,
+		"preEvol": [{
+			"id": 138
+		}],
+		"bStamina": 140,
+		"bAttack": 207,
+		"bDefense": 227
+	},
+	{
+		"id": 140,
+		"name": "Kabuto",
+		"candyDis": 5,
+		"topcp": 1172,
+		"candy": 50,
+		"gen": 1,
+		"evol1": [{
+			"id": 141
+		}],
+		"bStamina": 60,
+		"bAttack": 148,
+		"bDefense": 162
+	},
+	{
+		"id": 141,
+		"name": "Kabutops",
+		"candyDis": 5,
+		"topcp": 2517,
+		"minMulti": 1.49,
+		"maxMulti": 2.56,
+		"gen": 1,
+		"preEvol": [{
+			"id": 140
+		}],
+		"bStamina": 120,
+		"bAttack": 220,
+		"bDefense": 203
+	},
+	{
+		"id": 142,
+		"name": "Aerodactyl",
+		"candyDis": 5,
+		"topcp": 2608,
+		"gen": 1,
+		"bStamina": 160,
+		"bAttack": 221,
+		"bDefense": 164
+	},
+	{
+		"id": 143,
+		"name": "Snorlax",
+		"candyDis": 5,
+		"topcp": 3355,
+		"gen": 1,
+		"bStamina": 320,
+		"bAttack": 190,
+		"bDefense": 190
+	},
+	{
+		"id": 144,
+		"name": "Articuno",
+		"candyDis": 5,
+		"topcp": 2933,
+		"gen": 1,
+		"bStamina": 180,
+		"bAttack": 192,
+		"bDefense": 249
+	},
+	{
+		"id": 145,
+		"name": "Zapdos",
+		"candyDis": 5,
+		"topcp": 3330,
+		"gen": 1,
+		"bStamina": 180,
+		"bAttack": 253,
+		"bDefense": 188
+	},
+	{
+		"id": 146,
+		"name": "Moltres",
+		"candyDis": 5,
+		"topcp": 3272,
+		"gen": 1,
+		"bStamina": 180,
+		"bAttack": 251,
+		"bDefense": 184
+	},
+	{
+		"id": 147,
+		"name": "Dratini",
+		"candyDis": 5,
+		"topcp": 860,
+		"candy": 25,
+		"gen": 1,
+		"evol1": [{
+			"id": 148
+		}],
+		"evol2": [{
+			"id": 149
+		}],
+		"bStamina": 82,
+		"bAttack": 119,
+		"bDefense": 94
+	},
+	{
+		"id": 148,
+		"name": "Dragonair",
+		"candyDis": 5,
+		"topcp": 1609,
+		"candy": 100,
+		"minMulti": 1.44,
+		"maxMulti": 2.18,
+		"gen": 1,
+		"evol1": [{
+			"id": 149
+		}],
+		"preEvol": [{
+			"id": 147
+		}],
+		"bStamina": 122,
+		"bAttack": 163,
+		"bDefense": 138
+	},
+	{
+		"id": 149,
+		"name": "Dragonite",
+		"candyDis": 5,
+		"topcp": 3581,
+		"minMulti": 1.58,
+		"maxMulti": 2.81,
+		"gen": 1,
+		"preEvol": [{
+			"id": 147
+		}, {
+			"id": 148
+		}],
+		"bStamina": 182,
+		"bAttack": 263,
+		"bDefense": 201
+	},
+	{
+		"id": 150,
+		"name": "Mewtwo",
+		"candyDis": 5,
+		"topcp": 4760,
+		"gen": 1,
+		"bStamina": 212,
+		"bAttack": 330,
+		"bDefense": 200
+	},
+	{
+		"id": 151,
+		"name": "Mew",
+		"candyDis": 5,
+		"topcp": 3090,
+		"gen": 1,
+		"bStamina": 200,
+		"bAttack": 210,
+		"bDefense": 210
+	},
+	{
+		"id": 152,
+		"name": "Chikorita",
+		"candyDis": 3,
+		"topcp": 771,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 153
+		}],
+		"evol2": [{
+			"id": 154
+		}],
+		"bStamina": 90,
+		"bAttack": 92,
+		"bDefense": 122
+	},
+	{
+		"id": 153,
+		"name": "Bayleef",
+		"candyDis": 3,
+		"topcp": 1296,
+		"candy": 50,
+		"minMulti": 1.35,
+		"maxMulti": 1.87,
+		"gen": 2,
+		"evol1": [{
+			"id": 154
+		}],
+		"preEvol": [{
+			"id": 152
+		}],
+		"bStamina": 120,
+		"bAttack": 122,
+		"bDefense": 155
+	},
+	{
+		"id": 154,
+		"name": "Meganium",
+		"candyDis": 3,
+		"topcp": 2227,
+		"minMulti": 1.32,
+		"maxMulti": 1.97,
+		"gen": 2,
+		"preEvol": [{
+			"id": 152
+		}, {
+			"id": 153
+		}],
+		"bStamina": 160,
+		"bAttack": 168,
+		"bDefense": 202
+	},
+	{
+		"id": 155,
+		"name": "Cyndaquil",
+		"candyDis": 3,
+		"topcp": 831,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 156
+		}],
+		"evol2": [{
+			"id": 157
+		}],
+		"bStamina": 78,
+		"bAttack": 116,
+		"bDefense": 96
+	},
+	{
+		"id": 156,
+		"name": "Quilava",
+		"candyDis": 3,
+		"topcp": 1484,
+		"candy": 100,
+		"minMulti": 1.55,
+		"maxMulti": 1.99,
+		"gen": 2,
+		"evol1": [{
+			"id": 157
+		}],
+		"preEvol": [{
+			"id": 155
+		}],
+		"bStamina": 116,
+		"bAttack": 158,
+		"bDefense": 129
+	},
+	{
+		"id": 157,
+		"name": "Typhlosion",
+		"candyDis": 3,
+		"topcp": 2686,
+		"minMulti": 1.19,
+		"maxMulti": 2.06,
+		"gen": 2,
+		"preEvol": [{
+			"id": 155
+		}, {
+			"id": 156
+		}],
+		"bStamina": 156,
+		"bAttack": 223,
+		"bDefense": 176
+	},
+	{
+		"id": 158,
+		"name": "Totodile",
+		"candyDis": 3,
+		"topcp": 1011,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 159
+		}],
+		"evol2": [{
+			"id": 160
+		}],
+		"bStamina": 100,
+		"bAttack": 117,
+		"bDefense": 116
+	},
+	{
+		"id": 159,
+		"name": "Croconaw",
+		"candyDis": 3,
+		"topcp": 1598,
+		"candy": 100,
+		"minMulti": 1.19,
+		"maxMulti": 1.77,
+		"gen": 2,
+		"evol1": [{
+			"id": 160
+		}],
+		"preEvol": [{
+			"id": 158
+		}],
+		"bStamina": 130,
+		"bAttack": 150,
+		"bDefense": 151
+	},
+	{
+		"id": 160,
+		"name": "Feraligatr",
+		"candyDis": 3,
+		"topcp": 2721,
+		"minMulti": 1.20,
+		"maxMulti": 2.09,
+		"gen": 2,
+		"preEvol": [{
+			"id": 158
+		}, {
+			"id": 159
+		}],
+		"bStamina": 170,
+		"bAttack": 205,
+		"bDefense": 197
+	},
+	{
+		"id": 161,
+		"name": "Sentret",
+		"candyDis": 1,
+		"topcp": 519,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 162
+		}],
+		"bStamina": 70,
+		"bAttack": 79,
+		"bDefense": 77
+	},
+	{
+		"id": 162,
+		"name": "Furret",
+		"candyDis": 1,
+		"topcp": 1667,
+		"minMulti": 2.75,
+		"maxMulti": 3.92,
+		"gen": 2,
+		"preEvol": [{
+			"id": 161
+		}],
+		"bStamina": 170,
+		"bAttack": 148,
+		"bDefense": 130
+	},
+	{
+		"id": 163,
+		"name": "Hoothoot",
+		"candyDis": 1,
+		"topcp": 640,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 164
+		}],
+		"bStamina": 120,
+		"bAttack": 67,
+		"bDefense": 101
+	},
+	{
+		"id": 164,
+		"name": "Noctowl",
+		"candyDis": 1,
+		"topcp": 2040,
+		"minMulti": 2.75,
+		"maxMulti": 3.86,
+		"gen": 2,
+		"preEvol": [{
+			"id": 163
+		}],
+		"bStamina": 200,
+		"bAttack": 145,
+		"bDefense": 179
+	},
+	{
+		"id": 165,
+		"name": "Ledyba",
+		"candyDis": 1,
+		"topcp": 663,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 166
+		}],
+		"bStamina": 80,
+		"bAttack": 72,
+		"bDefense": 142
+	},
+	{
+		"id": 166,
+		"name": "Ledian",
+		"candyDis": 1,
+		"topcp": 1275,
+		"minMulti": 1.92,
+		"maxMulti": 2.12,
+		"gen": 2,
+		"preEvol": [{
+			"id": 165
+		}],
+		"bStamina": 110,
+		"bAttack": 107,
+		"bDefense": 209
+	},
+	{
+		"id": 167,
+		"name": "Spinarak",
+		"candyDis": 1,
+		"topcp": 685,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 168
+		}],
+		"bStamina": 80,
+		"bAttack": 105,
+		"bDefense": 73
+	},
+	{
+		"id": 168,
+		"name": "Ariados",
+		"candyDis": 1,
+		"topcp": 1636,
+		"minMulti": 1.96,
+		"maxMulti": 2.83,
+		"gen": 2,
+		"preEvol": [{
+			"id": 167
+		}],
+		"bStamina": 140,
+		"bAttack": 161,
+		"bDefense": 128
+	},
+	{
+		"id": 169,
+		"name": "Crobat",
+		"candyDis": 1,
+		"topcp": 2466,
+		"minMulti": 0.72,
+		"maxMulti": 1.57,
+		"gen": 2,
+		"preEvol": [{
+			"id": 42
+		}, {
+			"id": 41
+		}],
+		"bStamina": 170,
+		"bAttack": 194,
+		"bDefense": 178
+	},
+	{
+		"id": 170,
+		"name": "Chinchou",
+		"candyDis": 3,
+		"topcp": 1067,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 171
+		}],
+		"bStamina": 150,
+		"bAttack": 106,
+		"bDefense": 106
+	},
+	{
+		"id": 171,
+		"name": "Lanturn",
+		"candyDis": 3,
+		"topcp": 2077,
+		"minMulti": 1.54,
+		"maxMulti": 2.08,
+		"gen": 2,
+		"preEvol": [{
+			"id": 170
+		}],
+		"bStamina": 250,
+		"bAttack": 146,
+		"bDefense": 146
+	},
+	{
+		"id": 172,
+		"name": "Pichu",
+		"candyDis": 1,
+		"topcp": 376,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 25
+		}],
+		"evol2": [{
+			"id": 26
+		}],
+		"bStamina": 40,
+		"bAttack": 77,
+		"bDefense": 63
+	},
+	{
+		"id": 173,
+		"name": "Cleffa",
+		"candyDis": 1,
+		"topcp": 620,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 35
+		}],
+		"evol2": [{
+			"id": 36
+		}],
+		"bStamina": 100,
+		"bAttack": 75,
+		"bDefense": 91
+	},
+	{
+		"id": 174,
+		"name": "Igglybuff",
+		"candyDis": 1,
+		"topcp": 512,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 39
+		}],
+		"evol2": [{
+			"id": 40
+		}],
+		"bStamina": 180,
+		"bAttack": 69,
+		"bDefense": 34
+	},
+	{
+		"id": 175,
+		"name": "Togepi",
+		"candyDis": 3,
+		"topcp": 540,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 176
+		}],
+		"bStamina": 70,
+		"bAttack": 67,
+		"bDefense": 116
+	},
+	{
+		"id": 176,
+		"name": "Togetic",
+		"candyDis": 3,
+		"topcp": 1553,
+		"minMulti": 2.54,
+		"maxMulti": 3.40,
+		"gen": 2,
+		"preEvol": [{
+			"id": 175
+		}],
+		"bStamina": 110,
+		"bAttack": 139,
+		"bDefense": 191
+	},
+	{
+		"id": 177,
+		"name": "Natu",
+		"candyDis": 3,
+		"topcp": 925,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 178
+		}],
+		"bStamina": 80,
+		"bAttack": 134,
+		"bDefense": 89
+	},
+	{
+		"id": 178,
+		"name": "Xatu",
+		"candyDis": 3,
+		"topcp": 1975,
+		"minMulti": 1.77,
+		"maxMulti": 2.47,
+		"gen": 2,
+		"preEvol": [{
+			"id": 177
+		}],
+		"bStamina": 130,
+		"bAttack": 192,
+		"bDefense": 146
+	},
+	{
+		"id": 179,
+		"name": "Mareep",
+		"candyDis": 5,
+		"topcp": 887,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 180
+		}],
+		"evol2": [{
+			"id": 181
+		}],
+		"bStamina": 110,
+		"bAttack": 114,
+		"bDefense": 82
+	},
+	{
+		"id": 180,
+		"name": "Flaaffy",
+		"candyDis": 5,
+		"topcp": 1402,
+		"candy": 100,
+		"minMulti": 1.25,
+		"maxMulti": 1.70,
+		"gen": 2,
+		"evol1": [{
+			"id": 181
+		}],
+		"preEvol": [{
+			"id": 179
+		}],
+		"bStamina": 140,
+		"bAttack": 145,
+		"bDefense": 112
+	},
+	{
+		"id": 181,
+		"name": "Ampharos",
+		"candyDis": 5,
+		"topcp": 2695,
+		"minMulti": 1.19,
+		"maxMulti": 2.07,
+		"gen": 2,
+		"preEvol": [{
+			"id": 180
+		}, {
+			"id": 179
+		}],
+		"bStamina": 180,
+		"bAttack": 211,
+		"bDefense": 172
+	},
+	{
+		"id": 182,
+		"name": "Bellossom",
+		"candyDis": 3,
+		"topcp": 2108,
+		"minMulti": 1.57,
+		"maxMulti": 2.12,
+		"gen": 2,
+		"preEvol": [{
+			"id": 44
+		}, {
+			"id": 43
+		}],
+		"bStamina": 150,
+		"bAttack": 169,
+		"bDefense": 189
+	},
+	{
+		"id": 183,
+		"name": "Marill",
+		"candyDis": 3,
+		"topcp": 420,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 184
+		}],
+		"bStamina": 140,
+		"bAttack": 37,
+		"bDefense": 93
+	},
+	{
+		"id": 184,
+		"name": "Azumarill",
+		"candyDis": 3,
+		"topcp": 1503,
+		"minMulti": 3.16,
+		"maxMulti": 4.70,
+		"gen": 2,
+		"preEvol": [{
+			"id": 183
+		}],
+		"bStamina": 200,
+		"bAttack": 112,
+		"bDefense": 152
+	},
+	{
+		"id": 185,
+		"name": "Sudowoodo",
+		"candyDis": 5,
+		"topcp": 2065,
+		"gen": 2,
+		"bStamina": 140,
+		"bAttack": 167,
+		"bDefense": 198
+	},
+	{
+		"id": 186,
+		"name": "Politoed",
+		"candyDis": 3,
+		"topcp": 2371,
+		"minMulti": 1.40,
+		"maxMulti": 2.11,
+		"gen": 2,
+		"preEvol": [{
+			"id": 61
+		}, {
+			"id": 60
+		}],
+		"bStamina": 180,
+		"bAttack": 174,
+		"bDefense": 192
+	},
+	{
+		"id": 187,
+		"name": "Hoppip",
+		"candyDis": 3,
+		"topcp": 508,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 188
+		}],
+		"evol2": [{
+			"id": 189
+		}],
+		"bStamina": 70,
+		"bAttack": 67,
+		"bDefense": 101
+	},
+	{
+		"id": 188,
+		"name": "Skiploom",
+		"candyDis": 3,
+		"topcp": 882,
+		"candy": 100,
+		"minMulti": 1.58,
+		"maxMulti": 1.91,
+		"gen": 2,
+		"evol1": [{
+			"id": 189
+		}],
+		"preEvol": [{
+			"id": 187
+		}],
+		"bStamina": 110,
+		"bAttack": 91,
+		"bDefense": 127
+	},
+	{
+		"id": 189,
+		"name": "Jumpluff",
+		"candyDis": 3,
+		"topcp": 1553,
+		"minMulti": 1.39,
+		"maxMulti": 1.90,
+		"gen": 2,
+		"preEvol": [{
+			"id": 188
+		}, {
+			"id": 187
+		}],
+		"bStamina": 150,
+		"bAttack": 118,
+		"bDefense": 197
+	},
+	{
+		"id": 190,
+		"name": "Aipom",
+		"candyDis": 3,
+		"topcp": 1188,
+		"gen": 2,
+		"bStamina": 110,
+		"bAttack": 136,
+		"bDefense": 112
+	},
+	{
+		"id": 191,
+		"name": "Sunkern",
+		"candyDis": 3,
+		"topcp": 316,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 192
+		}],
+		"bStamina": 60,
+		"bAttack": 55,
+		"bDefense": 55
+	},
+	{
+		"id": 192,
+		"name": "Sunflora",
+		"candyDis": 3,
+		"topcp": 2048,
+		"minMulti": 6.14,
+		"maxMulti": 8.85,
+		"gen": 2,
+		"preEvol": [{
+			"id": 191
+		}],
+		"bStamina": 150,
+		"bAttack": 185,
+		"bDefense": 148
+	},
+	{
+		"id": 193,
+		"name": "Yanma",
+		"candyDis": 3,
+		"topcp": 1326,
+		"gen": 2,
+		"bStamina": 130,
+		"bAttack": 154,
+		"bDefense": 94
+	},
+	{
+		"id": 194,
+		"name": "Wooper",
+		"candyDis": 3,
+		"topcp": 596,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 195
+		}],
+		"bStamina": 110,
+		"bAttack": 75,
+		"bDefense": 75
+	},
+	{
+		"id": 195,
+		"name": "Quagsire",
+		"candyDis": 3,
+		"topcp": 1929,
+		"minMulti": 2.89,
+		"maxMulti": 3.88,
+		"gen": 2,
+		"preEvol": [{
+			"id": 194
+		}],
+		"bStamina": 190,
+		"bAttack": 152,
+		"bDefense": 152
+	},
+	{
+		"id": 196,
+		"name": "Espeon",
+		"candyDis": 5,
+		"topcp": 3000,
+		"minMulti": 2.23,
+		"maxMulti": 3.49,
+		"gen": 2,
+		"preEvol": [{
+			"id": 133
+		}],
+		"bStamina": 130,
+		"bAttack": 261,
+		"bDefense": 194
+	},
+	{
+		"id": 197,
+		"name": "Umbreon",
+		"candyDis": 5,
+		"topcp": 2052,
+		"minMulti": 1.52,
+		"maxMulti": 2.31,
+		"gen": 2,
+		"preEvol": [{
+			"id": 133
+		}],
+		"bStamina": 190,
+		"bAttack": 126,
+		"bDefense": 250
+	},
+	{
+		"id": 198,
+		"name": "Murkrow",
+		"candyDis": 3,
+		"topcp": 1392,
+		"gen": 2,
+		"bStamina": 120,
+		"bAttack": 175,
+		"bDefense": 87
+	},
+	{
+		"id": 199,
+		"name": "Slowking",
+		"candyDis": 3,
+		"topcp": 2482,
+		"minMulti": 1.47,
+		"maxMulti": 2.54,
+		"gen": 2,
+		"preEvol": [{
+			"id": 79
+		}],
+		"bStamina": 190,
+		"bAttack": 177,
+		"bDefense": 194
+	},
+	{
+		"id": 200,
+		"name": "Misdreavus",
+		"candyDis": 3,
+		"topcp": 1781,
+		"gen": 2,
+		"bStamina": 120,
+		"bAttack": 167,
+		"bDefense": 167
+	},
+	{
+		"id": 201,
+		"name": "Unown",
+		"candyDis": 0,
+		"topcp": 1022,
+		"gen": 2,
+		"bStamina": 96,
+		"bAttack": 136,
+		"bDefense": 91
+	},
+	{
+		"id": 202,
+		"name": "Wobbuffet",
+		"candyDis": 3,
+		"topcp": 1024,
+		"gen": 2,
+		"bStamina": 380,
+		"bAttack": 60,
+		"bDefense": 106
+	},
+	{
+		"id": 203,
+		"name": "Girafarig",
+		"candyDis": 3,
+		"topcp": 1863,
+		"gen": 2,
+		"bStamina": 140,
+		"bAttack": 182,
+		"bDefense": 133
+	},
+	{
+		"id": 204,
+		"name": "Pineco",
+		"candyDis": 5,
+		"topcp": 1045,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 205
+		}],
+		"bStamina": 100,
+		"bAttack": 108,
+		"bDefense": 146
+	},
+	{
+		"id": 205,
+		"name": "Forretress",
+		"candyDis": 5,
+		"topcp": 2263,
+		"minMulti": 1.68,
+		"maxMulti": 2.58,
+		"gen": 2,
+		"preEvol": [{
+			"id": 204
+		}],
+		"bStamina": 150,
+		"bAttack": 161,
+		"bDefense": 242
+	},
+	{
+		"id": 206,
+		"name": "Dunsparce",
+		"candyDis": 3,
+		"topcp": 1615,
+		"gen": 2,
+		"bStamina": 200,
+		"bAttack": 131,
+		"bDefense": 131
+	},
+	{
+		"id": 207,
+		"name": "Gilgar",
+		"candyDis": 5,
+		"topcp": 1758,
+		"gen": 2,
+		"bStamina": 130,
+		"bAttack": 143,
+		"bDefense": 204
+	},
+	{
+		"id": 208,
+		"name": "Steelix",
+		"candyDis": 5,
+		"topcp": 2439,
+		"minMulti": 1.81,
+		"maxMulti": 2.78,
+		"gen": 2,
+		"preEvol": [{
+			"id": 95
+		}],
+		"bStamina": 150,
+		"bAttack": 148,
+		"bDefense": 333
+	},
+	{
+		"id": 209,
+		"name": "Snubbull",
+		"candyDis": 3,
+		"topcp": 1124,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 210
+		}],
+		"bStamina": 120,
+		"bAttack": 137,
+		"bDefense": 89
+	},
+	{
+		"id": 210,
+		"name": "Granbull",
+		"candyDis": 3,
+		"topcp": 2440,
+		"minMulti": 1.45,
+		"maxMulti": 2.49,
+		"gen": 2,
+		"preEvol": [{
+			"id": 209
+		}],
+		"bStamina": 180,
+		"bAttack": 212,
+		"bDefense": 137
+	},
+	{
+		"id": 211,
+		"name": "Qwilfish",
+		"candyDis": 3,
+		"topcp": 1910,
+		"gen": 2,
+		"bStamina": 130,
+		"bAttack": 184,
+		"bDefense": 148
+	},
+	{
+		"id": 212,
+		"name": "Scizor",
+		"candyDis": 5,
+		"topcp": 2801,
+		"minMulti": 0.39,
+		"maxMulti": 1.43,
+		"gen": 2,
+		"preEvol": [{
+			"id": 123
+		}],
+		"bStamina": 140,
+		"bAttack": 236,
+		"bDefense": 191
+	},
+	{
+		"id": 213,
+		"name": "Shuckle",
+		"candyDis": 3,
+		"topcp": 300,
+		"gen": 2,
+		"bStamina": 40,
+		"bAttack": 17,
+		"bDefense": 396
+	},
+	{
+		"id": 214,
+		"name": "Heracross",
+		"candyDis": 3,
+		"topcp": 2938,
+		"gen": 2,
+		"bStamina": 160,
+		"bAttack": 234,
+		"bDefense": 189
+	},
+	{
+		"id": 215,
+		"name": "Sneasel",
+		"candyDis": 3,
+		"topcp": 1868,
+		"gen": 2,
+		"bStamina": 110,
+		"bAttack": 189,
+		"bDefense": 157
+	},
+	{
+		"id": 216,
+		"name": "Teddiursa",
+		"candyDis": 3,
+		"topcp": 1184,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 217
+		}],
+		"bStamina": 120,
+		"bAttack": 142,
+		"bDefense": 93
+	},
+	{
+		"id": 217,
+		"name": "Ursaring",
+		"candyDis": 3,
+		"topcp": 2760,
+		"minMulti": 1.64,
+		"maxMulti": 2.84,
+		"gen": 2,
+		"preEvol": [{
+			"id": 216
+		}],
+		"bStamina": 180,
+		"bAttack": 236,
+		"bDefense": 144
+	},
+	{
+		"id": 218,
+		"name": "Slugma",
+		"candyDis": 1,
+		"topcp": 750,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 219
+		}],
+		"bStamina": 80,
+		"bAttack": 118,
+		"bDefense": 71
+	},
+	{
+		"id": 219,
+		"name": "Magcargo",
+		"candyDis": 1,
+		"topcp": 1543,
+		"minMulti": 1.61,
+		"maxMulti": 2.26,
+		"gen": 2,
+		"preEvol": [{
+			"id": 218
+		}],
+		"bStamina": 100,
+		"bAttack": 139,
+		"bDefense": 209
+	},
+	{
+		"id": 220,
+		"name": "Swinub",
+		"candyDis": 3,
+		"topcp": 663,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 221
+		}],
+		"bStamina": 100,
+		"bAttack": 90,
+		"bDefense": 74
+	},
+	{
+		"id": 221,
+		"name": "Piloswine",
+		"candyDis": 3,
+		"topcp": 2284,
+		"minMulti": 3.08,
+		"maxMulti": 4.07,
+		"gen": 2,
+		"preEvol": [{
+			"id": 220
+		}],
+		"bStamina": 200,
+		"bAttack": 181,
+		"bDefense": 147
+	},
+	{
+		"id": 222,
+		"name": "Corsola",
+		"candyDis": 3,
+		"topcp": 1214,
+		"gen": 2,
+		"bStamina": 110,
+		"bAttack": 118,
+		"bDefense": 156
+	},
+	{
+		"id": 223,
+		"name": "Remoraid",
+		"candyDis": 1,
+		"topcp": 749,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 224
+		}],
+		"bStamina": 70,
+		"bAttack": 127,
+		"bDefense": 69
+	},
+	{
+		"id": 224,
+		"name": "Octillery",
+		"candyDis": 1,
+		"topcp": 2124,
+		"minMulti": 2.22,
+		"maxMulti": 3.49,
+		"gen": 2,
+		"preEvol": [{
+			"id": 223
+		}],
+		"bStamina": 150,
+		"bAttack": 197,
+		"bDefense": 141
+	},
+	{
+		"id": 225,
+		"name": "Delibird",
+		"candyDis": 0,
+		"topcp": 937,
+		"gen": 2,
+		"bStamina": 90,
+		"bAttack": 128,
+		"bDefense": 90
+	},
+	{
+		"id": 226,
+		"name": "Mantine",
+		"candyDis": 5,
+		"topcp": 2045,
+		"gen": 2,
+		"bStamina": 130,
+		"bAttack": 148,
+		"bDefense": 260
+	},
+	{
+		"id": 227,
+		"name": "Skarmory",
+		"candyDis": 5,
+		"topcp": 2045,
+		"gen": 2,
+		"bStamina": 130,
+		"bAttack": 148,
+		"bDefense": 260
+	},
+	{
+		"id": 228,
+		"name": "Houndour",
+		"candyDis": 3,
+		"topcp": 1110,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 229
+		}],
+		"bStamina": 90,
+		"bAttack": 152,
+		"bDefense": 93
+	},
+	{
+		"id": 229,
+		"name": "Houndoom",
+		"candyDis": 3,
+		"topcp": 2529,
+		"minMulti": 1.88,
+		"maxMulti": 2.58,
+		"gen": 2,
+		"preEvol": [{
+			"id": 228
+		}],
+		"bStamina": 150,
+		"bAttack": 224,
+		"bDefense": 159
+	},
+	{
+		"id": 230,
+		"name": "Kingdra",
+		"candyDis": 3,
+		"topcp": 2424,
+		"minMulti": 0.70,
+		"maxMulti": 1.54,
+		"gen": 2,
+		"preEvol": [{
+			"id": 117
+		}, {
+			"id": 116
+		}],
+		"bStamina": 150,
+		"bAttack": 194,
+		"bDefense": 194
+	},
+	{
+		"id": 231,
+		"name": "Phanpy",
+		"candyDis": 3,
+		"topcp": 1175,
+		"candy": 50,
+		"gen": 2,
+		"evol1": [{
+			"id": 232
+		}],
+		"bStamina": 180,
+		"bAttack": 107,
+		"bDefense": 107
+	},
+	{
+		"id": 232,
+		"name": "Donphan",
+		"candyDis": 3,
+		"topcp": 3022,
+		"minMulti": 1.79,
+		"maxMulti": 3.14,
+		"gen": 2,
+		"preEvol": [{
+			"id": 231
+		}],
+		"bStamina": 180,
+		"bAttack": 214,
+		"bDefense": 214
+	},
+	{
+		"id": 233,
+		"name": "Porygon2",
+		"candyDis": 3,
+		"topcp": 2546,
+		"minMulti": 1.12,
+		"maxMulti": 1.95,
+		"gen": 2,
+		"preEvol": [{
+			"id": 137
+		}],
+		"bStamina": 170,
+		"bAttack": 198,
+		"bDefense": 183
+	},
+	{
+		"id": 234,
+		"name": "Stantler",
+		"candyDis": 3,
+		"topcp": 1988,
+		"gen": 2,
+		"bStamina": 146,
+		"bAttack": 192,
+		"bDefense": 132
+	},
+	{
+		"id": 235,
+		"name": "Smeargle",
+		"candyDis": 0,
+		"topcp": 389,
+		"gen": 2,
+		"bStamina": 110,
+		"bAttack": 40,
+		"bDefense": 88
+	},
+	{
+		"id": 236,
+		"name": "Tyrogue",
+		"candyDis": 5,
+		"topcp": 404,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 106
+		}, {
+			"id": 107
+		}, {
+			"id": 237
+		}],
+		"bStamina": 70,
+		"bAttack": 64,
+		"bDefense": 64
+	},
+	{
+		"id": 237,
+		"name": "Hitmontop",
+		"candyDis": 5,
+		"topcp": 1905,
+		"minMulti": 4.29,
+		"maxMulti": 6.09,
+		"gen": 2,
+		"preEvol": [{
+			"id": 236
+		}],
+		"bStamina": 100,
+		"bAttack": 173,
+		"bDefense": 214
+	},
+	{
+		"id": 238,
+		"name": "Smoochum",
+		"candyDis": 5,
+		"topcp": 1230,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 124
+		}],
+		"bStamina": 90,
+		"bAttack": 153,
+		"bDefense": 116
+	},
+	{
+		"id": 239,
+		"name": "Elekid",
+		"candyDis": 5,
+		"topcp": 1073,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 125
+		}],
+		"bStamina": 90,
+		"bAttack": 135,
+		"bDefense": 110
+	},
+	{
+		"id": 240,
+		"name": "Magby",
+		"candyDis": 5,
+		"topcp": 1178,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 126
+		}],
+		"bStamina": 90,
+		"bAttack": 151,
+		"bDefense": 108
+	},
+	{
+		"id": 241,
+		"name": "Miltank",
+		"candyDis": 5,
+		"topcp": 2325,
+		"gen": 2,
+		"bStamina": 190,
+		"bAttack": 157,
+		"bDefense": 211
+	},
+	{
+		"id": 242,
+		"name": "Blissey",
+		"candyDis": 5,
+		"topcp": 3349,
+		"minMulti": 1.42,
+		"maxMulti": 2.88,
+		"gen": 2,
+		"preEvol": [{
+			"id": 113
+		}],
+		"bStamina": 510,
+		"bAttack": 129,
+		"bDefense": 229
+	},
+	{
+		"id": 243,
+		"name": "Raikou",
+		"candyDis": 0,
+		"topcp": 3412,
+		"gen": 2,
+		"bStamina": 180,
+		"bAttack": 241,
+		"bDefense": 210
+	},
+	{
+		"id": 244,
+		"name": "Entei",
+		"candyDis": 0,
+		"topcp": 3412,
+		"gen": 2,
+		"bStamina": 230,
+		"bAttack": 235,
+		"bDefense": 176
+	},
+	{
+		"id": 245,
+		"name": "Suicune",
+		"candyDis": 0,
+		"topcp": 2823,
+		"gen": 2,
+		"bStamina": 200,
+		"bAttack": 180,
+		"bDefense": 235
+	},
+	{
+		"id": 246,
+		"name": "Larvitar",
+		"candyDis": 5,
+		"topcp": 904,
+		"candy": 25,
+		"gen": 2,
+		"evol1": [{
+			"id": 247
+		}],
+		"evol2": [{
+			"id": 248
+		}],
+		"bStamina": 100,
+		"bAttack": 115,
+		"bDefense": 93
+	},
+	{
+		"id": 247,
+		"name": "Pupitar",
+		"candyDis": 5,
+		"topcp": 1608,
+		"candy": 100,
+		"minMulti": 1.44,
+		"maxMulti": 1.98,
+		"gen": 2,
+		"evol1": [{
+			"id": 246
+		}],
+		"preEvol": [{
+			"id": 248
+		}],
+		"bStamina": 140,
+		"bAttack": 155,
+		"bDefense": 133
+	},
+	{
+		"id": 248,
+		"name": "Tyranitar",
+		"candyDis": 5,
+		"topcp": 3670,
+		"minMulti": 1.62,
+		"maxMulti": 2.89,
+		"gen": 2,
+		"preEvol": [{
+			"id": 247
+		}, {
+			"id": 246
+		}],
+		"bStamina": 200,
+		"bAttack": 251,
+		"bDefense": 212
+	},
+	{
+		"id": 249,
+		"name": "Lugia",
+		"candyDis": 0,
+		"topcp": 3598,
+		"gen": 2,
+		"bStamina": 212,
+		"bAttack": 193,
+		"bDefense": 323
+	},
+	{
+		"id": 250,
+		"name": "Ho-Oh",
+		"candyDis": 0,
+		"topcp": 4650,
+		"gen": 2,
+		"bStamina": 212,
+		"bAttack": 263,
+		"bDefense": 301
+	},
+	{
+		"id": 251,
+		"name": "Celebi",
+		"candyDis": 0,
+		"topcp": 3090,
+		"gen": 2,
+		"bStamina": 200,
+		"bAttack": 210,
+		"bDefense": 210
+	}
+]
